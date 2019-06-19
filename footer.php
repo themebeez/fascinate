@@ -1,0 +1,89 @@
+<?php
+/**
+ * The template for displaying the footer
+ *
+ * Contains the closing of the #content div and all content after.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Fascinate
+ */
+
+?>
+
+		<footer class="footer dark secondary-widget-area">
+            <div class="footer-inner">
+                <?php
+                if( is_active_sidebar( 'fascinate-footer-left' ) || is_active_sidebar( 'fascinate-footer-middle' ) || is_active_sidebar( 'fascinate-footer-right' ) ) :
+                    ?>
+                    <div class="footer-top">
+                        <div class="gb-container">                            
+    	                    <div class="footer-widget-area">
+    	                        <div class="row">
+                                   
+                                    <div class="col-lg-4 col-md-12">
+                                        <?php
+                                        if( is_active_sidebar( 'fascinate-footer-left' ) ) {
+
+                                            dynamic_sidebar( 'fascinate-footer-left' ); 
+                                        }
+                                        ?>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12">
+                                        <?php 
+                                        if( is_active_sidebar( 'fascinate-footer-middle' ) ) {
+                                            dynamic_sidebar( 'fascinate-footer-middle' ); 
+                                        } 
+                                        ?>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12">
+                                        <?php 
+                                        if( is_active_sidebar( 'fascinate-footer-right' ) ) {
+                                            dynamic_sidebar( 'fascinate-footer-right' ); 
+                                        } 
+                                        ?>
+                                    </div>      	                            
+    	                        </div><!-- .row -->
+    	                    </div><!-- .footer-widget-area -->
+                        </div><!-- .gb-container -->
+                    </div><!-- .footer-top -->
+                    <?php
+                endif;
+                ?>
+                <div class="footer-bottom">
+                    <div class="gb-container">
+                        <div class="row">                            
+                            <div class="col-lg-6">
+                                <?php
+                                $copyright_text = fascinate_get_option( 'copyright_text' );
+
+                                if( !empty( $copyright_text ) ) :
+                                    ?>
+                                    <div class="copyright-information">
+                                        <p><?php echo esc_html( $copyright_text ); ?></p>
+                                    </div><!-- .copyright-information -->
+                                    <?php
+                                endif;
+                                ?>
+                            </div><!-- .col -->
+                            <div class="col-lg-6">
+                                <div class="author-credit">
+                                    <p> 
+                                        <?php
+                                        /* translators: 1: Theme name, 2: Theme author. */
+                                        printf( esc_html__( '%1$s Theme By %2$s', 'fascinate' ), 'Glaze Blog', '<a href="' . esc_url( 'https://themebeez.com/' ) . '" target="_blank">'. esc_html__( 'Themebeez', 'fascinate' ) . '</a>' );
+                                        ?>
+                                    </p>
+                                </div><!-- .author-credit -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .gb-container -->
+                </div><!-- .footer-bottom -->
+            </div><!-- .footer-inner -->
+        </footer><!-- .footer.secondary-widget-area -->
+	</div><!-- .page--wrap -->
+
+<?php wp_footer(); ?>
+
+</body>
+</html>

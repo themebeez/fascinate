@@ -1,0 +1,44 @@
+
+#glaze-toTop {
+	
+	display: none;
+	position: fixed;
+    z-index: 999999999;
+    bottom: 40px;
+    right: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    opacity: 0.9;
+    -moz-transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    @include transation_delay(); 
+
+}
+
+#glaze-toTop span {
+
+	display:inline-block;
+	font-size: 50px;
+    padding:0;
+    color: $primary_color;
+}
+
+#glaze-toTop:hover {
+
+	opacity: 1;
+	
+}
+
+#glaze-toTop span {
+
+	@include transation_delay_slow(); 
+}
+
+
+#glaze-toTop:hover span {
+
+	padding-bottom: 30px;
+}
