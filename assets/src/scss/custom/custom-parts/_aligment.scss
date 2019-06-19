@@ -1,0 +1,50 @@
+.alignleft {
+
+    display: inline;
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+
+    display: inline;
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+
+    clear: both;
+    display: block;
+    margin: 0 auto;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+body.no-sidebar .alignfull {
+
+    width: 91vw;
+    max-width: 91vw;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+body.no-sidebar .alignwide {
+
+    width: 75vw;
+    width: 75vw;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
