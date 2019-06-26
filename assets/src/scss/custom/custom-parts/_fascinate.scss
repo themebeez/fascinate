@@ -153,11 +153,12 @@ body.boxed .fb-container {
     border-top: 4px solid transparent
 }
 
-
-.updated:not(.published) {
+.updated:not(.published),
+.fb-post-widget .entry-metas ul li.posted-date a:after {
 
     display:none;
 }
+
 
 
 // Social icons 
@@ -180,98 +181,6 @@ body.boxed .fb-container {
     line-height: 40px;
     height: 40px;
     padding: 0 10px;
-}
-
-
-#sticky-social {
-
-    position: fixed;
-    left: 0;
-    top: 50%;
-    z-index: 21;
-    max-width: 50px;
-    padding:0;
-    text-align: center;
-    -webkit-transform:translateY(-50%);
-    -moz-transform:translateY(-50%);
-    -o-transform:translateY(-50%);
-    transform:translateY(-50%);
-}
-
-
-#sticky-social ul.social-icons-list li {
-
-    display:block;
-}
-
-#sticky-social ul.social-icons-list li a {
-
-    display:inline-block;
-    padding:0;
-    color:$white;
-    line-height:50px;
-    width:50px;
-    height:50px;
-
-    &:hover {
-
-        margin-left: -10px;
-    }
-}
-
-#sticky-social li.fb a {
-
-    background:$facebook;
-}
-
-#sticky-social li.tw a {
-
-    background:$twitter;
-}
-
-#sticky-social li.ins a {
-
-    background:$instagram;
-}
-
-#sticky-social li.pin a {
-
-    background:$pinterest;
-}
-
-#sticky-social li.gplus a {
-
-    background:$googleplus;
-}
-
-#sticky-social li.lk a {
-
-    background:$linkedin;
-}
-
-#sticky-social li.rd a {
-
-    background:$reddit;
-}
-
-#sticky-social li.tmb a {
-
-    background:$tumblr;
-}
-
-#sticky-social li.dg a {
-
-    background:$digg;
-}
-
-#sticky-social li.vk a {
-
-    background:$vk;
-}
-
-#sticky-social li.email a {
-
-    background:#1E9F75;
 }
 
 
@@ -547,7 +456,9 @@ img.lazyloaded {
 }
 
 .is-video-format iframe,
-.is-audio-format iframe {
+.is-audio-format iframe,
+.is-video-format video,
+.is-audio-format audio {
 
     @include border-radius(10px);
 }
