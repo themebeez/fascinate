@@ -215,6 +215,20 @@ input[type="search"],
 	border-bottom-color:$white;
 }
 
+.single-page-style-2 .entry-metas ul li.posted-date a:after {
+
+	content:'';
+	border-left-color:$white;
+    border-bottom-color:$white;
+}
+
+.single-page-style-2 .entry-metas ul li.posted-date a:hover:after {
+
+	content:'';
+	border-left-color:$secondary_color;
+    border-bottom-color:$secondary_color;
+}
+
 // background color
 
 button,
