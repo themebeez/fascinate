@@ -1,38 +1,4 @@
 
-// color white 
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"], 
-button#load-comments,
-footer.dark .footer-bottom a,
-.entry-tags .post-tags a:hover,
-.gb-breadcrumb ul .trail-item a,
-.gb-breadcrumb ul .trail-item span,
-.gb-breadcrumb-wrap .page-title,
-footer.dark .footer-bottom a:hover,
-.entry-tags .post-tags a:hover,
-.single-page-style-2 .entry-metas li,
-.single-page-style-2 .entry-metas li a,
-.single-page-style-2 .entry-cats ul li a,
-.single-page-style-2 .entry-metas li span,
-.single-page-style-2 .entry-metas ul li.posted-date a:hover,
-.widget_rss .widget-title h3 a,
-.widget_tag_cloud .tagcloud a:hover,
-.gb-patigation .page-numbers,
-.wpcf7 input[type="submit"],
-.wpcf7 input[type="button"],
-.jetpack_subscription_widget input[type="submit"],
-.screen-reader-shortcut,
-body .wpforms-container .wpforms-form input[type=submit], 
-body .wpforms-container .wpforms-form button[type=submit],
-body .wpforms-container .wpforms-form .wpforms-page-button  {
-
-	color:$white;
-}
-
-
 // color primary
 
 a,
@@ -48,12 +14,51 @@ input[type="search"],
 .widget .widget_title h3,
 .widget_tag_cloud .tagcloud a,
 .entry-tags .post-tags a,
+.fascinate-toTop,
 .single-page-style-2 .entry-metas ul li.posted-date a,
 .single-page-style-2 .related-posts .entry-metas li a,
 .single-page-style-2 .related-posts .entry-metas ul li,
 .woocommerce .woocommerce-widget-layered-nav-list .woocommerce-widget-layered-nav-list__item:before {
 
 	color:$primary_color;
+}
+
+
+// color white 
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.post-format-icon,
+a.post-link-btn,
+.post-link-btn,
+.post-link-btn:hover, 
+button#load-comments,
+.fascinate-toTop:hover,
+footer.dark .footer-bottom a,
+.entry-tags .post-tags a:hover,
+.fb-breadcrumb ul .trail-item a,
+.fb-breadcrumb ul .trail-item span,
+.fb-breadcrumb-wrap .page-title,
+footer.dark .footer-bottom a:hover,
+.entry-tags .post-tags a:hover,
+.single-page-style-2 .entry-metas li,
+.single-page-style-2 .entry-metas li a,
+.single-page-style-2 .entry-cats ul li a,
+.single-page-style-2 .entry-metas li span,
+.single-page-style-2 .entry-metas ul li.posted-date a:hover,
+.widget_rss .widget-title h3 a,
+.fb-patigation .page-numbers,
+.wpcf7 input[type="submit"],
+.wpcf7 input[type="button"],
+.jetpack_subscription_widget input[type="submit"],
+.screen-reader-shortcut,
+body .wpforms-container .wpforms-form input[type=submit], 
+body .wpforms-container .wpforms-form button[type=submit],
+body .wpforms-container .wpforms-form .wpforms-page-button  {
+
+	color:$white;
 }
 
 
@@ -64,15 +69,15 @@ input[type="search"],
 a:hover,
 footer.dark a:hover,
 .editor-entry a,
-.gb-breadcrumb ul li a span:hover,
+.fb-breadcrumb ul li a span:hover,
 footer.dark .footer-bottom a:hover,
-.gb-post-widget .entry-metas ul li.comment a:hover, 
-.gb-post-widget .entry-metas ul li.posted-date a:hover,
+.fb-post-widget .entry-metas ul li.comment a:hover, 
+.fb-post-widget .entry-metas ul li.posted-date a:hover,
 .single-page-style-2 .entry-cats ul li a:hover,
 .single-page-style-2 .entry-metas ul li.posted-by a:hover,
 .single-page-style-2 .related-posts .entry-metas li a:hover,
-footer.dark .gb-post-widget :hover.entry-metas ul li.posted-date a:hover, 
-footer.dark .gb-post-widget .entry-metas ul li.comment a:hover,
+footer.dark .fb-post-widget :hover.entry-metas ul li.posted-date a:hover, 
+footer.dark .fb-post-widget .entry-metas ul li.comment a:hover,
 .widget_archive a:hover,
 .widget_categories a:hover,
 .widget_recent_entries a:hover,
@@ -93,7 +98,9 @@ footer.dark .widget_rss ul li a:hover,
 .comments-area .comment-body .fn a:hover,
 .comments-area .comment-body .reply a:hover, 
 .comments-area .comment-body .comment-metadata a:hover,
-.comments-area .comment-body .comment-metadata .edit-link:hover   {
+.comments-area .comment-body .comment-metadata .edit-link:hover,
+.widget_tag_cloud .tagcloud a:hover,
+.footer.dark .widget_tag_cloud .tagcloud a:hover   {
 
 	color:$secondary_color;
 }
@@ -104,8 +111,8 @@ footer.dark .widget_rss ul li a:hover,
 
 span.edit-link a,
 .widget_recent_entries .post-date,
-.gb-post-widget .entry-metas ul li.posted-date a,
-.gb-post-widget .entry-metas ul li.comment a,
+.fb-post-widget .entry-metas ul li.posted-date a,
+.fb-post-widget .entry-metas ul li.comment a,
 .comments-area .comment-body .fn,
 .comments-area .comment-body .fn a,
 .comments-area .comment-body .reply a, 
@@ -118,6 +125,7 @@ span.edit-link a,
 
 
 // border color
+
 
 .author-box .top-wrap,
 .related-posts .title h3, 
@@ -134,7 +142,7 @@ body .header-style-1 .main-menu-wrapper,
 .widget_rss li,
 .widget_pages li,
 .widget_nav_menu li a,
-.gb-post-widget article,
+.fb-post-widget article,
 .widget_product_categories li,
 .woocommerce-widget-layered-nav ul li,
 .comments-area .comment-body .comment-meta,
@@ -143,6 +151,10 @@ body .header-style-1 .main-menu-wrapper,
     border-bottom: 1px solid $border_color;
 }
 
+.entry-cats ul li a {
+
+	border-bottom: 1px solid $primary_color;
+}
 
 textarea,
 .author-box,
@@ -161,15 +173,28 @@ input[type="search"],
 .calendar_wrap table td,
 .secondary-widget-area .widget,
 .author-box .top-wrap .author-thumb img,
-.comments-area .comment-body {
+.comments-area .comment-body,
+.widget_tag_cloud .tagcloud a {
 
 	border: 1px solid $border_color;
 }
 
+.fascinate-toTop {
+
+	border:1px solid $primary_color;
+}
+
+.fascinate-toTop:hover,
 .entry-tags .post-tags a:hover,
 .author-box .social-icons-list li a:hover {
 
 	border:1px solid $secondary_color;
+}
+
+.widget_tag_cloud .tagcloud a:hover,
+.footer.dark .widget_tag_cloud .tagcloud a:hover {
+
+	border-color:$secondary_color;
 }
 
 .widget_product_categories ul li ul {
@@ -177,6 +202,18 @@ input[type="search"],
 	border-top:1px solid $border_color;
 }
 
+.entry-metas ul li.posted-date a:hover:after {
+
+	content:'';
+	border-left-color:$secondary_color;
+	border-bottom-color:$secondary_color;
+}
+
+
+.single-page-style-2 .entry-cats ul li a {
+
+	border-bottom-color:$white;
+}
 
 // background color
 
@@ -184,16 +221,17 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
+.post-link-btn,
 .calendar_wrap caption,
 footer.dark .footer-inner,
-.gb-popular-posts .count,
-.gb-patigation .page-numbers,
+.fb-popular-posts .count,
+.fb-patigation .page-numbers,
 body .wpcf7 input[type="submit"],
 body .wpcf7 input[type="button"], 
 .entry-metas ul li.posted-date a,
 .jetpack_subscription_widget input[type="submit"]:hover,
 #single-content-area-wrap ul.social-icons-list li a:hover,
-.secondary-widget-area .gb-instagram-widget .follow-permalink a,
+.secondary-widget-area .fb-instagram-widget .follow-permalink a,
 .screen-reader-shortcut,
 body .wpforms-container .wpforms-form input[type=submit], 
 body .wpforms-container .wpforms-form button[type=submit],
@@ -202,7 +240,7 @@ body .wpforms-container .wpforms-form .wpforms-page-button {
 	background:$primary_color;
 }
 
-.gb-breadcrumb-wrap,
+.fb-breadcrumb-wrap,
 button#load-comments {
 
 	background-color:$primary_color;
@@ -214,15 +252,16 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover,
 button#load-comments:hover,
+.post-format-icon,
+.fascinate-toTop:hover,
+.post-link-btn:hover,
 .entry-tags .post-tags a:hover,
-.widget_tag_cloud .tagcloud a:hover,
-.gb-patigation a.page-numbers:hover,
+.fb-patigation a.page-numbers:hover,
 body .wpcf7 input[type="submit"]:hover,
 body .wpcf7 input[type="button"]:hover,
 .entry-metas ul li.posted-date a:hover,
-footer.dark .widget_tag_cloud .tagcloud a:hover,
 .single-page-style-2 .entry-metas ul li.posted-date a:hover,
-.secondary-widget-area .gb-instagram-widget .follow-permalink a:hover,
+.secondary-widget-area .fb-instagram-widget .follow-permalink a:hover,
 .woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
 .woocommerce .widget_price_filter .ui-slider .ui-slider-handle, 
 .woocommerce .widget_price_filter .ui-slider .ui-slider-range,
@@ -244,8 +283,8 @@ footer.dark a,
 footer.dark .footer-bottom p,
 footer.dark .widget_rss ul li a,
 footer.dark .widget_tag_cloud .tagcloud a,
-footer.dark .gb-post-widget .entry-metas ul li.posted-date a,
-footer.dark .gb-post-widget .entry-metas ul li.comment a,
+footer.dark .fb-post-widget .entry-metas ul li.posted-date a,
+footer.dark .fb-post-widget .entry-metas ul li.comment a,
 body footer.dark .wpforms-container .wpforms-form input[type=submit], 
 body footer.dark .wpforms-container .wpforms-form button[type=submit],
 body footer.dark .wpforms-container .wpforms-form .wpforms-page-button  {
@@ -255,7 +294,6 @@ body footer.dark .wpforms-container .wpforms-form .wpforms-page-button  {
 
 
 footer.dark .widget_rss .widget_title h3 a,
-footer.dark .widget_tag_cloud .tagcloud a:hover,
 body footer.dark .wpforms-container .wpforms-form input[type=submit]:hover, 
 body footer.dark .wpforms-container .wpforms-form button[type=submit]:hover,
 body footer.dark .wpforms-container .wpforms-form .wpforms-page-button:hover  {
@@ -264,7 +302,7 @@ body footer.dark .wpforms-container .wpforms-form .wpforms-page-button:hover  {
 }
 
 footer.dark .nice-select,
-footer.dark .gb-post-widget article,
+footer.dark .fb-post-widget article,
 footer.dark .widget_archive li, 
 footer.dark .widget_categories li, 
 footer.dark .widget_recent_entries li, 
@@ -276,7 +314,8 @@ footer.dark .widget_nav_menu li a,
 footer.dark .widget_product_categories li, 
 footer.dark .woocommerce-widget-layered-nav ul li,
 footer.dark .calendar_wrap table td,
-footer.dark .calendar_wrap table th, 
+footer.dark .calendar_wrap table th,
+footer.dark .widget_tag_cloud .tagcloud a, 
 footer.dark .woocommerce .woocommerce-widget-layered-nav-list .woocommerce-widget-layered-nav-list__item {
 
 	border-color:$dark_footer_border_color;
@@ -296,14 +335,18 @@ footer.dark .wpcf7 input[type="button"],
 footer.dark .nice-select,
 footer.dark .calendar_wrap caption,
 footer.dark .nice-select .list,
-footer.dark .widget_tag_cloud .tagcloud a,
 footer.dark .jetpack_subscription_widget input[type="submit"]:hover,
-footer.dark .secondary-widget-area .gb-instagram-widget .follow-permalink a,
+footer.dark .secondary-widget-area .fb-instagram-widget .follow-permalink a,
 body footer.dark .wpforms-container .wpforms-form input[type=submit], 
 body footer.dark .wpforms-container .wpforms-form button[type=submit],
 body footer.dark .wpforms-container .wpforms-form .wpforms-page-button {
 
 	background:$dark_footer_element_bg_color;
+}
+
+footer.dark .widget_tag_cloud .tagcloud a {
+
+	background-color:transparent;
 }
 
 footer.dark .nice-select .option:hover, 

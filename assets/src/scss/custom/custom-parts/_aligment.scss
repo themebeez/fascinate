@@ -1,5 +1,5 @@
 .alignleft {
-
+    
     display: inline;
     float: left;
     margin-right: 15px;
@@ -19,31 +19,24 @@
     margin: 0 auto;
 }
 
-.center-align {
-    text-align: center;
-}
 
-.left-align {
-    text-align: left;
-}
+// gutenberg aligment ( full width & wide width )
 
-.right-align {
-    text-align: right;
-}
 
 body.no-sidebar .alignfull {
 
-    width: 91vw;
-    max-width: 91vw;
+    width: 90vw;
+    max-width: 90vw;
     margin-left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
+
 body.no-sidebar .alignwide {
 
-    width: 75vw;
-    width: 75vw;
+    width: 70vw;
+    width: 70vw;
     margin-left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);

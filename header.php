@@ -42,7 +42,7 @@
 	<div class="page--wrap">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'fascinate' ); ?></a>
 	
-		<header class="gb-general-header header-style-1">
+		<header class="fb-general-header header-style-1">
 	        <div class="header-inner">
 	        	<?php
 
@@ -51,7 +51,7 @@
 	        	if( $display_top_header == true ) :
 	        		?>
 		            <div class="header-top">
-		                <div class="gb-container">
+		                <div class="fb-container">
 		                    <div class="row">
 	                        	<div class="col-lg-7 col-md-6 col-sm-12">
 	                        		<?php
@@ -141,13 +141,13 @@
 		                            </div><!-- .social-icons -->
 		                        </div><!-- .col -->
 		                    </div><!-- .row -->
-		                </div><!-- .gb-container -->
+		                </div><!-- .fb-container -->
 		            </div><!-- .header-top -->
 		            <?php
 		        endif;
 		        ?>
 	            <div class="mid-header">
-	                <div class="gb-container">
+	                <div class="fb-container">
 	                    <div class="site-branding">
 	                    	<?php
 	                    	if( has_custom_logo() ) :
@@ -168,11 +168,11 @@
 	                    	endif;
 	                    	?>                        
 	                    </div><!-- .site-branding -->
-	                </div><!-- .gb-container -->
+	                </div><!-- .fb-container -->
 	            </div><!-- .mid-header -->
 	            <div class="header-bottom">
 	                <div class="main-menu-wrapper">
-	                    <div class="gb-container">
+	                    <div class="fb-container">
 	                        <div class="menu-toggle">
 	                        	<span class="hamburger-bar"></span>
 	                        	<span class="hamburger-bar"></span>
@@ -190,8 +190,8 @@
 								wp_nav_menu( $menu_args );
 	                        	?>
 	                        </nav><!-- #site-navigation.site-navigation -->
-	                    </div><!-- .gb-container -->
+	                    </div><!-- .fb-container -->
 	                </div><!-- .main-menu-wrapper -->
 	            </div><!-- .header-bottom -->
 	        </div><!-- .header-inner -->
-	    </header><!-- .gb-general-header.header-style-1 -->
+	    </header><!-- .fb-general-header.header-style-1 -->

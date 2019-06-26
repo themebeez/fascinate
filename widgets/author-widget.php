@@ -46,7 +46,7 @@ if( ! class_exists( 'Fascinate_Author_Widget' ) ) {
 
                     $author->the_post();
                     ?>
-                    <div class="widget gb-author-widget">
+                    <div class="widget fb-author-widget">
                         <?php
                         if( !empty( $title ) ) :
                             ?>
@@ -97,13 +97,13 @@ if( ! class_exists( 'Fascinate_Author_Widget' ) ) {
                             if( !empty( $author_link_title ) ) :  
                                 ?>
                                 <div class="author-permalink">
-                                    <a href="<?php the_permalink(); ?>"><i class="fa fa-angle-right" aria-hidden="true"></i><span><?php echo esc_html( $author_link_title ); ?></span><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                                    <a class="post-link-btn" href="<?php the_permalink(); ?>"><?php echo esc_html( $author_link_title ); ?></a>
                                 </div><!-- .auhtor-permalink -->
                                 <?php
                             endif;
                             ?>
                         </div><!-- .widget-container -->
-                    </div><!-- .widget.gb-author-widget -->
+                    </div><!-- .widget.fb-author-widget -->
                     <?php
                 endwhile;
                 wp_reset_postdata();               

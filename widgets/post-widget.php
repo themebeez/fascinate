@@ -47,7 +47,7 @@ if( ! class_exists( 'Fascinate_Post_Widget' ) ) :
 
                 if( $layout == 'layout_one' ) {
                     ?>
-                    <div class="widget gb-post-widget gb-recent-posts">
+                    <div class="widget fb-post-widget fb-recent-posts">
                         <?php
                         if( !empty( $title ) ) :
                             ?>
@@ -63,20 +63,20 @@ if( ! class_exists( 'Fascinate_Post_Widget' ) ) :
                                 $post_query->the_post();
                                 ?>
                                 <article class="post">
-                                    <div class="gb-row">
+                                    <div class="fb-row">
                                         <?php
                                         if( has_post_thumbnail() ) :
                                             ?>
-                                            <div class="gb-col">
+                                            <div class="fb-col">
                                                 <div class="post-thumb imghover">
                                                     <?php fascinate_small_thumbnail(); ?>
                                                 </div><!-- .post-thumb.imghover -->
-                                            </div><!-- gb-col -->
+                                            </div><!-- fb-col -->
                                             <?php
                                         endif;
                                         ?>
                                         
-                                        <div class="gb-col">
+                                        <div class="fb-col">
                                             <div class="content-holder">
                                                 <div class="the-title">
                                                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -88,19 +88,19 @@ if( ! class_exists( 'Fascinate_Post_Widget' ) ) :
                                                     </ul>
                                                 </div><!-- .entry-metas -->
                                             </div><!-- .content-holder -->
-                                        </div><!-- .gb-col -->
-                                    </div><!-- .gb-row -->
+                                        </div><!-- .fb-col -->
+                                    </div><!-- .fb-row -->
                                 </article><!-- .post -->
                                 <?php
                             endwhile;
                             wp_reset_postdata();
                             ?>
                         </div><!-- .widget-container -->
-                    </div><!-- .widget.gb-post-widget.gb-recent-posts -->
+                    </div><!-- .widget.fb-post-widget.fb-recent-posts -->
                     <?php
                 } else {
                     ?>
-                    <div class="widget gb-post-widget gb-popular-posts">
+                    <div class="widget fb-post-widget fb-popular-posts">
                         <?php
                         if( !empty( $title ) ) :
                             ?>
@@ -117,20 +117,20 @@ if( ! class_exists( 'Fascinate_Post_Widget' ) ) :
                                 $post_query->the_post();
                                 ?>
                                 <article class="post">
-                                    <div class="gb-row">
+                                    <div class="fb-row">
                                         <?php
                                         if( has_post_thumbnail() ) :
                                             ?>
-                                            <div class="gb-col">
+                                            <div class="fb-col">
                                                 <div class="post-thumb imghover">
                                                     <span class="count"><?php echo esc_html( $i ); ?></span>
                                                     <?php fascinate_small_thumbnail(); ?>
                                                 </div><!-- .post-thumb.imghover -->
-                                            </div><!-- gb-col -->
+                                            </div><!-- fb-col -->
                                             <?php
                                         endif;
                                         ?>
-                                        <div class="gb-col">
+                                        <div class="fb-col">
                                             <div class="content-holder">
                                                 <div class="the-title">
                                                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -142,8 +142,8 @@ if( ! class_exists( 'Fascinate_Post_Widget' ) ) :
                                                     </ul>
                                                 </div><!-- .entry-metas -->
                                             </div><!-- .content-holder -->
-                                        </div><!-- .gb-col -->
-                                    </div><!-- .gb-row -->
+                                        </div><!-- .fb-col -->
+                                    </div><!-- .fb-row -->
                                 </article><!-- .post -->
                                 <?php
                                 $i++;
@@ -151,7 +151,7 @@ if( ! class_exists( 'Fascinate_Post_Widget' ) ) :
                             wp_reset_postdata();
                             ?>
                         </div><!-- .widget-container -->
-                    </div><!-- .widget.gb-post-widget.gb-popular-posts -->
+                    </div><!-- .widget.fb-post-widget.fb-popular-posts -->
                     <?php
                 }           
             }

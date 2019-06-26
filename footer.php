@@ -17,7 +17,7 @@
                 if( is_active_sidebar( 'fascinate-footer-left' ) || is_active_sidebar( 'fascinate-footer-middle' ) || is_active_sidebar( 'fascinate-footer-right' ) ) :
                     ?>
                     <div class="footer-top">
-                        <div class="gb-container">                            
+                        <div class="fb-container">                            
     	                    <div class="footer-widget-area">
     	                        <div class="row">
                                    
@@ -45,13 +45,13 @@
                                     </div>      	                            
     	                        </div><!-- .row -->
     	                    </div><!-- .footer-widget-area -->
-                        </div><!-- .gb-container -->
+                        </div><!-- .fb-container -->
                     </div><!-- .footer-top -->
                     <?php
                 endif;
                 ?>
                 <div class="footer-bottom">
-                    <div class="gb-container">
+                    <div class="fb-container">
                         <div class="row">                            
                             <div class="col-lg-6">
                                 <?php
@@ -71,13 +71,13 @@
                                     <p> 
                                         <?php
                                         /* translators: 1: Theme name, 2: Theme author. */
-                                        printf( esc_html__( '%1$s Theme By %2$s', 'fascinate' ), 'Glaze Blog', '<a href="' . esc_url( 'https://themebeez.com/' ) . '" target="_blank">'. esc_html__( 'Themebeez', 'fascinate' ) . '</a>' );
+                                        printf( esc_html__( '%1$s Theme By %2$s', 'fascinate' ), 'Fascinate', '<a href="' . esc_url( 'https://themebeez.com/' ) . '" target="_blank">'. esc_html__( 'Themebeez', 'fascinate' ) . '</a>' );
                                         ?>
                                     </p>
                                 </div><!-- .author-credit -->
                             </div><!-- .col -->
                         </div><!-- .row -->
-                    </div><!-- .gb-container -->
+                    </div><!-- .fb-container -->
                 </div><!-- .footer-bottom -->
             </div><!-- .footer-inner -->
         </footer><!-- .footer.secondary-widget-area -->

@@ -46,7 +46,7 @@ msgid "Comments are closed."
 msgstr ""
 
 #: customizer/customizer.php:48
-msgid "Glaze Blog"
+msgid "Fascinate"
 msgstr ""
 
 #: customizer/customizer.php:49
@@ -1024,7 +1024,7 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Fascinate is 100% media responsive WordPress blog theme. Glaze Blog "
+"Fascinate is 100% media responsive WordPress blog theme. Fascinate "
 "Lite is build for those optimistic bloggers who wish to share their "
 "incredible stories on different niche like lifestyle, travel, food, "
 "technology, fashion, business, marketing etc. Fascinate is build "

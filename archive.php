@@ -17,16 +17,16 @@ fascinate_breadcrumb_wrapper();
         if( !empty( $archive_description ) ) :
             ?>
             <div class="category-description-outer">
-                <div class="gb-container">
+                <div class="fb-container">
                     <div class="category-description-inner">
                         <p><?php echo wp_kses_post( $archive_description ); ?></p>
                     </div><!-- .category-description-inner -->
-                </div><!-- .gb-container -->
+                </div><!-- .fb-container -->
             </div><!-- .category-description-outer -->
             <?php
         endif;
         ?>
-        <div class="gb-container">
+        <div class="fb-container">
             <div class="row">
                 <div class="<?php fascinate_main_container_class(); ?>">
                     <div id="primary" class="primary-widget-area content-area">
@@ -65,7 +65,7 @@ fascinate_breadcrumb_wrapper();
                 </div><!-- .col -->
                 <?php get_sidebar(); ?>
             </div><!-- .row -->
-        </div><!-- .gb-container -->
+        </div><!-- .fb-container -->
     </div><!-- .archive-content-area-wrap -->
 	<?php
 get_footer();

@@ -3,18 +3,8 @@
 // Will be scaling font size on media query ( 1024px, 768px & 574px )
 
 
-
-// Common font family 
-
-.entry-cats ul li a,
-.entry-metas ul li.posted-by a,
-.author-box .author-name h3 {
-
-	// font-family:$logo_font;
-}
-
-
 // Text transforms 
+
 
 .the-title h1,
 .the-title h2,
@@ -25,13 +15,20 @@
 .post-title h4,
 .page-title h1,
 .page-title h2,
+.entry-cats ul li a,
 .widget .widget_title h3,
 .related-posts .title h3,
 .related-post .post-title h4,
 .entry-metas ul li.posted-date a,
-.gb-post-widget .entry-metas ul li.comment a,
+.fb-post-widget .entry-metas ul li.comment a,
 .comments-area .comments-title,
-.comment-respond .comment-reply-title {
+.comment-respond .comment-reply-title,
+.entry-metas ul li.posted-date a,
+.widget_recent_entries .post-date,
+.fb-post-widget .entry-metas ul li.comment a,
+.fb-post-widget .entry-metas ul li.posted-date a,
+.post-navigation .post-nav-title span.meta-nav,
+.author-box .author-name h3  {
 
 	text-transform:uppercase;
 }
@@ -42,19 +39,40 @@
 
 .entry-metas ul li.posted-date a,
 .widget_recent_entries .post-date,
-.gb-post-widget .entry-metas ul li.comment a,
-.gb-post-widget .entry-metas ul li.posted-date a {
+.fb-post-widget .entry-metas ul li.comment a,
+.fb-post-widget .entry-metas ul li.posted-date a {
 
 	font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.25px;
-    text-transform: uppercase;
 }
 
+.entry-cats ul li a,
+.fb-breadcrumb ul li, 
+.fb-breadcrumb ul li span, 
+.fb-breadcrumb ul li a,
+.post-navigation .post-nav-title span.meta-nav {
+
+	font-size: 13px;
+}
+
+.post-link-btn {
+
+	font-size: 15px;
+}
+
+.post-format-icon {
+
+	font-size:16px;
+}
+
+q,
+blockquote,
+.wp-block-quote {
+
+	font-size:17px;
+}
 
 .widget .widget_title h3 {
 
-	font-weight:bold;
 	font-size: 21px;
 }
 
@@ -73,18 +91,56 @@
 	font-size:36px;
 }
 
-.gb-breadcrumb-wrap .page-title {
+.fb-breadcrumb-wrap .page-title {
 
 	font-size: 38px;
 }
 
 
-
-
 // Font weights 
 
+
+.entry-metas ul li.posted-date a,
+.widget_recent_entries .post-date,
+.fb-post-widget .entry-metas ul li.comment a,
+.fb-post-widget .entry-metas ul li.posted-date a,
 .single-page-style-2 .entry-metas ul li.posted-date a {
 
 	font-weight:500;
+}
+
+.entry-cats ul li, 
+.entry-cats ul li a,
+.post-navigation .post-nav-title span.meta-nav {
+
+	font-weight:600;
+}
+
+.widget .widget_title h3 {
+
+	font-weight:700;
+}
+
+
+// letter spacing 
+
+
+.entry-metas ul li.posted-date a,
+.widget_recent_entries .post-date,
+.fb-post-widget .entry-metas ul li.comment a,
+.fb-post-widget .entry-metas ul li.posted-date a {
+
+	letter-spacing: 0.25px;
+}
+
+
+// font style 
+
+
+q,
+blockquote,
+.wp-block-quote  {
+
+	font-style:italic;
 }
 

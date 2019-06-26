@@ -12,7 +12,7 @@ get_header();
 fascinate_breadcrumb_wrapper();
 	?>
 	<div class="search-page-content-area-wrap">
-	    <div class="gb-container">
+	    <div class="fb-container">
 	        <div class="row">
 	            <div class="<?php fascinate_main_container_class(); ?>">
 	                <div id="primary" class="primary-widget-area content-area">
@@ -53,7 +53,7 @@ fascinate_breadcrumb_wrapper();
 	            </div><!-- .col -->
 	            <?php get_sidebar(); ?>
 	        </div><!-- .row -->
-	    </div><!-- .gb-container -->
+	    </div><!-- .fb-container -->
 	</div><!-- .search-page-content-area-wrap -->
 	<?php
 get_footer();

@@ -1,12 +1,12 @@
 
 // Pagination 
 
-.gb-patigation .pagination-entry {
+.fb-patigation .pagination-entry {
 
 	margin:-3px 0;
 }
 
-.gb-patigation .page-numbers {
+.fb-patigation .page-numbers {
 	
 	display:inline-block;
 	text-align: center;
@@ -19,19 +19,19 @@
 	@include border_radius(100%);
 }
 
-.gb-patigation .page-numbers.current {
+.fb-patigation .page-numbers.current {
 
 	font-weight:500;
 }
 
-.gb-patigation .page-numbers.next,
-.gb-patigation .page-numbers.prev {
+.fb-patigation .page-numbers.next,
+.fb-patigation .page-numbers.prev {
 
 	font-size: 0;
 }
 
-.gb-patigation .page-numbers.next:after,
-.gb-patigation .page-numbers.prev:after {
+.fb-patigation .page-numbers.next:after,
+.fb-patigation .page-numbers.prev:after {
 
 	content:'';
 	font-family: 'fontAwesome';
@@ -39,33 +39,33 @@
 	@include transation_delay(); 
 }
 
-.gb-patigation .page-numbers.next:after {
+.fb-patigation .page-numbers.next:after {
 
 	content:'\f105';
 }
 
-.gb-patigation .page-numbers.next:hover:after {
+.fb-patigation .page-numbers.next:hover:after {
 
 	padding-left:20px;
 }
 
-.gb-patigation .page-numbers.prev:after {
+.fb-patigation .page-numbers.prev:after {
 
 	content:'\f104';
 }
 
-.gb-patigation .page-numbers.prev:hover:after {
+.fb-patigation .page-numbers.prev:hover:after {
 
 	padding-right:20px;
 }
 
-.gb-patigation .page-numbers:last-child {
+.fb-patigation .page-numbers:last-child {
 	
 	padding-right: 0;
 	margin-right: 0;
 }
 
-.gb-patigation .page-numbers:first-child {
+.fb-patigation .page-numbers:first-child {
 	
 	padding-left: 0;
 	margin-left:0;

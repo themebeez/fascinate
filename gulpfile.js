@@ -14,6 +14,9 @@ var rename = require('gulp-rename');
 var cache = require('gulp-cache');
 
 
+
+
+
 // Task defined for java scripts bundling and minifying
 
 gulp.task('scripts', function() {
@@ -21,6 +24,7 @@ gulp.task('scripts', function() {
 
     return gulp.src([
 
+            'assets/src/js/jquery/*.js',
             'assets/src/js/vendor/*.js',
             'assets/src/js/libraries/*.js',
             'assets/src/js/custom/*.js',
@@ -34,16 +38,17 @@ gulp.task('scripts', function() {
 
         .pipe(gulp.dest('assets/dist/js/'));
 
-});
 
+});
 
 
 // Task watch
 
 gulp.task('watch', function() {
 
-    gulp.watch('assets/src/js/**/**.js', ['scripts']);  // watch js files changes
-    //gulp.watch('**/*.php', ['make-pot-file']); // watch .php file changes to generate pot file
+    // Watch .js files
+
+    gulp.watch('assets/src/js/**/**.js', ['scripts']);
 
 
 });
@@ -53,5 +58,5 @@ gulp.task('watch', function() {
 
 // just hit the command "gulp" it will run the following tasks...
 
+
 gulp.task('default', ['watch', 'scripts']);
-//gulp.task('default', ['watch', 'make-pot-file']);
