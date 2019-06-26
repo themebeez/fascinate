@@ -11,7 +11,7 @@
 	padding-bottom: $max_element_spacing;
 }
 
-.gb-breadcrumb-wrap {
+.fb-breadcrumb-wrap {
 
 	padding:$max_element_spacing 0;
 }
@@ -22,8 +22,14 @@
 	margin-bottom: $standard_section_spacing;
 }
 
-.gb-patigation {
+.fb-patigation {
+
 	margin-top: $max_element_spacing;
+}
+
+.post-content-link {
+	
+    margin-top: 40px;
 }
 
 .posts-list-style-1 .post,

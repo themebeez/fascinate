@@ -28,7 +28,7 @@ if( $banner_query->have_posts() ) {
 		$spacing_class = 'no-carousel-spacing';
 	}
 	?>
-	<div class="gb-banner banner-style-1 <?php echo esc_attr( $spacing_class ); ?>">
+	<div class="fb-banner banner-style-1 <?php echo esc_attr( $spacing_class ); ?>">
         <div class="banner-inner">		            	
             <div class="slider-tweak slider-1">
             	<?php
@@ -75,6 +75,6 @@ if( $banner_query->have_posts() ) {
                 ?>
             </div><!-- .banner-1-carousel -->		            
         </div><!-- .banner-inner -->
-    </div><!-- .gb-banner -->
+    </div><!-- .fb-banner -->
 	<?php
 }

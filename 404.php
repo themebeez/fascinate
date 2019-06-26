@@ -12,7 +12,7 @@ get_header();
 fascinate_breadcrumb_wrapper();
 	?>
 	<div class="innerpage-content-area-wrap">
-        <div class="gb-container">
+        <div class="fb-container">
             <div class="row">
                 <div class="col-lg-12">
                     <div id="primary" class="primary-widget-area content-area">
@@ -35,7 +35,7 @@ fascinate_breadcrumb_wrapper();
                     </div><!-- #primary.primary-widget-area.content-area -->
                 </div><!-- .col -->
             </div><!-- .row -->
-        </div><!-- .gb-container -->
+        </div><!-- .fb-container -->
     </div><!-- .innerpage-content-area-wrap -->
 
 <?php

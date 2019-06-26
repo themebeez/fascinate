@@ -22,21 +22,17 @@
 		height: 500px;
 	}
 
-	// gutenberg 
+	// Gutenberg 
 
 	body.no-sidebar .alignwide {
 
-		width: 100%;
-    	transform: none;
-    	margin-left: 0;
+		width:80vw;
 	}
 
 	body.no-sidebar .alignfull {
 
 		width:95vw;
 	}
-
-
 }
 
 @media( max-width: 1366px ) {
@@ -84,17 +80,17 @@
 		top:21px;
 	}
 
-	.gb-banner .content-holder {
+	.fb-banner .content-holder {
 
 		padding:30px;
 	}
 
-	.gb-author-widget .lazy-thumb {
+	.fb-author-widget .lazy-thumb {
 
 		padding-bottom:0;
 	}
 
-	.gb-author-widget .author-thumb img {
+	.fb-author-widget .author-thumb img {
 
 		position: relative;
 		left:unset;
@@ -103,6 +99,26 @@
 	}
 }
 
+
+@media ( max-width:1170px ) {
+
+	// Gutenberg 
+
+	body.no-sidebar .alignwide,
+	body.no-sidebar .alignfull {
+
+		width:100%;
+	}
+	
+	body.no-sidebar .alignwide,
+	body.no-sidebar .alignfull,
+	.editor-entry ul.wp-block-gallery.alignfull, 
+	.editor-entry ul.wp-block-gallery.alignwide {
+
+		margin-left: inherit;
+		transform:inherit;
+	}
+}
 
 @media ( max-width:1050px ) { 
 
@@ -282,7 +298,7 @@
 	// body, page-wrap & contains
 
 	.container,
-	.gb-container {
+	.fb-container {
 
 		max-width: 98%;
 	}
@@ -335,7 +351,7 @@
 		font-size:28px;
 	}
 
-	.gb-breadcrumb-wrap .page-title {
+	.fb-breadcrumb-wrap .page-title {
 
 		font-size: 32px;
 	}
@@ -359,13 +375,13 @@
 		padding:40px 0;
 	}
 
-	.gb-banner .content-holder {
+	.fb-banner .content-holder {
 
 		width:500px;
 		padding:40px 30px;
 	}
 
-	.gb-banner .content-holder-wrap:before {
+	.fb-banner .content-holder-wrap:before {
 
 		width:520px;
 	}
@@ -388,30 +404,30 @@
     	max-width: 100%;
 	}
 
-	.gb-patigation {
+	.fb-patigation {
 
 		margin-top: 40px;
 		margin-bottom:40px;
 	}
 
-	.gb-breadcrumb ul li, 
-	.gb-breadcrumb ul li span, 
-	.gb-breadcrumb ul li a {
+	.fb-breadcrumb ul li, 
+	.fb-breadcrumb ul li span, 
+	.fb-breadcrumb ul li a {
 
 		font-size: 14px;
 	}
 
-	.gb-breadcrumb ul li {
+	.fb-breadcrumb ul li {
 
 		padding-right: 10px;
 	}
 
-	.gb-breadcrumb li.trail-item:after {
+	.fb-breadcrumb li.trail-item:after {
 
 		padding-left:7px;
 	}
 
-	#glaze-toTop {
+	#Fascinate-toTop {
 
 		right:10px;
 	}
@@ -575,7 +591,7 @@
 		height:400px;
 	}
 
-	.primary-widget-area .gb-instagram-widget ul li {
+	.primary-widget-area .fb-instagram-widget ul li {
 
 		flex: 0 0 33.33%;
     	max-width: 33.33%;
@@ -675,7 +691,7 @@
 		font-size:24px;
 	}
 
-	.gb-breadcrumb-wrap .page-title {
+	.fb-breadcrumb-wrap .page-title {
 
 		font-size: 28px;
 	}
@@ -704,7 +720,7 @@
 	.slick-prev, 
 	.slick-prev:hover {
 
-		right:50px;
+		right:45px;
 	}
 
 	.slick-nav i {
@@ -712,12 +728,17 @@
 		font-size: 12px;
 	}
 
-	.banner-1-carousel .post-thumb {
+	.banner-style-1 .post-thumb {
 
 		height:350px;
 	}
 
-	.gb-banner .content-holder-wrap {
+	.banner-style-1 .post-title h2 {
+
+		font-size:22px;
+	}
+
+	.fb-banner .content-holder-wrap {
 		
 		top:unset;
 		bottom: 0;
@@ -735,29 +756,29 @@
         background-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.5) 40%, #000 100%);
 	}
 
-	.gb-banner .content-holder-wrap:before {
+	.fb-banner .content-holder-wrap:before {
 
 		content:'';
 		display:none;
 	}
 
-	.gb-banner .content-holder {
+	.fb-banner .content-holder {
 		
 		width: 100%;
-		padding: 30px;
+		padding: 30px 20px;
 		opacity: 1;
 		background:transparent;
 		color:$white;
 	}
 	
-	.gb-banner .post-title h2 a,
-	.gb-banner .entry-cats ul li a,
-	.gb-banner .entry-metas ul li.posted-by a {
+	.fb-banner .post-title h2 a,
+	.fb-banner .entry-cats ul li a,
+	.fb-banner .entry-metas ul li.posted-by a {
 
 		color:$white;
 	}
 
-	.gb-banner .entry-metas ul li.posted-date a {
+	.fb-banner .entry-metas ul li.posted-date a {
 
 		background:$white;
 		color:$primary_color;
@@ -834,7 +855,7 @@
 		padding: 0;
 	}
 
-	.single-page-style-2 .gb-breadcrumb-wrap {
+	.single-page-style-2 .fb-breadcrumb-wrap {
 
 		height:400px;
 	}
@@ -851,7 +872,7 @@
 		margin-bottom: 30px;
 	}
 
-	.gb-patigation {
+	.fb-patigation {
 
 		margin-top: 30px;
 		margin-bottom: 30px;
@@ -956,7 +977,7 @@
 @media ( max-width: 380px) {
 	
 	.container, 
-	.gb-container {
+	.fb-container {
 
 		max-width:100%;
 	}
@@ -966,12 +987,12 @@
 		font-size: 28px;
 	}
 
-	.gb-breadcrumb nav {
+	.fb-breadcrumb nav {
 
 		display:none;
 	}
 
-	.gb-author-widget .author-thumb img {
+	.fb-author-widget .author-thumb img {
 
 		width:200px;
 		height:200px;
@@ -997,7 +1018,7 @@
 		display:none;
 	}
 
-	.gb-banner .content-holder {
+	.fb-banner .content-holder {
 
 		padding:30px 5px;
 	}

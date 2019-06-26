@@ -15,7 +15,7 @@ fascinate_single_breadcrumb_wrapper();
 
 	?>
 	<div class="innerpage-content-area-wrap <?php fascinate_single_layout_class(); ?>">
-        <div class="gb-container">
+        <div class="fb-container">
         	<div class="single-content-container">
 	            <div class="row">
 	                <div class="<?php fascinate_main_container_class(); ?>">
@@ -60,7 +60,7 @@ fascinate_single_breadcrumb_wrapper();
 	                <?php get_sidebar(); ?>
 	            </div><!-- .row -->
 	        </div><!-- .single-content-container -->
-        </div><!-- .gb-container -->
+        </div><!-- .fb-container -->
     </div><!-- .innerpage-content-area-wrap.single-page-style-2 -->
     <?php
     while( have_posts() ) :

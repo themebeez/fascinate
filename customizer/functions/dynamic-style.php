@@ -6,7 +6,7 @@ if( ! function_exists( 'fascinate_dynamic_style' ) ) {
 
 		$enabled_lazy_loading = fascinate_get_option( 'enable_lazy_loading' );
 
-		$display_srcoll_top = fascinate_get_option( 'display_scroll_top_one' );  
+		$display_srcoll_top = fascinate_get_option( 'display_scroll_top' );  
 
 		$enable_cursive_site_title = fascinate_get_option( 'enable_cursive_site_title' );
 
@@ -38,7 +38,8 @@ if( ! function_exists( 'fascinate_dynamic_style' ) ) {
 			<?php
 			if( $display_srcoll_top == false ) {
 				?>
-				#glaze-toTop {
+				.fascinate-toTop {
+
 					display: none !important;
 				}
 				<?php
@@ -66,9 +67,9 @@ if( ! function_exists( 'fascinate_dynamic_style' ) ) {
 
 			if( $enable_cursive_post_meta == true ) {
 				?>
-				.entry-cats ul li a, 
-				.entry-metas ul li.posted-by a, 
-				.author-box .author-name h3 {
+
+				.entry-metas ul li.posted-by a {
+				
 					font-family: "Pacifico", cursive;
 				}
 				<?php
