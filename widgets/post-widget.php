@@ -25,7 +25,7 @@ if( ! class_exists( 'Fascinate_Post_Widget' ) ) :
 
             $title = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base );
 
-            $posts_no = !empty( $instance[ 'post_no' ] ) ? $instance[ 'post_no' ] : 5;
+            $posts_no = !empty( $instance['post_no'] ) ? $instance['post_no'] : 5;
 
             $layout = !empty( $instance[ 'layout' ] ) ? $instance[ 'layout' ] : 'layout_one';
 
@@ -34,7 +34,8 @@ if( ! class_exists( 'Fascinate_Post_Widget' ) ) :
             $dispaly_comments_no = !empty( $instance['dispaly_comments_no'] ) ? $instance['dispaly_comments_no'] : false;
 
             $post_args = array(
-                'post_type' => 'post'
+                'post_type' => 'post',
+                'ignore_sticky_posts' => true,
             );
 
             if( absint( $posts_no ) > 0 ) {
