@@ -27,7 +27,7 @@
 
 .secondary-navigation ul li a {
 
-    font-size: 14px;
+    font-size: 15px;
 }
 
 header .social-icons ul {
@@ -130,13 +130,13 @@ header .site-title {
 }
 
 
-.gb-banner .content-holder-wrap {
+.fb-banner .content-holder-wrap {
 
     @include position_absolute(50%,unset,0,0);
     z-index:20;  
 }
 
-.gb-banner .content-holder-wrap:before {
+.fb-banner .content-holder-wrap:before {
     
     position: absolute;
     content: "";
@@ -152,7 +152,7 @@ header .site-title {
     transform: translate(-50%,-50%);
 }
 
-.gb-banner .content-holder {
+.fb-banner .content-holder {
     
     position:relative;
     text-align:center;
@@ -198,11 +198,13 @@ header .site-title {
 }
 
 .banner-style-1 .slick-slide .mask { 
+    
     opacity:0
 }
 
 .banner-style-1 .slick-center .content-holder,
 .banner-style-1 .slick-center .content-holder-wrap:before { 
+
     content:'';
     opacity:1;
 }
@@ -264,51 +266,6 @@ header .site-title {
     @include border_radius(10px);
 }
 
-.posts-list-style-1 .share-and-comment {
-
-    margin-top:30px;
-    padding: 5px 0;
-    border-top:1px solid $border-color;
-    border-bottom:1px solid $border_color;
-}
-
-.posts-list-style-1 .share-and-comment .row {
-
-    align-items: center;
-    align-content: center;
-}
-
-.posts-list-style-1 .share-and-comment .row .col {
-
-    padding-top:5px;
-    padding-bottom:5px;
-}
-
-.posts-list-style-1 .share-and-comment .row .col:first-child {
-
-    border-right:1px solid $border_color;
-}
-
-.posts-list-style-1 .social-icons ul li a {
-
-    padding: 0;
-    margin:0 8px;
-}
-
-.posts-list-style-1 .social-icons ul li:last-child a {
-
-    margin-right:0;
-}
-
-.posts-list-style-1 .social-icons ul li:first-child a {
-
-    margin-left: 0;
-}
-
-.posts-list-style-1 .share-and-comment .entry-metas ul {
-
-    text-align:right;
-}
 
 
 
@@ -501,8 +458,8 @@ footer .woocommerce-widget-layered-nav ul {
 */
 
 
-.archive-content-area-wrap .gb-breadcrumb-wrap,
-.search-page-content-area-wrap .gb-breadcrumb-wrap {
+.archive-content-area-wrap .fb-breadcrumb-wrap,
+.search-page-content-area-wrap .fb-breadcrumb-wrap {
 
     margin-bottom: 30px;
 }
@@ -532,21 +489,6 @@ footer .woocommerce-widget-layered-nav ul {
     padding-bottom:0;
 }
 
-.archive-page-style-1-entry .share-and-comment .entry-metas ul,
-.archive-page-style-1-entry .social-icons ul {
-
-    text-align:center;
-}
-
-.archive-page-style-1-entry .share-and-comment .row .col {
-
-    border-right:1px solid $border_color;
-}
-
-.archive-page-style-1-entry .share-and-comment .row .col:last-child {
-
-    border-right:none;
-}
 
 
 
@@ -569,7 +511,7 @@ footer .woocommerce-widget-layered-nav ul {
 
 .single-metas-and-cats {
 
-    border:2px dashed $primary_color;
+    background-color:#fde9e5;
     padding:30px;
     margin-bottom:30px;
     text-align: center;
@@ -646,7 +588,7 @@ footer .woocommerce-widget-layered-nav ul {
 
 .post-navigation .nav-links a {
 
-    display:inline-block;
+    @include flex_row_alt();
     font-size: 16px;
 }
 
@@ -679,16 +621,11 @@ footer .woocommerce-widget-layered-nav ul {
     text-align: right;
 }
 
-.post-navigation .nav-links .nav-next img {
-
-    margin-left:10px;
-}
-
 .post-navigation .nav-links img {
     
     @include border_radius(100%);
-    height:89px;
-    width:89px;
+    height:69px;
+    width:69px;
     object-fit:cover;
     object-position: center center;
     -o-object-fit:cover;
@@ -699,6 +636,35 @@ footer .woocommerce-widget-layered-nav ul {
     -ms-object-position: center center;
     -webkit-object-position: center center;
     -moz-object-position: center center;
+}
+
+.post-navigation .post-nav-img {
+
+    flex:0 0 69px;
+    max-width:69px;
+}
+
+.post-navigation .post-nav-title {
+
+    flex:0 0 calc( 100% - 69px );
+    max-width:calc( 100% - 69px );
+}
+
+.post-navigation .post-nav-title span.meta-nav {
+
+    display:block;
+    margin-bottom: 5px;
+    letter-spacing: 0;
+}
+
+.post-navigation .nav-previous .post-nav-title {
+
+    padding-left: 20px;
+}
+
+.post-navigation .nav-next .post-nav-title {
+
+    padding-right: 20px;
 }
 
 .author-box {
@@ -745,18 +711,13 @@ footer .woocommerce-widget-layered-nav ul {
 
 .author-box .author-name h3 {
 
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .author-box .author-name p {
 
     padding-top:10px;
     font-size: 16px;
-}
-
-.author-box .author-desc {
-
-    margin-bottom: 20px;
 }
 
 .author-box .social-icons-list {
@@ -965,8 +926,6 @@ body.logged-in .canvas-aside {
 }
 
 
-
-
 // Inner single page style 1
 
 
@@ -986,7 +945,7 @@ body.logged-in .canvas-aside {
 }
 
 
-.single-page-style-1 .gb-breadcrumb-wrap {
+.single-page-style-1 .fb-breadcrumb-wrap {
 
     margin-bottom:30px;
 }
@@ -1000,7 +959,7 @@ body.logged-in .canvas-aside {
     padding-top: 0; // No padding top for single page style 2
 }
 
-.single-page-style-2 .gb-breadcrumb-wrap {
+.single-page-style-2 .fb-breadcrumb-wrap {
 
     height:600px;
     padding: 0;
@@ -1009,7 +968,7 @@ body.logged-in .canvas-aside {
     background-attachment: fixed;
 }
 
-body.page .single-page-style-2 .gb-breadcrumb-wrap {
+body.page .single-page-style-2 .fb-breadcrumb-wrap {
 
     padding-top:170px; // Additional padding top for pages 
 }
@@ -1028,8 +987,8 @@ body.page .single-page-style-2 .gb-breadcrumb-wrap {
     padding: 40px;
 }
 
-.single-page-style-2 .gb-breadcrumb-wrap .entry-metas,
-.single-page-style-2 .gb-breadcrumb-wrap .entry-cats {
+.single-page-style-2 .fb-breadcrumb-wrap .entry-metas,
+.single-page-style-2 .fb-breadcrumb-wrap .entry-cats {
 
     position: relative;
     z-index: 10;
@@ -1059,6 +1018,8 @@ body.page .single-page-style-2 .gb-breadcrumb-wrap {
 
     margin-top: $max_element_spacing;
 }
+
+
 
 
 

@@ -234,6 +234,26 @@
                 },
             ]
         });
+        
+
+        // gallery post format
+
+
+        $('.is-gallery-format').owlCarousel({
+
+            items: 1,
+            loop: true,
+            lazyLoad: false,
+            margin: 0,
+            smartSpeed: 800,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+        });
+
+
 
 
         // banner 1 single slide 
@@ -266,7 +286,7 @@
         =======================================
         */
 
-        $('body').append('<div id="glaze-toTop"><span class="ion-md-rocket"></span></div>');
+        $('body').append('<div class="fascinate-toTop"><i class="fa fa-angle-up"></i></div>');
 
         // Window scroll function
 
@@ -276,15 +296,15 @@
 
             if (height > 500) {
 
-                $('#glaze-toTop').fadeIn();
+                $('.fascinate-toTop').fadeIn();
 
             } else {
 
-                $('#glaze-toTop').fadeOut();
+                $('.fascinate-toTop').fadeOut();
             }
         });
 
-        $("#glaze-toTop,.footer-btp").on('click', function(event) {
+        $(".fascinate-toTop").on('click', function(event) {
 
             event.preventDefault();
 
@@ -305,12 +325,12 @@
 
         $(window).load(function() {
 
-            var body = jQuery( 'body' );
+            var body = jQuery('body');
 
-            if( body.hasClass( 'preloader-active' ) ) {
+            if (body.hasClass('preloader-active')) {
 
-                jQuery( '.preloader-mask' ).fadeOut(1000);
-                body.removeClass( 'preloader-active' );
+                jQuery('.preloader-mask').fadeOut(1000);
+                body.removeClass('preloader-active');
             }
         });
 

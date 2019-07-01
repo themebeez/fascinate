@@ -1,5 +1,5 @@
 
-#glaze-toTop {
+.fascinate-toTop {
 	
 	display: none;
 	position: fixed;
@@ -11,6 +11,10 @@
     border-radius: 0;
     outline: none;
     opacity: 0.9;
+    height:40px;
+    width:40px;
+    text-align:center;
+    background:transparent;
     -moz-transform-origin: 100% 100%;
     -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
@@ -18,27 +22,15 @@
 
 }
 
-#glaze-toTop span {
+.fascinate-toTop:hover {
+
+    opacity: 1;
+}
+
+.fascinate-toTop i {
 
 	display:inline-block;
-	font-size: 50px;
+	font-size: 16px;
+    line-height:36px;
     padding:0;
-    color: $primary_color;
-}
-
-#glaze-toTop:hover {
-
-	opacity: 1;
-	
-}
-
-#glaze-toTop span {
-
-	@include transation_delay_slow(); 
-}
-
-
-#glaze-toTop:hover span {
-
-	padding-bottom: 30px;
 }

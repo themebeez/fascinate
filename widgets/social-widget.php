@@ -33,7 +33,7 @@ if( ! class_exists( 'Fascinate_Social_Widget' ) ) {
             $pinterest      = ! empty( $instance['pinterest'] ) ? $instance['pinterest'] : '';
             $vk             = ! empty( $instance['vk'] ) ? $instance['vk'] : '';
             ?>
-            <div class="widget gb-social-widget-1">
+            <div class="widget fb-social-widget-1">
                 <?php
                 if( !empty( $title ) ) :
                     ?>
@@ -106,7 +106,7 @@ if( ! class_exists( 'Fascinate_Social_Widget' ) ) {
                         </ul><!-- .social-icons-list -->
                     </div><!-- .social-icons -->
                 </div><!-- .widget-container -->
-            </div><!-- . widget.gb-social-widget-1 -->
+            </div><!-- . widget.fb-social-widget-1 -->
             <?php 
         }
      

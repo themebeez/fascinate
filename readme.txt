@@ -3,21 +3,21 @@
 Contributors: themebeez
 Requires at least: 4.8.0
 Requires PHP: 5.6
-Tested up to: 5.2.1
+Tested up to: 5.2.2
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, blog, custom-header, theme-options, footer-widgets, editor-style, block-styles, wide-blocks, sticky-post
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, blog, custom-header, theme-options, footer-widgets, editor-style, block-styles, wide-blocks, sticky-post, post-formats
 
 
 == Description ==
 
-Fascinate is 100% media responsive WordPress blog theme. Fascinate is build for those optimistic bloggers who wish to share their incredible stories on different niche like lifestyle, travel, food, technology, fashion, business, marketing etc. Fascinate is build totally with respect to WordPress standards & also supports Gutenberg editor. Fascinate is totally build taking care of user end. Build-in features & tools that are necessary for a bloggers like lazy load for images, one click demo import, color option, multiple options to tweak theme design, important widgets like ( author widget, Instagram widget, recent posts widget, popular posts widget ), social sharing options & any more are integrated seamlessly with Fascinate itself. One can start blogging right away after installing Fascinate. Fascinate extends WordPress core functionality using page builder "elementor" if one wish to fully build their website using page builder. This theme has been tested for plugins like Contact form 7, Jetpack, Updraft, Mail chimp, Amp, Yoast, All in one seo etc. Visit https://themebeez.com/themes/fascinate/ for more information on Fascinate.
+Fascinate is 
 
 
 == License ==
 
-Fascinate WordPress Theme, Copyright (C) 2018, themebeez.
+Fascinate WordPress Theme, Copyright (C) 2019, themebeez.
 Fascinate is distributed under the terms of the GNU GPL
 
 
@@ -62,17 +62,11 @@ Fascinate is distributed under the terms of the GNU GPL
 
 == Screenshots ==
 
-Girl With Camera
+xxxxxxxxxxxxxxxxx
 License: CC0 Public Domain (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
 Source: https://pxhere.com/en/photo/14200
 
-Girls On Rocky Beach Taking Pictures
-License: CC0 Public Domain (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
-Source: https://pxhere.com/en/photo/1409745
 
-Boats Anchored Between Small Islands
-License: CC0 Public Domain (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
-Source: https://pxhere.com/en/photo/606123
 
 
 == Installation ==
@@ -86,7 +80,7 @@ Source: https://pxhere.com/en/photo/606123
 
 = Does this theme support any plugins? =
 
-Glaze Blog includes support for contact form 7, wp forms, jetpack
+Fascinate includes support for contact form 7, wp forms, jetpack
 
 
 == Changelog ==

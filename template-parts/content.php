@@ -6,6 +6,8 @@
  *
  * @package Fascinate
  */
+
+
 $display_featured_image = '';
 $display_date = '';
 $display_author = '';

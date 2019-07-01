@@ -74,22 +74,22 @@ footer.secondary-widget-area .widget {
 */
 
 
-.gb-author-widget .widget-container {
+.fb-author-widget .widget-container {
 
     text-align:center;
 }
 
-.gb-author-widget .lazy-thumb {
+.fb-author-widget .lazy-thumb {
 
     padding-bottom:100%;
 }
 
-.gb-author-widget .author-thumb {
+.fb-author-widget .author-thumb {
 
     @include border_radius(100%);
 }
 
-.gb-author-widget .author-thumb img {
+.fb-author-widget .author-thumb img {
 
     width:284px;
     height:284px;
@@ -107,19 +107,20 @@ footer.secondary-widget-area .widget {
     -o-object-position: center center;
 }
 
-.gb-author-widget .author-bio {
+.fb-author-widget .author-bio {
 
-    margin-top:10px;
-    margin-bottom:15px;
+    margin-top:20px;
+    margin-bottom:20px;
 }
 
-.gb-author-widget .author-bio p {
+.fb-author-widget .author-bio p {
 
-    overflow:hidden;
-    max-height: 6em;
+    overflow: hidden;
+    max-height: 4.7em;
+    text-overflow: ellipsis;
 }
 
-.gb-author-widget .author-permalink span {
+.fb-author-widget .author-permalink span {
 
     display:inline-block;
     padding:0 5px;
@@ -130,9 +131,10 @@ footer.secondary-widget-area .widget {
     transition: all 1s ease; 
 }
 
-.gb-author-widget .author-permalink a:hover span {
+.fb-author-widget .author-permalink a {
 
-    padding:0 20px;
+    padding: 15px 40px;
+    line-height: 1;
 }
 
 
@@ -146,91 +148,16 @@ footer.secondary-widget-area .widget {
 */
 
 
-.gb-social-widget-1 .social-icons ul li:first-child a {
+.fb-social-widget-1 .social-icons ul li:first-child a {
 
     padding-left:0;
 }
 
-.gb-social-widget-1 .social-icons ul li:last-child a {
+.fb-social-widget-1 .social-icons ul li:last-child a {
 
     padding-right:0;
 }
 
-
-
-/*
-====================================================
-=
-= Instagram widget
-=
-==========================================
-*/
-
-
-.secondary-widget-area .gb-instagram-widget .widget_title {
-
-    display:block;
-}
-
-.gb-instagram-widget ul {
-
-    display:flex;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-.gb-instagram-widget ul li,
-.gb-instagram-widget ul li a {
-
-    display:block;
-}
-
-.secondary-widget-area .gb-instagram-widget ul li {
-
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    padding: 2px;
-    background: transparent;
-}
-
-.secondary-widget-area .gb-instagram-widget .follow-permalink a {
-    
-    display:block;
-    padding:10px 0;
-    color:$white;
-    text-decoration: none;
-    text-align:center;
-    line-height: 1;
-    margin-top: 27px;
-}
-
-
-// Insta widget at footer top 
-
-
-.gb-instagram-widget .widget_title {
-
-    display:none;
-}
-
-.gb-instagram-widget ul {
-
-    justify-content: center;
-}
-
-.gb-instagram-widget ul li {
-
-    flex: 0 0 16.666666%;
-    max-width: 16.666666%;
-    padding: 0;
-    background: transparent;
-    @include transation_delay(); 
-}
-
-.primary-insta-widget-area .follow-permalink {
-
-    display:none;
-}
 
 
 /*
@@ -242,102 +169,97 @@ footer.secondary-widget-area .widget {
 */
 
 
-.gb-post-widget article {
+.fb-post-widget article {
 
     margin-bottom:20px;
     padding-bottom:20px;
 }
 
-.gb-post-widget article:last-child {
+.fb-post-widget article:last-child {
 
     border-bottom:0;
     margin-bottom:0;
     padding-bottom:0;
 }
 
-.gb-post-widget .gb-row {
+.fb-post-widget .fb-row {
 
     margin:0;
     align-items: center;
 }
 
-.gb-post-widget .gb-row .gb-col {
+.fb-post-widget .fb-row .fb-col {
 
     padding-left: 0;
     padding-right:0;
 }
 
-.gb-post-widget .gb-row .gb-col:last-child {
+.fb-post-widget .fb-row .fb-col:last-child {
 
     padding-left:20px;
 }
 
-.gb-post-widget .lazy-thumb {
+.fb-post-widget .lazy-thumb {
 
     padding-bottom:100%;
 }
 
-.gb-post-widget .the-title a {
+.fb-post-widget .the-title a {
 
     display:block;
     line-height:1.4;
     padding-bottom:5px;
 }
 
-.gb-post-widget .entry-metas ul li.posted-date a {
+.fb-post-widget .entry-metas ul li.posted-date a {
 
     background:none;
     padding:0;
 }
 
-.gb-post-widget .entry-metas ul li.posted-date a:hover {
+.fb-post-widget .entry-metas ul li.posted-date a:hover {
 
     background:none;
 }
 
-.gb-post-widget .gb-row .gb-col:first-child {
+.fb-post-widget .fb-row .fb-col:first-child {
 
     flex:99px;
     max-width:99px;
 }
 
-.gb-post-widget .gb-row .gb-col:last-child {
+.fb-post-widget .fb-row .fb-col:last-child {
 
     flex:calc( 100% - 99px );
     max-width:calc( 100% - 99px );
 }
 
-.gb-post-widget .post-thumb {
+.fb-post-widget .post-thumb {
 
     @include border_radius(100%);
 } 
 
-.gb-post-widget .post-thumb img {
+.fb-post-widget .post-thumb img {
 
     @include border_radius(100%);
 }
-
-
-// Recent post style 1
-
-
 
 
 
 // Popular post style 1
 
 
-.gb-popular-posts .post-thumb {
+.fb-popular-posts .post-thumb {
 
     @include border_radius(5px);
 }
 
-.gb-popular-posts .post-thumb img {
+.fb-popular-posts .post-thumb img {
 
     @include border_radius(5px);
 }
 
-.gb-popular-posts .count {
+.fb-popular-posts .count {
 
     display:inline-block;
     position:absolute;

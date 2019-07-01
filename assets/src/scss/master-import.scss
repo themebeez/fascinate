@@ -4,17 +4,17 @@
 
 - File: Master importer ( Imports all scss files )
 
-- Project : Glaze blog
+- Project : Fascinate blog
 
 - Author: Themebeez
 
 - Author url : https://themebeez.com/
 
-- Since : 30 Nov, 2018
+- Since : 27 May, 2019
 
-- Scss version: 1.0.6
+- Scss version: 1.0.0
 
-- Last updated: 26 march, 2019
+- Last updated: 26 june, 2019
 
 ======================================================================================
 */
@@ -29,7 +29,6 @@
 
 @import 'variables/var-typography';
 @import 'variables/var-colors';
-@import 'variables/var-woocommerce';
 @import 'variables/var-spacing';
 
 // Import mixins
@@ -42,6 +41,7 @@
 @import 'libraries/retina';
 @import 'libraries/animate';
 @import 'libraries/niceselect';
+@import 'libraries/owlcarousel';
 
 // Import font icons 
 
@@ -69,7 +69,6 @@
 
 @import 'custom/wordpress/wp-default-widget';		// wp default widgets
 @import 'custom/wordpress/wordpress';				// wp styles
-@import 'custom/wordpress/woocommerce';				// woo-commerce styles
 
 @import 'custom/custom-parts/editor-styles';  		// [ Editor styles here ]
 @import 'custom/custom-styles';  					// [ we code custom style here ]

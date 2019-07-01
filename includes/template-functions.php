@@ -275,14 +275,14 @@ if( ! function_exists( 'fascinate_breadcrumb' ) ) :
 
  		if( $display_breadcrumb == true ) {
  			?>
- 			<div class="gb-breadcrumb">
+ 			<div class="fb-breadcrumb">
                 <?php
                 $breadcrumb_args = array(
                     'show_browse' => false,
                 );
                 fascinate_breadcrumb_trail( $breadcrumb_args );
 	            ?>
-            </div><!-- .gb-breadcrumb -->
+            </div><!-- .fb-breadcrumb -->
  			<?php
  		}  		
  	}
@@ -305,20 +305,20 @@ if( ! function_exists( 'fascinate_breadcrumb_wrapper' ) ) :
             
             if( $enable_lazy_loading == true ) {
                 ?>
-                <div class="gb-breadcrumb-wrap lazyload lazyloading" data-bg="<?php header_image(); ?>">
+                <div class="fb-breadcrumb-wrap lazyload lazyloading" data-bg="<?php header_image(); ?>">
                 <?php 
             } else {
                 ?>
-                <div class="gb-breadcrumb-wrap" style="background-image: url( <?php header_image(); ?> );">
+                <div class="fb-breadcrumb-wrap" style="background-image: url( <?php header_image(); ?> );">
                 <?php
             }
         else : 
             ?>
-            <div class="gb-breadcrumb-wrap">
+            <div class="fb-breadcrumb-wrap">
           <?php 
         endif; 
         ?>
-            <div class="gb-container">
+            <div class="fb-container">
                 <div class="the-title">
                 	<?php
                 	if( is_404() ) {
@@ -356,9 +356,9 @@ if( ! function_exists( 'fascinate_breadcrumb_wrapper' ) ) :
 	                ?>
                 </div><!-- .the-title -->
                 <?php fascinate_breadcrumb(); ?>
-            </div><!-- .gb-container -->
+            </div><!-- .fb-container -->
             <div class="mask"></div><!-- .mask -->
-        </div><!-- .gb-breadcrumb-wrap -->
+        </div><!-- .fb-breadcrumb-wrap -->
         <?php		
  	}
 endif;
@@ -403,11 +403,11 @@ if( ! function_exists( 'fascinate_single_breadcrumb_wrapper' ) ) :
 
 					if( $enable_lazy_loading == true ) {
 						?>
-						<div class="gb-breadcrumb-wrap lazyload lazyloading" data-bg="<?php echo esc_url( $post_thumbnail_url ); ?>">
+						<div class="fb-breadcrumb-wrap lazyload lazyloading" data-bg="<?php echo esc_url( $post_thumbnail_url ); ?>">
 						<?php
 					} else {
 						?>
-						<div class="gb-breadcrumb-wrap" style="background-image: url( <?php echo esc_url( $post_thumbnail_url ); ?> );">
+						<div class="fb-breadcrumb-wrap" style="background-image: url( <?php echo esc_url( $post_thumbnail_url ); ?> );">
 						<?php
 					}
 				} else if( has_header_image() ) {
@@ -416,20 +416,20 @@ if( ! function_exists( 'fascinate_single_breadcrumb_wrapper' ) ) :
 
 					if( $enable_lazy_loading == true ) {
 						?>
-						<div class="gb-breadcrumb-wrap lazyload lazyloading" data-bg="<?php header_image(); ?>">
+						<div class="fb-breadcrumb-wrap lazyload lazyloading" data-bg="<?php header_image(); ?>">
 						<?php
 					} else {
 						?>
-						<div class="gb-breadcrumb-wrap" style="background-image: url( <?php header_image(); ?> );">
+						<div class="fb-breadcrumb-wrap" style="background-image: url( <?php header_image(); ?> );">
 						<?php
 					}
 				} else {
 					?>
-					<div class="gb-breadcrumb-wrap">
+					<div class="fb-breadcrumb-wrap">
 					<?php
 				}
 				?>
-		            <div class="gb-container">
+		            <div class="fb-container">
 		            	<?php
 		            	while( have_posts() ) :
 
@@ -463,9 +463,9 @@ if( ! function_exists( 'fascinate_single_breadcrumb_wrapper' ) ) :
 
 			            fascinate_breadcrumb();
 			            ?>
-		            </div><!-- .gb-container -->
+		            </div><!-- .fb-container -->
 		            <div class="mask"></div><!-- .mask -->
-		        </div><!-- .gb-breadcrumb-wrap -->
+		        </div><!-- .fb-breadcrumb-wrap -->
 		    </div>
 		    <?php			
 		} else {
@@ -483,7 +483,7 @@ if( ! function_exists( 'fascinate_pagination' ) ) {
 
 	function fascinate_pagination() {
 		?>
-		<div class="gb-patigation gb-patigation-style-1">
+		<div class="fb-patigation fb-patigation-style-1">
             <div class="pagination-entry">
                 <?php
 	            the_posts_pagination( array(
@@ -493,7 +493,7 @@ if( ! function_exists( 'fascinate_pagination' ) ) {
 	        	) );
 	            ?>
             </div><!-- .pagination-entry -->
-        </div><!-- .gb-patigation-style-1 -->
+        </div><!-- .fb-patigation-style-1 -->
 		<?php
 	}
 }
