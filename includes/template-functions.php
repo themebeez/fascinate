@@ -21,7 +21,7 @@ function fascinate_body_classes( $classes ) {
 	$sidebar_position = fascinate_sidebar_position();
 
 	// Adds a class of no-sidebar when there is no sidebar present.
-	if ( ! is_active_sidebar( 'fascinate-sidebar' ) || $sidebar_position == true ) {
+	if ( ! is_active_sidebar( 'fascinate-sidebar' ) || $sidebar_position == 'none' ) {
 
 		$classes[] = 'no-sidebar';
 	}
@@ -74,7 +74,7 @@ if( ! function_exists( 'fascinate_main_container_class' ) ) {
 
 		if( $sidebar_position == 'none' || !is_active_sidebar( 'fascinate-sidebar' ) ) {
 
-			if( is_singular()|| is_404() ) {
+			if( is_singular() || is_404() ) {
 
 				$container_class = 'col-12';
 			} else {
