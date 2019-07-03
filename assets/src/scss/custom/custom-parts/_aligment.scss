@@ -41,3 +41,16 @@ body.no-sidebar .alignwide {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+
+body.no-sidebar.boxed .alignfull,
+body.no-sidebar.boxed .alignwide {
+
+    width:100%;
+    max-width:100%;
+    margin-left: inherit;
+    -webkit-transform:none;
+    -moz-transform:none;
+    -o-transform:none;
+    -ms-transform:none;
+    transform:none;
+}
