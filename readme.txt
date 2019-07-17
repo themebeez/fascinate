@@ -12,8 +12,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 == Description ==
 
-Fascinate is 
-
+Fascinate is a beautifully designed, clean, minimal and professional looking WordPress theme. Fascinate is an ideal WordPress theme for creating personal or professional blogging website to show case own's experiences, stories and findings on niches like fashion, travel, lifestyle, gourmet, business and so on. Fascinate is responsive and supported by multiple devices. Fascinate has support for post formats such as audio, video, gallery, quote, etc. With avaibility of customizer options, one can highly customize his/her website. Fascinate is SEO optimized, translation ready and with lazy load feature has very fast page load speed. Fascinate is compatible with plugins like Contact Form 7, Jetpack, Updraft, Mail Chimp, Amp, Yoast, All In One Seo etc.
 
 == License ==
 
@@ -53,18 +52,24 @@ Fascinate is distributed under the terms of the GNU GPL
 
 * Themify Icons https://github.com/lykmapipo/themify-icons, Copyright (c) 2015-present Ionic, [SIL OFL 1.1, MIT](http://scripts.sil.org/OFL, http://opensource.org/licenses/mit-license.html)
 
-* Nice Select https://github.com/h1dd3nsn1p3r/jquery-nice-select, [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html)
-
 * Animate https://github.com/daneden/animate.css, [MIT](http://opensource.org/licenses/MIT)
 
-* Images Included, carousel_one.jpg, carousel_two.jpg, sidebar_left.jpg, sidebar_right, and sidebar_none.png, self created GPLv2
+* Images Included, carousel_one.png, carousel_two.png, sidebar_left.png, sidebar_right.png, and sidebar_none.png, self created GPLv2
 
 
 == Screenshots ==
 
-xxxxxxxxxxxxxxxxx
+Lady with camera
 License: CC0 Public Domain (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
-Source: https://pxhere.com/en/photo/14200
+Source: https://pxhere.com/en/photo/948941
+
+Lady in glasses and wearing t-shirt with roses
+License: CC0 Public Domain (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
+Source: https://pxhere.com/en/photo/1561333
+
+Lady in yellow dress
+License: CC0 Public Domain (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
+Source: https://pxhere.com/en/photo/1520137
 
 
 

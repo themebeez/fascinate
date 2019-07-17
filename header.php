@@ -22,17 +22,13 @@
 
 <body <?php body_class(); ?>>
 	<?php
-	$is_preloader_enabled = fascinate_get_option( 'enable_preloader' );
+	$is_preloader_enabled = fascinate_get_option( 'display_preloader' );
 	if( $is_preloader_enabled == true ) {
 		?>
-		<div class="preloader-mask">
-			<div class="content">
-			  	<div class="loading">
-			    	<!-- <span class="title">Carregando...</span> -->
-			    	<div class="loading-bar">
-			      		<span class="bar-animation"></span>
-			    	</div>
-			  	</div>
+		<div class="preLoader">
+			<div class="fl fl-spinner spinner1">
+				<div class="double-bounce1"></div>
+				<div class="double-bounce2"></div>
 			</div>
 		</div>
 	    <?php

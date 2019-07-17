@@ -7,21 +7,6 @@
     $(document).ready(function() {
 
 
-
-        /*
-        ============================
-        = Prevent click
-        ========================================
-        */
-
-
-        $("a.footer-btp").on('click', function(e) {
-
-            // stop its defaut behaviour
-            e.preventDefault();
-        });
-
-
         /*
         =========================
         = Tooltip
@@ -37,17 +22,7 @@
             size: 'large',
             duration: 500,
             animation: 'scale'
-        })
-
-
-        /*
-        =============================
-        = Nice select
-        =======================================
-        */
-
-
-        $('select').niceSelect();
+        });
 
 
         /*
@@ -286,25 +261,23 @@
         =======================================
         */
 
-        $('body').append('<div class="fascinate-toTop"><i class="fa fa-angle-up"></i></div>');
-
         // Window scroll function
 
         $(window).scroll(function() {
 
             var height = $(window).scrollTop();
 
-            if (height > 500) {
+            if (height > 400) {
 
-                $('.fascinate-toTop').fadeIn();
+                $('.fascinate-to-top').fadeIn('slow');
 
             } else {
 
-                $('.fascinate-toTop').fadeOut();
+                $('.fascinate-to-top').fadeOut('slow');
             }
         });
 
-        $(".fascinate-toTop").on('click', function(event) {
+        $(".fascinate-to-top").on('click', function(event) {
 
             event.preventDefault();
 
@@ -325,13 +298,7 @@
 
         $(window).load(function() {
 
-            var body = jQuery('body');
-
-            if (body.hasClass('preloader-active')) {
-
-                jQuery('.preloader-mask').fadeOut(1000);
-                body.removeClass('preloader-active');
-            }
+            jQuery('.preLoader').fadeOut(1000);
         });
 
     });

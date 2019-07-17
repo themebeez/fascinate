@@ -120,6 +120,11 @@ body.boxed .fb-container {
     list-style:none;
 }
 
+.entry-metas ul li {
+    
+    margin-right: 10px;
+}
+
 .entry-metas ul li,
 .entry-metas ul li a {
 
@@ -178,8 +183,6 @@ body.boxed .fb-container {
 
     font-style: normal;
     font-size:14px;
-    line-height: 40px;
-    height: 40px;
     padding: 0 10px;
 }
 
@@ -204,7 +207,7 @@ body.boxed .fb-container {
 .dropcap>p:first-child:first-letter,
 .has-drop-cap>p:first-child:first-letter  {
 
-    color: #000000;
+    color: $secondary_color;
     float: left;
     font-size:75px;
     font-weight:bold;

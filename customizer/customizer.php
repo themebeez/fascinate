@@ -39,12 +39,12 @@ function fascinate_customize_register( $wp_customize ) {
 	$wp_customize->register_section_type( 'Fascinate_Pro' );
 
 	$wp_customize->add_section(
-		new Fascinate_Pro( $wp_customize, 'facinate_pro', [
+		new Fascinate_Pro( $wp_customize, 'facinate_pro', array(
 			'title'       	=> esc_html__( 'Fascinate Pro', 'fascinate' ),
 			'button_text' 	=> esc_html__( 'Go Pro',        'fascinate' ),
 			'button_url'  	=> 'https://themebeez.com/themes/fascinate-pro/?ref=upsell-btn',
 			'priority'		=> 1,
-		] )
+		) )
 	);
 
 	/**
@@ -64,10 +64,12 @@ function fascinate_customize_register( $wp_customize ) {
 	require get_template_directory() . '/customizer/functions/customizer-fields.php';
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
+
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(
 			'selector'        => '.site-title a',
 			'render_callback' => 'fascinate_customize_partial_blogname',
 		) );
+
 		$wp_customize->selective_refresh->add_partial( 'blogdescription', array(
 			'selector'        => '.site-description',
 			'render_callback' => 'fascinate_customize_partial_blogdescription',
@@ -134,8 +136,26 @@ function fascinate_enqueues() {
 
 	wp_enqueue_style( 'fascinate-customizer-style', get_template_directory_uri() . '/customizer/assets/css/customizer-style.css' );
 
-	wp_enqueue_script( 'fascinate-customizer-script', get_template_directory_uri() . '/customizer/assets/js/customizer-script.js', array( 'jquery', 'wp-i18n' ), FASCINATE_VERSION, true );
+	wp_register_script( 'fascinate-customizer-script', get_template_directory_uri() . '/customizer/assets/js/customizer-script.js', array( 'jquery' ), FASCINATE_VERSION, true );
 
-	wp_set_script_translations( 'fascinate-customizer-script', 'fascinate' );
+	// Localize the script with new data
+	$titles = array(
+	    'logo_title' => esc_html__( 'Logo Setup', 'fascinate' ),
+	    'favicon_title' => esc_html__( 'Favicon', 'fascinate' ),
+	    'body_bg_title' => esc_html__( 'Body Background', 'fascinate' ),
+	    'header_bg_title' => esc_html__( 'Background Image', 'fascinate' ),
+	    'carousel_content_title' => esc_html__( 'Carousel Content', 'fascinate' ),
+	    'carousel_layout_title' => esc_html__( 'Carousel Layout', 'fascinate' ),
+	    'social_links_title' => esc_html__( 'Social Links', 'fascinate' ),
+	    'post_content_title' => esc_html__( 'Post Content', 'fascinate' ),
+	    'author_section_title' => esc_html__( 'Author Section', 'fascinate' ),
+	    'related_section_title' => esc_html__( 'Related Section', 'fascinate' ),
+	    'sidebar_title' => esc_html__( 'Sidebar', 'fascinate' ),
+	);
+
+	wp_localize_script( 'fascinate-customizer-script', 'customizer_titles', $titles );
+	 
+	// Enqueued script with localized data.
+	wp_enqueue_script( 'fascinate-customizer-script' );
 }
 add_action( 'customize_controls_enqueue_scripts', 'fascinate_enqueues' );

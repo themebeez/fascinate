@@ -42,13 +42,21 @@ fascinate_single_breadcrumb_wrapper();
 
 									    // If comments are open or we have at least one comment, load up the comment template.
 										if ( comments_open() || get_comments_number() ) :
-										    ?>
-											<div class="container">
-											    <div class="comments-box-entry">
-											        <button id="load-comments"><?php esc_html_e( 'Load Comments', 'fascinate' ); ?></button>
-											    </div><!-- .comments-box-entry -->
-											</div><!-- .container -->
-									    	<?php
+
+										    $comments_view = fascinate_get_option( 'display_post_comments_view' );
+
+											if( $comments_view == 'default' ) {
+
+												comments_template();
+											} else {
+												?>
+												<div class="container">
+												    <div class="comments-box-entry">
+												        <button id="load-comments"><?php esc_html_e( 'Load Comments', 'fascinate' ); ?></button>
+												    </div><!-- .comments-box-entry -->
+												</div><!-- .container -->
+												<?php
+											}
 									    endif;
 	                            		
 	                    			endwhile;
@@ -63,21 +71,24 @@ fascinate_single_breadcrumb_wrapper();
         </div><!-- .fb-container -->
     </div><!-- .innerpage-content-area-wrap.single-page-style-2 -->
     <?php
-    while( have_posts() ) :
-    	
-    	the_post();
+    if( $comments_view != 'default' ) {
 
-    	// If comments are open or we have at least one comment, load up the comment template.
-		if ( comments_open() || get_comments_number() ) :
-		    ?>
-	    	<div class="canvas-aside" id="comment-canvas">
-	            <div class="canvas-inner">
-	            	<?php comments_template(); ?>
-	            </div><!-- .canvas-inner -->
-	        </div><!-- .comment-canvas -->
-	        <div class="canvas-aside-mask"></div>
-    		<?php
-    	endif;
-    endwhile;
+	    while( have_posts() ) :
+	    	
+	    	the_post();
+
+	    	// If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+			    ?>
+		    	<div class="canvas-aside" id="comment-canvas">
+		            <div class="canvas-inner">
+		            	<?php comments_template(); ?>
+		            </div><!-- .canvas-inner -->
+		        </div><!-- .comment-canvas -->
+		        <div class="canvas-aside-mask"></div>
+	    		<?php
+	    	endif;
+	    endwhile;
+	}
 
 get_footer();

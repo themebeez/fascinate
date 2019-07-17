@@ -87,3 +87,14 @@ if( ! function_exists( 'fascinate_sidebar_position_choices' ) ) {
 		);
 	}
 }
+
+if( ! function_exists( 'fascinate_comment_box_choices' ) ) {
+
+	function fascinate_comment_box_choices() {
+
+		return array(
+			'default' => esc_html__( 'Show Default View', 'fascinate' ),
+			'toggle_canvas' => esc_html__( 'Toggleable Canvas View', 'fascinate' ),
+		);
+	}
+} 

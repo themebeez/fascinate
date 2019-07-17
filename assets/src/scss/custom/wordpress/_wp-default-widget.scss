@@ -317,17 +317,18 @@
     animation:none;
     box-shadow:none;
     background:transparent;
-}
-
-.widget_search form input[type="submit"] {
-    
     position: relative;
-    width:100px;
 }
 
 .widget_search form input[type="search"] {
 
-    width:calc( 100% - 100px);
+    width: 100%;
+}
+
+.widget.widget_search button[type="submit"] {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
 }
 
 
