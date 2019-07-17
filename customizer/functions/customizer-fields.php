@@ -200,7 +200,7 @@ fascinate_control_rearrange();
 /*******************************************************************************************************
 ******************************* Site Preloader Control Fields Declaration *******************************
 *******************************************************************************************************/
-fascinate_add_toggle_field( 'enable_preloader', esc_html__( 'Enable Preloader', 'fascinate' ), '', '', 'site_preloader' );
+fascinate_add_toggle_field( 'display_preloader', esc_html__( 'Enable Preloader', 'fascinate' ), '', '', 'site_preloader' );
 
 
 
@@ -226,7 +226,7 @@ fascinate_add_url_field( 'header_linkedin_link', esc_html__( 'Linkedin Link', 'f
 fascinate_add_url_field( 'header_vk_link', esc_html__( 'VK Link', 'fascinate' ), '', 'fascinate_active_top_header', 'social_links' );
 
 fascinate_add_toggle_field( 'enable_cursive_site_title', esc_html__( 'Enable Cursive Site Title', 'fascinate' ), '', '', 'site_logo' );
-fascinate_add_slider_field( 'site_identity_section_padding', esc_html__( 'Logo Section Padding', 'fascinate' ), esc_html__( 'This option lets you set padding on top and bottom of the site identiy or logo section. Minimum padding size is 0 whereas maximum padding size is 50. The padding size is in px.', 'fascinate' ), 'fascinate_active_carousel', 'site_logo', 0, 50, 1 );
+fascinate_add_slider_field( 'site_identity_section_padding', esc_html__( 'Logo Section Padding', 'fascinate' ), esc_html__( 'Set padding on top and bottom of logo section. The range of value for padding is 0-50.', 'fascinate' ), 'fascinate_active_carousel', 'site_logo', 0, 50, 1 );
 
 
 /*******************************************************************************************************
@@ -234,11 +234,11 @@ fascinate_add_slider_field( 'site_identity_section_padding', esc_html__( 'Logo S
 *******************************************************************************************************/
 fascinate_add_toggle_field( 'display_carousel', esc_html__( 'Display Carousel', 'fascinate' ), '', '', 'site_carousel' );
 fascinate_add_select_field( 'carousel_category', esc_html__( 'Carousel Category', 'fascinate' ), '', fascinate_post_category_choices(), 'fascinate_active_carousel', 'site_carousel' );
-fascinate_add_number_field( 'carousel_item_no', esc_html__( 'No of Carousel Items', 'fascinate' ), esc_html__( 'Maximum 5 items and minimum 1 item can be set.', 'fascinate' ), 'fascinate_active_carousel', 'site_carousel', 5, 1, 1 );
+fascinate_add_number_field( 'carousel_item_no', esc_html__( 'Number of Carousel Items', 'fascinate' ), esc_html__( 'Maximum 5 items and minimum 1 item can be set.', 'fascinate' ), 'fascinate_active_carousel', 'site_carousel', 5, 1, 1 );
 fascinate_add_toggle_field( 'carousel_hide_content', esc_html__( 'Display Carousel Content', 'fascinate' ), '', 'fascinate_active_carousel', 'site_carousel' );
 fascinate_add_radio_image_field( 'carousel_layout', esc_html__( 'Carousel Layout', 'fascinate' ), '', fascinate_carousel_layout_choices(), 'fascinate_active_carousel', 'site_carousel' );
 fascinate_add_toggle_field( 'carousel_enable_spacing', esc_html__( 'Enable Spacing', 'fascinate' ), '', 'fascinate_active_carousel', 'site_carousel' );
-fascinate_add_slider_field( 'carousel_height', esc_html__( 'Carousel Height', 'fascinate' ), esc_html__( 'This height will be displayed for devices with display width 992px. Minimum height is 400 and maximum height is 700.', 'fascinate' ), 'fascinate_active_carousel', 'site_carousel', 700, 400, 1 );
+fascinate_add_slider_field( 'carousel_height', esc_html__( 'Carousel Height', 'fascinate' ), esc_html__( 'This height will be displayed for devices with display width 992px. The range of value for carousel height is 400-700.', 'fascinate' ), 'fascinate_active_carousel', 'site_carousel', 400, 700, 1 );
 
 
 
@@ -288,10 +288,11 @@ fascinate_add_toggle_field( 'display_post_feat_img', esc_html__( 'Display Featur
 fascinate_add_toggle_field( 'display_post_date', esc_html__( 'Display Posted Date', 'fascinate' ), '', '', 'post_single' );
 fascinate_add_toggle_field( 'display_post_author', esc_html__( 'Display Author Name', 'fascinate' ), '', '', 'post_single' );
 fascinate_add_toggle_field( 'display_post_tags', esc_html__( 'Display Tags', 'fascinate' ), '', '', 'post_single' );
+fascinate_add_select_field( 'display_post_comments_view', esc_html__( 'Comments View', 'fascinate' ), '', fascinate_comment_box_choices(), '', 'post_single' );
 fascinate_add_toggle_field( 'display_author_section', esc_html__( 'Display Section', 'fascinate' ), '', '', 'post_single' );
 fascinate_add_toggle_field( 'display_related_section', esc_html__( 'Display Section', 'fascinate' ), '', '', 'post_single' );
 fascinate_add_text_field( 'related_section_title', esc_html__( 'Section Title', 'fascinate' ), '', 'fascinate_active_related_section', 'post_single' );
-fascinate_add_number_field( 'related_posts_no', esc_html__( 'No of Posts', 'fascinate' ), esc_html__( 'Maximum 4 items and minimum 1 items can be set.', 'fascinate' ), 'fascinate_active_related_section', 'post_single', 4, 1, 1 );
+fascinate_add_number_field( 'related_posts_no', esc_html__( 'Number of Posts', 'fascinate' ), esc_html__( 'Maximum 4 items and minimum 1 items can be set.', 'fascinate' ), 'fascinate_active_related_section', 'post_single', 4, 1, 1 );
 fascinate_add_toggle_field( 'display_related_author_meta', esc_html__( 'Display Author Meta', 'fascinate' ), '', 'fascinate_active_related_section', 'post_single' );
 fascinate_add_toggle_field( 'enable_common_post_sidebar_position', esc_html__( 'Enable Common Sidebar Position', 'fascinate' ), '', 'fascinate_not_active_global_sidebar', 'post_single' );
 fascinate_add_radio_image_field( 'common_post_sidebar_position', esc_html__( 'Common Sidebar Position', 'fascinate' ), '', fascinate_sidebar_position_choices(), 'fascinate_active_common_post_sidebar', 'post_single' );

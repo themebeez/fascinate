@@ -14,7 +14,7 @@
 		<footer class="footer dark secondary-widget-area">
             <div class="footer-inner">
                 <?php
-                if( is_active_sidebar( 'fascinate-footer-left' ) || is_active_sidebar( 'fascinate-footer-middle' ) || is_active_sidebar( 'fascinate-footer-right' ) ) :
+                if( is_active_sidebar( 'footer-left' ) || is_active_sidebar( 'footer-middle' ) || is_active_sidebar( 'footer-right' ) ) :
                     ?>
                     <div class="footer-top">
                         <div class="fb-container">                            
@@ -23,23 +23,23 @@
                                    
                                     <div class="col-lg-4 col-md-12">
                                         <?php
-                                        if( is_active_sidebar( 'fascinate-footer-left' ) ) {
+                                        if( is_active_sidebar( 'footer-left' ) ) {
 
-                                            dynamic_sidebar( 'fascinate-footer-left' ); 
+                                            dynamic_sidebar( 'footer-left' ); 
                                         }
                                         ?>
                                     </div>
                                     <div class="col-lg-4 col-md-12">
                                         <?php 
-                                        if( is_active_sidebar( 'fascinate-footer-middle' ) ) {
-                                            dynamic_sidebar( 'fascinate-footer-middle' ); 
+                                        if( is_active_sidebar( 'footer-middle' ) ) {
+                                            dynamic_sidebar( 'footer-middle' ); 
                                         } 
                                         ?>
                                     </div>
                                     <div class="col-lg-4 col-md-12">
                                         <?php 
-                                        if( is_active_sidebar( 'fascinate-footer-right' ) ) {
-                                            dynamic_sidebar( 'fascinate-footer-right' ); 
+                                        if( is_active_sidebar( 'footer-right' ) ) {
+                                            dynamic_sidebar( 'footer-right' ); 
                                         } 
                                         ?>
                                     </div>      	                            
@@ -82,6 +82,8 @@
             </div><!-- .footer-inner -->
         </footer><!-- .footer.secondary-widget-area -->
 	</div><!-- .page--wrap -->
+
+    <div class="fascinate-to-top"><span><?php esc_html_e( 'Back to top', 'fascinate' ); ?></span></div>
 
 <?php wp_footer(); ?>
 

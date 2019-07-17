@@ -21,7 +21,7 @@ function fascinate_body_classes( $classes ) {
 	$sidebar_position = fascinate_sidebar_position();
 
 	// Adds a class of no-sidebar when there is no sidebar present.
-	if ( ! is_active_sidebar( 'fascinate-sidebar' ) || $sidebar_position == 'none' ) {
+	if ( ! is_active_sidebar( 'sidebar' ) || $sidebar_position == 'none' ) {
 
 		$classes[] = 'no-sidebar';
 	}
@@ -72,7 +72,7 @@ if( ! function_exists( 'fascinate_main_container_class' ) ) {
 
 		$sticky_enabled = fascinate_sticky_sidebar_enabled();
 
-		if( $sidebar_position == 'none' || !is_active_sidebar( 'fascinate-sidebar' ) ) {
+		if( $sidebar_position == 'none' || !is_active_sidebar( 'sidebar' ) ) {
 
 			if( is_singular() || is_404() ) {
 
@@ -148,7 +148,7 @@ if( ! function_exists( 'fascinate_thumbnail_class' ) ) {
 
 		$sidebar_position = fascinate_sidebar_position();
 
-		if( $sidebar_position == 'none' || !is_active_sidebar( 'fascinate-sidebar' ) ) {
+		if( $sidebar_position == 'none' || !is_active_sidebar( 'sidebar' ) ) {
 
 			$thumbnail_container_class = 'center-align';
 
@@ -514,12 +514,26 @@ if( ! function_exists( 'fascinate_post_navigation' ) ) {
 
 	    if( !empty( $next_post ) ) {
 
-	    	$navigation_args['next_text'] = '<div class="post-nav-title"><span class="meta-nav" aria-hidden="true">' . esc_html__( 'Next Post', 'fascinate' ) . '</span><div class="nav-title"><span>' . esc_html( $next_post->post_title ) . '</span></div></div><div class="post-nav-img">' . get_the_post_thumbnail( $next_post->ID, 'thumbnail' ) . '</div>';
+	    	$navigation_args['next_text'] = '';
+
+	    	$navigation_args['next_text'] = '<div class="post-nav-title"><span class="meta-nav" aria-hidden="true">' . esc_html__( 'Next Post', 'fascinate' ) . '</span><div class="nav-title"><span>' . esc_html( $next_post->post_title ) . '</span></div></div>';
+
+	    	if( get_the_post_thumbnail( $next_post->ID, 'thumbnail' ) ) {
+
+	    		$navigation_args['next_text'] .= '<div class="post-nav-img">' . get_the_post_thumbnail( $next_post->ID, 'thumbnail' ) . '</div>';
+	    	}
 	    }
 
 	    if( !empty( $previous_post ) ) {
 
-	    	$navigation_args['prev_text'] = '<div class="post-nav-img">' . get_the_post_thumbnail( $previous_post->ID, 'thumbnail' ) . '</div><div class="post-nav-title"><span class="meta-nav" aria-hidden="true">' . esc_html__( 'Previous Post', 'fascinate' ) . '</span><div class="nav-title"><span>' . esc_html( $previous_post->post_title ) . '</span></div></div>';
+	    	$navigation_args['prev_text'] = '';
+
+	    	if( get_the_post_thumbnail( $previous_post->ID, 'thumbnail' ) ) {
+
+	    		$navigation_args['prev_text'] = '<div class="post-nav-img">' . get_the_post_thumbnail( $previous_post->ID, 'thumbnail' ) . '</div>';
+	    	}
+
+	    	$navigation_args['prev_text'] .= '<div class="post-nav-title"><span class="meta-nav" aria-hidden="true">' . esc_html__( 'Previous Post', 'fascinate' ) . '</span><div class="nav-title"><span>' . esc_html( $previous_post->post_title ) . '</span></div></div>';
 	    }
 
 	    the_post_navigation( $navigation_args );

@@ -180,7 +180,7 @@ if( ! function_exists( 'fascinate_sidebar_position' ) ) {
 
     function fascinate_sidebar_position() {
 
-        if( ! is_active_sidebar( 'fascinate-sidebar' ) ) {
+        if( ! is_active_sidebar( 'sidebar' ) ) {
 
             return 'none';
         }
@@ -243,7 +243,7 @@ if( !function_exists( 'fascinate_sticky_sidebar_enabled' ) ) {
 
         $sidebar_position = fascinate_sidebar_position();
 
-        if( is_active_sidebar( 'fascinate-sidebar' ) && $sidebar_position != 'none' ) {
+        if( is_active_sidebar( 'sidebar' ) && $sidebar_position != 'none' ) {
 
             if( $enable_sticky_sidebar == true ) {
 

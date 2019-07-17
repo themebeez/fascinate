@@ -53,14 +53,14 @@ if ( ! function_exists( 'fascinate_get_default_theme_options' ) ) {
 
         $defaults = array(
 
-            'enable_preloader' => false,
+            'display_preloader' => false,
 
             'site_layout' => 'fullwidth',
 
             'display_top_header' => true,
 
-            'enable_cursive_site_title' => true,
-            'site_identity_section_padding' => 15,
+            'enable_cursive_site_title' => false,
+            'site_identity_section_padding' => 30,
 
             'header_facebook_link' => '',
             'header_twitter_link' => '',
@@ -112,6 +112,7 @@ if ( ! function_exists( 'fascinate_get_default_theme_options' ) ) {
             'display_post_date' => true,
             'display_post_author' => true,
             'display_post_tags' => true,
+            'display_post_comments_view' => 'default',
             'display_author_section' => true,
             'display_related_section' => true,
             'related_section_title' => '',

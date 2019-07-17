@@ -89,7 +89,7 @@ if( !function_exists( 'fascinate_search_form' ) ) {
      */
     function fascinate_search_form() {
 
-        $form = '<form role="search" method="get" id="search-form" class="clearfix" action="' . esc_url( home_url( '/' ) ) . '"><input type="search" name="s" placeholder="' . esc_attr__( 'Enter Keyword', 'fascinate' ) . '" value"' . esc_attr( get_search_query() ) . '"><input type="submit" id="submit" value="'. esc_attr__( 'Search', 'fascinate' ).'"></form>';
+        $form = '<form role="search" method="get" id="search-form" class="clearfix" action="' . esc_url( home_url( '/' ) ) . '"><input type="search" name="s" placeholder="' . esc_attr_x( 'Type here to search', 'place-holder', 'fascinate' ) . '" value"' . esc_attr( get_search_query() ) . '"><button type="submit"><span class="ion-ios-search"></span></button></form>';
 
         return $form;
     }

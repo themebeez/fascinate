@@ -127,7 +127,7 @@ function fascinate_widgets_init() {
 	
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'fascinate' ),
-		'id'            => 'fascinate-sidebar',
+		'id'            => 'sidebar',
 		'description'   => esc_html__( 'Add widgets here.', 'fascinate' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
@@ -137,7 +137,7 @@ function fascinate_widgets_init() {
 
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Left', 'fascinate' ),
-		'id'            => 'fascinate-footer-left',
+		'id'            => 'footer-left',
 		'description'   => esc_html__( 'Add widgets here.', 'fascinate' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
@@ -148,7 +148,7 @@ function fascinate_widgets_init() {
 
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Middle', 'fascinate' ),
-		'id'            => 'fascinate-footer-middle',
+		'id'            => 'footer-middle',
 		'description'   => esc_html__( 'Add widgets here.', 'fascinate' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
@@ -159,7 +159,7 @@ function fascinate_widgets_init() {
 
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Right', 'fascinate' ),
-		'id'            => 'fascinate-footer-right',
+		'id'            => 'footer-right',
 		'description'   => esc_html__( 'Add widgets here.', 'fascinate' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
@@ -202,6 +202,12 @@ add_action( 'wp_enqueue_scripts', 'fascinate_scripts' );
 function fascinate_admin_enqueue() {
 
 	wp_enqueue_style( 'fascinate-admin', get_template_directory_uri() . '/admin/css/admin.css' );
+
+	wp_enqueue_script( 'media-upload' );
+
+	wp_enqueue_media();
+
+	wp_enqueue_script( 'fascinate-admin-script', get_template_directory_uri() . '/admin/js/admin-script.js', array( 'jquery' ), FASCINATE_VERSION, true );
 }
 add_action( 'admin_enqueue_scripts', 'fascinate_admin_enqueue' );
 

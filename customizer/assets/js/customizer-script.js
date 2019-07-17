@@ -1,6 +1,4 @@
-(function( $ ) {
-
-	const { __, _x, _n, _nx } = wp.i18n;
+( function( $ ) {
 
 	wp.customize.bind( 'ready', function() {
 
@@ -14,24 +12,24 @@
 		}
 
 		// Site Identity
-		customizer_label( 'custom_logo', __( 'Logo Setup', 'fascinate' ) );
-		customizer_label( 'site_icon', __( 'Favicon', 'fascinate' ) );
+		customizer_label( 'custom_logo', customizer_titles.logo_title );
+		customizer_label( 'site_icon', customizer_titles.favicon_title );
 
-		customizer_label( 'background_color', __( 'Body Background', 'fascinate' ) );
+		customizer_label( 'background_color', customizer_titles.body_bg_title );
 
-		customizer_label( 'header_image', __( 'Background Image', 'fascinate' ) );
+		customizer_label( 'header_image', customizer_titles.header_bg_title );
 
-		customizer_label( 'fascinate_field_carousel_category', __( 'Carousel Content', 'fascinate' ) );
-		customizer_label( 'fascinate_field_carousel_layout', __( 'Carousel Layout', 'fascinate' ) );
+		customizer_label( 'fascinate_field_carousel_category', customizer_titles.carousel_content_title );
+		customizer_label( 'fascinate_field_carousel_layout', customizer_titles.carousel_layout_title );
 
-		customizer_label( 'fascinate_field_header_facebook_link', __( 'Social Links', 'fascinate' ) );
+		customizer_label( 'fascinate_field_header_facebook_link', customizer_titles.social_links_title );
 
-		customizer_label( 'fascinate_field_display_post_cats', __( 'Post Content', 'fascinate' ) );
-		customizer_label( 'fascinate_field_display_author_section', __( 'Author Section', 'fascinate' ) );
-		customizer_label( 'fascinate_field_display_related_section', __( 'Related Posts Section', 'fascinate' ) );
+		customizer_label( 'fascinate_field_display_post_cats', customizer_titles.post_content_title );
+		customizer_label( 'fascinate_field_display_author_section', customizer_titles.author_section_title );
+		customizer_label( 'fascinate_field_display_related_section', customizer_titles.related_section_title );
 
-		customizer_label( 'fascinate_field_enable_common_post_sidebar_position', __( 'Sidebar', 'fascinate' ) );
-		customizer_label( 'fascinate_field_enable_common_page_sidebar_position', __( 'Sidebar', 'fascinate' ) );
+		customizer_label( 'fascinate_field_enable_common_post_sidebar_position', customizer_titles.sidebar_title );
+		customizer_label( 'fascinate_field_enable_common_page_sidebar_position', customizer_titles.sidebar_title );
 
 		
 

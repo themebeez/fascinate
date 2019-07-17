@@ -171,7 +171,7 @@ if( ! class_exists( 'Fascinate_Post_Widget' ) ) :
 
             ?>
             <p>
-                <label for="<?php echo esc_attr( $this->get_field_name('layout') ); ?>">
+                <label for="<?php echo esc_attr( $this->get_field_id('layout') ); ?>">
                     <strong><?php esc_html_e('Chooose Layout', 'fascinate'); ?></strong>
                 </label>
                 <select class="widefat" id="<?php echo esc_attr( $this->get_field_id('layout') ); ?>" name="<?php echo esc_attr( $this->get_field_name('layout') ); ?>">
@@ -191,14 +191,14 @@ if( ! class_exists( 'Fascinate_Post_Widget' ) ) :
             </p> 
 
             <p>
-                <label for="<?php echo esc_attr( $this->get_field_name('title') ); ?>">
+                <label for="<?php echo esc_attr( $this->get_field_id('title') ); ?>">
                     <strong><?php esc_html_e('Title', 'fascinate'); ?></strong>
                 </label>
                 <input class="widefat" id="<?php echo esc_attr( $this->get_field_id('title') ); ?>" name="<?php echo esc_attr( $this->get_field_name('title') ); ?>" type="text" value="<?php echo esc_attr( $instance['title'] ); ?>" />   
             </p>
 
             <p>
-                <label for="<?php echo esc_attr( $this->get_field_name('post_no') ); ?>">
+                <label for="<?php echo esc_attr( $this->get_field_id('post_no') ); ?>">
                     <strong><?php esc_html_e('No of Posts', 'fascinate'); ?></strong>
                 </label>
                 <input class="widefat" id="<?php echo esc_attr( $this->get_field_id('post_no') ); ?>" name="<?php echo esc_attr( $this->get_field_name('post_no') ); ?>" type="number" value="<?php echo esc_attr( $instance['post_no'] ); ?>" />   

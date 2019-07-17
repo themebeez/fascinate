@@ -38,7 +38,7 @@ if( ! function_exists( 'fascinate_dynamic_style' ) ) {
 			<?php
 			if( $display_srcoll_top == false ) {
 				?>
-				.fascinate-toTop {
+				.fascinate-to-top {
 
 					display: none !important;
 				}

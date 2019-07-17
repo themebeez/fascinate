@@ -9,6 +9,9 @@
 
 ?>
 <div class="nothing-found-page-entry">
+	<div class="title">
+        <h3><?php echo esc_html__( 'Nothing Found', 'fascinate' ); ?></h3>
+    </div><!-- .title -->
     <?php
 	if ( is_home() && current_user_can( 'publish_posts' ) ) :
 
