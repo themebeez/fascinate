@@ -118,6 +118,12 @@
 		margin-left: inherit;
 		transform:inherit;
 	}
+
+	body.boxed .fb-container {
+
+		padding-right: 15px;
+		padding-left: 15px;
+	}
 }
 
 @media ( max-width:1050px ) { 
@@ -144,7 +150,7 @@
 
 		border-top:none;
 		border-bottom:none;
-		background:$primary_color;
+		background:#222222;
 	}
 
 	.header-style-1 .menu-toggle span {
@@ -174,7 +180,7 @@
 	#site-navigation>ul>li>a {
 
 		line-height:1;
-		border-bottom: 1px solid #353535;
+		border-bottom: 1px solid #2d2d2d;
 		text-transform: inherit;
     	font-weight: normal;
     	font-size: 16px;
@@ -224,7 +230,7 @@
 	#site-navigation ul li .sub-menu li a, 
 	#site-navigation ul li .children li a {
 		
-		border-bottom: 1px solid #353535;
+		border-bottom: 1px solid #2d2d2d;
 		line-height:1;
 		padding:15px 0 15px 15px;
 	}
@@ -738,6 +744,12 @@
 		font-size:22px;
 	}
 
+	.fb-banner.carousel-spacing {
+
+		margin-left: 0;
+    	margin-right: 0;
+	}
+
 	.fb-banner .content-holder-wrap {
 		
 		top:unset;
@@ -784,9 +796,20 @@
 		color:$primary_color;
 	}
 
-	.posts-list-style-1 .share-and-comment {
+	.fb-banner .entry-metas ul li.posted-date a:after {
 
-		padding:0;
+		border-left-color: $white;
+    	border-bottom-color: $white;
+	}
+
+	.fb-banner .entry-cats ul li a {
+
+		border-bottom-color:$white;
+	}
+
+	.post-link-btn {
+
+		padding: 14px 30px;
 	}
 
 	.dropcap>p:first-child:first-letter,
@@ -800,6 +823,7 @@
 		float:none;
 		padding-left:inherit;
 		padding-right:inherit;
+		color:$primary_color;
 	}
 
 	.single-page-style-2 .single-page-entry article {
@@ -837,6 +861,41 @@
 	.comment-respond .comment-reply-title {
 
 		font-size: 22px;
+	}
+
+	.post-navigation .nav-links .nav-previous, 
+	.post-navigation .nav-links .nav-next {
+
+		flex:0 0 100%;
+		max-width:100%;
+	}
+
+	.post-navigation .nav-links {
+
+		padding:30px;
+	}
+
+	.post-navigation .nav-links .nav-previous, 
+	.post-navigation .nav-links .nav-next {
+
+		padding:0;
+	}
+
+	.post-navigation .nav-links .nav-previous {
+
+		border-right: none;
+	}
+
+	.post-navigation .nav-links .nav-next {
+
+		margin-top: 20px;
+    	padding-top: 20px;
+    	border-top: 1px solid $border_color;
+	}
+
+	.fascinate-to-top {
+
+		right:0;
 	}
 
 
@@ -934,7 +993,11 @@
 
 		width:300px;
 	}
-	
+
+	.fascinate-to-top {
+
+    	right: -20px;
+	}
 	
 }
 
@@ -969,8 +1032,11 @@
 		margin:5px 3px;
 	}
 
+	.comment-respond,
+	.post-navigation .nav-links {
 
-	
+		padding:20px;
+	}
 	
 }
 
@@ -1002,7 +1068,6 @@
 
 		padding:20px;
 	}
-
 	
 }
 

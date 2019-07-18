@@ -209,7 +209,7 @@
                 },
             ]
         });
-        
+
 
         // gallery post format
 
@@ -255,6 +255,20 @@
             }, ]
         });
 
+        /* 
+        =============================
+        =
+        = Window load function
+        =
+        =====================================
+        */
+
+
+        $(window).load(function() {
+
+            jQuery('.preLoader').fadeOut(1000);
+        });
+
         /*
         ==========================
         = Back to top
@@ -284,21 +298,6 @@
             $("html, body").animate({ scrollTop: 0 }, "slow");
 
             return false;
-        });
-
-
-        /* 
-        =============================
-        =
-        = Window load function
-        =
-        =====================================
-        */
-
-
-        $(window).load(function() {
-
-            jQuery('.preLoader').fadeOut(1000);
         });
 
     });

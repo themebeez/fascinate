@@ -238,7 +238,6 @@ input[type="reset"],
 input[type="submit"],
 .post-link-btn,
 .calendar_wrap caption,
-footer.dark .footer-inner,
 .fb-popular-posts .count,
 .fb-patigation .page-numbers,
 body .wpcf7 input[type="submit"],
@@ -293,8 +292,14 @@ body .wpforms-container .wpforms-form .wpforms-page-button:hover {
 // Footer ( Dark )
 
 
+footer.dark .footer-inner {
+
+	background:$dark_footer_bg;
+}
+
 footer.dark,
 footer.dark a,
+footer.dark select,
 footer.dark .footer-bottom p,
 footer.dark .widget_rss ul li a,
 footer.dark .widget_tag_cloud .tagcloud a,
@@ -316,7 +321,8 @@ body footer.dark .wpforms-container .wpforms-form .wpforms-page-button:hover  {
 	color:$white;
 }
 
-footer.dark .nice-select,
+footer.dark select,
+footer.dark button,
 footer.dark .fb-post-widget article,
 footer.dark .widget_archive li, 
 footer.dark .widget_categories li, 
@@ -336,11 +342,7 @@ footer.dark .woocommerce .woocommerce-widget-layered-nav-list .woocommerce-widge
 	border-color:$dark_footer_border_color;
 }
 
-footer.dark .nice-select .option {
-
-	border-color:$dark_footer_alt_border_color;
-}
-
+footer.dark select,
 footer.dark button, 
 footer.dark input[type="button"], 
 footer.dark input[type="reset"], 
