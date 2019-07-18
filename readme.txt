@@ -71,7 +71,8 @@ Lady in yellow dress
 License: CC0 Public Domain (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
 Source: https://pxhere.com/en/photo/1520137
 
-
+Logo image is self created
+License: GPLv2 http://www.gnu.org/licenses/gpl-2.0.html
 
 
 == Installation ==
