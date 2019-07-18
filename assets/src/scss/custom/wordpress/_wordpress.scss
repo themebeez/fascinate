@@ -404,6 +404,10 @@ span.edit-link a:before {
 .comment-respond .form-submit input {
 
     margin-bottom:0;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 45px;
+    @include border-radius(25px);
 }
 
 .akismet_comment_form_privacy_notice {

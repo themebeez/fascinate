@@ -91,6 +91,6 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 
 == Changelog ==
 
-= 1.0.0 - 25, June 2019 =
+= 1.0.0 - 21, July 2019 =
 
 - Initial release
