@@ -20,6 +20,7 @@
 }
 
 
+
 // gutenberg aligment ( full width & wide width )
 
 
@@ -32,6 +33,11 @@ body.no-sidebar .alignfull {
     transform: translateX(-50%);
 }
 
+body.no-sidebar ul.wp-block-gallery.alignfull,
+body.no-sidebar ul.wp-block-gallery.alignwide {
+
+    margin-left: 50%;
+}
 
 body.no-sidebar .alignwide {
 
@@ -43,7 +49,9 @@ body.no-sidebar .alignwide {
 }
 
 body.no-sidebar.boxed .alignfull,
-body.no-sidebar.boxed .alignwide {
+body.no-sidebar.boxed .alignwide,
+body.no-sidebar.boxed ul.wp-block-gallery.alignwide,
+body.no-sidebar.boxed ul.wp-block-gallery.alignfull {
 
     width:100%;
     max-width:100%;

@@ -633,6 +633,35 @@ body .wpforms-container .wpforms-form .wpforms-page-button:hover {
 }
 
 
+/*
+==================================
+=
+= Mailchimp newsletter
+=
+===================================================
+*/
+
+
+.mc4wp-form .mc4wp-form-fields label {
+
+    margin-bottom: 10px;
+}
+
+.mc4wp-form .mc4wp-form-fields p {
+
+    margin-bottom: 20px;
+}
+
+.mc4wp-form .mc4wp-form-fields p:last-child {
+
+    margin-bottom: 0;
+}
+
+.mc4wp-form .mc4wp-form-fields input[type="submit"] {
+
+    padding: 0 30px;
+    height: 41px;
+}
 
 /*
 =============================
