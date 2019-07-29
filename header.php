@@ -163,7 +163,7 @@
 	                        	$fascinate_description = get_bloginfo( 'description', 'display' );
 								if ( $fascinate_description || is_customize_preview() ) :
 									?>
-									<p class="site-description"><?php echo esc_html( $fascinate_description ); /* WPCS: xss ok. */ ?></p><!-- .site-description -->
+									<p class="site-description"><?php echo esc_html( $fascinate_description ); // phpcs:ignore ?></p><!-- .site-description -->
 									<?php 
 								endif;
 	                    	endif;

@@ -28,7 +28,7 @@ if ( ! function_exists( 'fascinate_posted_on' ) ) :
 				esc_html( get_the_modified_date() )
 			);
 
-			echo '<li class="posted-date"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a></li>'; // WPCS: XSS OK.
+			echo '<li class="posted-date"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a></li>'; // phpcs:ignore
 		}
 	}
 endif;
@@ -60,7 +60,7 @@ if ( ! function_exists( 'fascinate_posted_by' ) ) :
 				'<a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a>'
 			);
 
-			echo '<li class="posted-by">' . $byline . '</li>'; // WPCS: XSS OK.
+			echo '<li class="posted-by">' . $byline . '</li>'; // phpcs:ignore
 		}
 	}
 endif;
@@ -115,7 +115,7 @@ if( ! function_exists( 'fascinate_categories_meta' ) ) :
 				$categories_list = get_the_category_list();
 
 				if ( $categories_list ) {
-					echo '<div class="entry-cats">' . wp_kses_post( $categories_list ) . '</div>'; // WPCS: XSS OK.
+					echo '<div class="entry-cats">' . wp_kses_post( $categories_list ) . '</div>'; // phpcs:ignore
 				}
 			}
 		}
@@ -138,7 +138,7 @@ if( ! function_exists( 'fascinate_tags_meta' ) ) :
 				$tags_list = get_the_tag_list();
 
 				if ( $tags_list ) {
-					echo '<div class="entry-tags"><div class="post-tags">' . wp_kses_post( $tags_list ) . '</div></div>'; // WPCS: XSS OK.
+					echo '<div class="entry-tags"><div class="post-tags">' . wp_kses_post( $tags_list ) . '</div></div>'; // phpcs:ignore
 				}
 			}
 		}
@@ -386,7 +386,7 @@ if( ! function_exists( 'fascinate_post_format_video_content' ) ) {
 	        ?>
 	        <div class="mid-block is-post-format-block">
 	            <div class="is-video-format">
-	            	<?php echo $video[0]; // WPCS xss ok. ?>
+	            	<?php echo $video[0]; // phpcs:ignore ?>
 	            </div><!-- .is-audio-format -->
 	        </div><!-- .mid-block.is-post-format-block -->
 	        <?php
@@ -417,7 +417,7 @@ if( ! function_exists( 'fascinate_post_format_audio_content' ) ) {
 	        ?>
 	        <div class="mid-block is-post-format-block">
 	            <div class="is-audio-format">
-	            	<?php echo $audio[0]; // WPCS xss ok. ?>
+	            	<?php echo $audio[0]; // phpcs:ignore ?>
 	            </div><!-- .is-audio-format -->
 	        </div><!-- .mid-block.is-post-format-block -->
 	        <?php

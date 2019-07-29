@@ -269,14 +269,14 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * Load Post Widget.
  */
-require get_template_directory() . '/widgets/post-widget.php';
+require get_template_directory() . '/widgets/fascinate-post-widget.php';
 
 /**
  * Load Author Widget.
  */
-require get_template_directory() . '/widgets/author-widget.php';
+require get_template_directory() . '/widgets/fascinate-author-widget.php';
 
 /**
  * Load Social Links Widget.
  */
-require get_template_directory() . '/widgets/social-widget.php';
+require get_template_directory() . '/widgets/fascinate-social-widget.php';
