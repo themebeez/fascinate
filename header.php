@@ -21,22 +21,27 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<?php
-	$is_preloader_enabled = fascinate_get_option( 'display_preloader' );
-	if( $is_preloader_enabled == true ) {
-		?>
-		<div class="preLoader">
-			<div class="fl fl-spinner spinner1">
-				<div class="double-bounce1"></div>
-				<div class="double-bounce2"></div>
-			</div>
-		</div>
-	    <?php
-	}
+	<?php 
+	if( class_exists( 'wp_body_open' ) ) { 
+		wp_body_open(); 
+	} 
 	?>
-
 	<div class="page--wrap">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'fascinate' ); ?></a>
+
+		<?php
+		$is_preloader_enabled = fascinate_get_option( 'display_preloader' );
+		if( $is_preloader_enabled == true ) {
+			?>
+			<div class="preLoader">
+				<div class="fl fl-spinner spinner1">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+			</div>
+		    <?php
+		}
+		?>
 	
 		<header class="fb-general-header header-style-1">
 	        <div class="header-inner">
