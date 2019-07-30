@@ -472,6 +472,10 @@ msgstr ""
 msgid "Themebeez Toolkit"
 msgstr ""
 
+#: includes/helper-functions.php:361
+msgid "Universal Google AdSense And Ads Manager"
+msgstr ""
+
 #: includes/template-functions.php:326
 msgid "404 - Page Not Found"
 msgstr ""

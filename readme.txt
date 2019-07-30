@@ -4,7 +4,7 @@ Contributors: themebeez
 Requires at least: 4.8.0
 Requires PHP: 5.6
 Tested up to: 5.2.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, blog, custom-header, theme-options, footer-widgets, editor-style, block-styles, wide-blocks, sticky-post, post-formats
@@ -12,7 +12,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 == Description ==
 
-Fascinate is a slick, modern, minimal, and beautifully designed Gutenberg compatible WordPress blog theme. Fascinate is an ideal and complete WordPress blog theme for creating personal or professional blogging website to showcase your experiences, stories or write on different niches like fashion, travel, lifestyle, gourmet, business and so on. Fascinate is 100% media responsive, which means that Fascinate is compatible for all devices ranging from desktop, tablets to smartphones. Fascinate supports four types of post formats ( video, audio, gallery & quote formats ) which can be very helpful to showcase your special moments insisted of a featured image. Fascinate extends WordPress Live customizer functionality which will help you to build your blog website right from customizer itself. Fascinate includes built-in features like custom author widget, social widget, lazyload for images etc. Fascinate is also optimized for SEO & website load time. Fascinate also supports third party popular plugins like Jetpack, Mail Chimp, Contact Form 7, Yoast, Universal Google AdSense & Ads manager etc.
+Fascinate is a slick, modern, minimal, and beautifully designed Gutenberg compatible WordPress blog theme. Fascinate Blog is an ideal and complete WordPress blog theme for creating personal or professional blogging website to showcase your experiences, stories or write on different niches like fashion, travel, lifestyle, gourmet, business and so on. Fascinate is 100% media responsive, which means that Fascinate Blog is compatible for all devices ranging from desktop, tablets to smartphones. Fascinate Blog supports four types of post formats ( video, audio, gallery & quote formats ) which can be very helpful to showcase your special moments insisted of a featured image. Fascinate Blog extends WordPress Live customizer functionality which will help you to build your blog website right from customizer itself. Fascinate Blog includes built-in features like custom author widget, social widget, lazyload for images etc. Fascinate Blog is also optimized for SEO & website load time. Fascinate Blog also supports third party popular plugins like Jetpack, Mail Chimp, Contact Form 7, Yoast, Universal Google AdSense & Ads manager etc.
 
 
 == License ==
@@ -60,17 +60,17 @@ Fascinate is distributed under the terms of the GNU GPL
 
 == Screenshots ==
 
-Lady with camera
+Lady at the sea
 License: CC0 Public Domain (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
-Source: https://pxhere.com/en/photo/948941
+Source: https://pxhere.com/en/photo/1556663
 
 Lady in glasses and wearing t-shirt with roses
 License: CC0 Public Domain (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
 Source: https://pxhere.com/en/photo/1561333
 
-Lady in yellow dress
+Lady in prink high heels
 License: CC0 Public Domain (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
-Source: https://pxhere.com/en/photo/1520137
+Source: https://pxhere.com/en/photo/1509277
 
 Logo image is self created
 License: GPLv2 http://www.gnu.org/licenses/gpl-2.0.html
@@ -91,6 +91,12 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 
 
 == Changelog ==
+
+= 1.0.1 - 30 July, 2019 =
+
+- Issue on image upload field of author widget fixed
+- UGAAM plugin recommended
+- Screenshot has been changed
 
 = 1.0.0 - 21, July 2019 =
 
