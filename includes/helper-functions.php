@@ -357,6 +357,11 @@ if ( ! function_exists( 'fascinate_recommended_plugins' ) ) :
                 'slug'     => 'themebeez-toolkit',
                 'required' => false,
             ),
+            array(
+                'name'     => esc_html__( 'Universal Google AdSense And Ads Manager', 'fascinate' ),
+                'slug'     => 'universal-google-adsense-and-ads-manager',
+                'required' => false,
+            ),
         );
 
         tgmpa( $plugins );

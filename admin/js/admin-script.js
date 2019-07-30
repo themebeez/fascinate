@@ -35,9 +35,9 @@
 
                         currentBtn.parent( '.fb-image-uploader-container' ).find( '.fb-upload-image-holder' ).css( 'background-image', 'url('+attachment.url+')' );
 
-                        currentBtn.parent( '.fb-image-uploader-container' ).find( '.fb-remove-btn' ).removeClass( 'os-btn-hide' ).addClass( 'os-btn-show' );
+                        currentBtn.parent( '.fb-image-uploader-container' ).find( '.fb-remove-btn' ).removeClass( 'fb-btn-hide' ).addClass( 'fb-btn-show' );
 
-                        currentBtn.removeClass( 'os-btn-show' ).addClass( 'os-btn-hide' );
+                        currentBtn.removeClass( 'fb-btn-show' ).addClass( 'fb-btn-hide' );
 
                     } else {
 
@@ -61,9 +61,9 @@
 
             jQuery( this ).parent( '.fb-image-uploader-container' ).find( '.fb-upload-image-holder' ).css( 'background-image', 'url()' );
 
-            jQuery( this ).parent( '.fb-image-uploader-container' ).find( '.fb-upload-btn' ).removeClass( 'os-btn-hide' ).addClass( 'os-btn-show' );
+            jQuery( this ).parent( '.fb-image-uploader-container' ).find( '.fb-upload-btn' ).removeClass( 'fb-btn-hide' ).addClass( 'fb-btn-show' );
 
-            jQuery( this ).removeClass( 'os-btn-show' ).addClass( 'os-btn-hide' );
+            jQuery( this ).removeClass( 'fb-btn-show' ).addClass( 'fb-btn-hide' );
         } );
 	} );
 
