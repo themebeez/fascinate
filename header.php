@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 	<?php 
-	if( class_exists( 'wp_body_open' ) ) { 
+	if( function_exists( 'wp_body_open' ) ) { 
 		wp_body_open(); 
 	} 
 	?>
@@ -196,3 +196,5 @@
 	            </div><!-- .header-bottom -->
 	        </div><!-- .header-inner -->
 	    </header><!-- .fb-general-header.header-style-1 -->
+
+	    <div id="content" class="site-content">

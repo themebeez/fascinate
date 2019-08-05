@@ -10,6 +10,7 @@
  */
 
 ?>
+        </div>
 
 		<footer class="footer dark secondary-widget-area">
             <div class="footer-inner">
