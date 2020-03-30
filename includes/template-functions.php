@@ -323,22 +323,22 @@ if( ! function_exists( 'fascinate_breadcrumb_wrapper' ) ) :
                 	<?php
                 	if( is_404() ) {
 	                	?>
-	                	<h2 class="page-title"><?php esc_html_e( '404 - Page Not Found', 'fascinate' ); ?></h2>
+	                	<h1 class="page-title"><?php esc_html_e( '404 - Page Not Found', 'fascinate' ); ?></h1>
 	                	<?php
 	                }
 
 	                if( is_archive() ) {
-	                	the_archive_title( '<h2 class="page-title">', '</h2>' );
+	                	the_archive_title( '<h1 class="page-title">', '</h1>' );
 	                }
 
 	                if( is_search() ) {
 	                	?>
-	                	<h2 class="page-title">
+	                	<h1 class="page-title">
 	                		<?php
 							/* translators: %s: search query. */
 							printf( esc_html__( 'Search Results for: %s', 'fascinate' ), '<span>' . get_search_query() . '</span>' );
 							?>
-	                	</h2>
+	                	</h1>
 	                	<?php
 	                }
 
@@ -348,7 +348,7 @@ if( ! function_exists( 'fascinate_breadcrumb_wrapper' ) ) :
 		            		the_post();
 		            		?>
 		            		<div class="the-title">
-			                    <h2 class="page-title"><?php the_title(); ?></h2>
+			                    <h1 class="page-title"><?php the_title(); ?></h1>
 			                </div><!-- .the-title -->
 		            		<?php
 		            	endwhile;
@@ -442,7 +442,7 @@ if( ! function_exists( 'fascinate_single_breadcrumb_wrapper' ) ) :
 		            		}
 		                	?>
 			                <div class="the-title">
-			                    <h2 class="page-title"><?php the_title(); ?></h2>
+			                    <h1 class="page-title"><?php the_title(); ?></h1>
 			                </div><!-- .the-title -->
 			                <?php
 			                if( get_post_type() === 'post' ) {

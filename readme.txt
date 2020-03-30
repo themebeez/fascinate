@@ -4,7 +4,7 @@ Contributors: themebeez
 Requires at least: 4.8.0
 Requires PHP: 5.6
 Tested up to: 5.2.4
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, blog, custom-header, theme-options, footer-widgets, editor-style, block-styles, wide-blocks, sticky-post, post-formats
@@ -92,9 +92,15 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 
 == Changelog ==
 
+= 1.0.4 - 31 March, 2020 =
+
+- Fix: Heading tag h1 at single, page, archive, category, 404 & search pages
+
+
 = 1.0.3 - 24 October, 2019 =
 
 - Fix: issue with image size in blog detail
+
 
 = 1.0.2 - 5 August, 2019 =
 
@@ -102,11 +108,13 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 - Issue with wp_body_open() fixed
 - Issue of skip links fixed
 
+
 = 1.0.1 - 30 July, 2019 =
 
 - Issue on image upload field of author widget fixed
 - UGAAM plugin recommended
 - Screenshot has been changed
+
 
 = 1.0.0 - 21, July 2019 =
 
