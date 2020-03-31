@@ -39,8 +39,6 @@ Fascinate is distributed under the terms of the GNU GPL
 
 * Slick http://github.com/kenwheeler/slick, Copyright (c) 2017 Ken Wheeler, [MIT](http://opensource.org/licenses/MIT)
 
-* Retina https://github.com/strues/retinajs, Copyright (c) 2013-2017 Steven Truesdell, John Newman, Ben Atkin, and other contributors, [MIT](http://opensource.org/licenses/MIT)
-
 * Sticky https://github.com/garand/sticky, Copyright 2014-2016 Anthony Garand, [MIT](http://opensource.org/licenses/MIT)
 
 * Theia Sticky Sidebar https://github.com/WeCodePixels/theia-sticky-sidebar, Copyright (c) 2014 Liviu Cristian Mirea Ghiban, [MIT](http://opensource.org/licenses/MIT)
@@ -95,12 +93,13 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 = 1.0.4 - 31 March, 2020 =
 
 - Fix: Heading tag h1 at single, page, archive, category, 404 & search pages
+- Removed: Retins js & scss file
+- Removed: Bootstrap js
 
 
 = 1.0.3 - 24 October, 2019 =
 
 - Fix: issue with image size in blog detail
-
 
 = 1.0.2 - 5 August, 2019 =
 
