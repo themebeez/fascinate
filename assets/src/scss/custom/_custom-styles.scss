@@ -977,7 +977,7 @@ body.page .single-page-style-2 .fb-breadcrumb-wrap {
     padding-top:170px; // Additional padding top for pages 
 }
 
-.single-page-style-2 .single-page-entry article {
+.single-page-style-2 .single-page-entry > .hentry {
     
     position: relative;
     z-index:20;
@@ -986,7 +986,7 @@ body.page .single-page-style-2 .fb-breadcrumb-wrap {
     background:$white;
 }
 
-.single-page-style-2 .single-page-entry article.article-with-sidebar {
+.single-page-style-2 .single-page-entry > .hentry.article-with-sidebar {
     
     padding: 40px;
 }
