@@ -3,8 +3,8 @@
 Contributors: themebeez
 Requires at least: 4.8.0
 Requires PHP: 5.6
-Tested up to: 5.2.4
-Stable tag: 1.0.4
+Tested up to: 5.4.1
+Stable tag: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, blog, custom-header, theme-options, footer-widgets, editor-style, block-styles, wide-blocks, sticky-post, post-formats
@@ -89,6 +89,10 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 
 
 == Changelog ==
+
+= 1.0.5 - 05 May, 2020 =
+
+- Fix: Padding issue with article tag on single layout two
 
 = 1.0.4 - 31 March, 2020 =
 

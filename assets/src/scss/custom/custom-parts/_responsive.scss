@@ -826,13 +826,13 @@
 		color:$primary_color;
 	}
 
-	.single-page-style-2 .single-page-entry article {
+	.single-page-style-2 .single-page-entry > .hentry {
 
 		margin-top: 0px;
 		padding: 50px 50px 30px 50px;
 	}
 
-	.single-page-style-2 .single-page-entry article.article-with-sidebar {
+	.single-page-style-2 .single-page-entry > .hentry.article-with-sidebar {
 
 		padding: 0px;
 	}
