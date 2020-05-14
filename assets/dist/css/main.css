@@ -13972,9 +13972,12 @@ header .social-icons ul {
 header .site-title {
   font-weight: 800;
   font-size: 52px;
-  padding-bottom: 10px;
+  padding-bottom: 10px; }
+
+header span.site-title {
   font-family: "Oswald", sans-serif;
-  line-height: 1.2; }
+  line-height: 1.1;
+  display: block; }
 
 .header-style-1 .header-top .row {
   -webkit-box-align: center;
