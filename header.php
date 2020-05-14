@@ -152,13 +152,42 @@
 	                    <div class="site-branding">
 	                    	<?php
 	                    	if( has_custom_logo() ) :
+	                    		if( is_home() || is_front_page() ) :
+		                    		?>
+		                    		<h1 class="site-logo">
+			                    	<?php
+			                    endif;
 
-	                    		the_custom_logo();
+			                    	the_custom_logo();
+			                  
+			                    if( is_home() ) :
+		                    		?>
+		                    		</h1>
+			                    	<?php
+			                    endif;
 	                    	else :
-	                    		?>
-	                    		<h1 class="site-title">
+	                    		if( is_home() || is_front_page() ) :
+		                    		?>
+		                    		<h1 class="site-title">
+		                    		<?php
+		                    	else :
+		                    		?>
+		                    		<span class="site-title">
+		                    		<?php
+		                    	endif;
+		                    	?>
 	                    			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-	                    		</h1><!-- .site-title -->
+	                    		<?php
+	                    		if( is_home() ) :
+		                    		?>
+		                    		</h1>
+		                    		<?php
+		                    	else :
+		                    		?>
+		                    		</span>
+		                    		<?php
+		                    	endif;
+		                    	?>
 	                    		<?php
 	                        	$fascinate_description = get_bloginfo( 'description', 'display' );
 								if ( $fascinate_description || is_customize_preview() ) :
