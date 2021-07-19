@@ -228,9 +228,9 @@ if( ! class_exists( 'Fascinate_Post_Widget' ) ) :
 
             $instance['post_no']    = absint( $new_instance['post_no'] );
 
-            $instance['display_date']    = wp_validate_boolean( $new_instance['display_date'] );
+            $instance['display_date']    = isset( $new_instance['display_date'] ) ? true : false;
             
-            $instance['dispaly_comments_no']    = wp_validate_boolean( $new_instance['dispaly_comments_no'] );
+            $instance['dispaly_comments_no']    = isset( $new_instance['display_comments_no'] ) ? true : false;
 
             $instance['layout']    = sanitize_text_field( $new_instance['layout'] );
 
