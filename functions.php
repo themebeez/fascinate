@@ -99,6 +99,14 @@ if ( ! function_exists( 'fascinate_setup' ) ) :
 		add_theme_support( 'align-wide' );
 		add_theme_support( 'wp-block-styles' );
 		add_theme_support( 'responsive-embeds' );
+
+
+		/**
+		 * Remove block widget support in WordPress version 5.8 & later 
+		 *
+		 * @link https://make.wordpress.org/core/2021/06/29/block-based-widgets-editor-in-wordpress-5-8/
+		 */
+		remove_theme_support( 'widgets-block-editor' );
 	}
 endif;
 add_action( 'after_setup_theme', 'fascinate_setup' );

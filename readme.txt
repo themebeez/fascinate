@@ -1,10 +1,10 @@
 === Fascinate ===
 
 Contributors: themebeez
-Requires at least: 4.8.0
+Requires at least: 5.0
 Requires PHP: 5.6
-Tested up to: 5.4.1
-Stable tag: 1.0.6
+Tested up to: 5.8
+Stable tag: 1.0.7
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, blog, custom-header, theme-options, footer-widgets, editor-style, block-styles, wide-blocks, sticky-post, post-formats
@@ -17,7 +17,7 @@ Fascinate is a slick, modern, minimal, and beautifully designed Gutenberg compat
 
 == License ==
 
-Fascinate WordPress Theme, Copyright (C) 2020, themebeez.
+Fascinate WordPress Theme, Copyright (C) 2021, themebeez.
 Fascinate is distributed under the terms of the GNU GPL
 
 
@@ -89,6 +89,11 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 
 
 == Changelog ==
+
+= 1.0.7 - 19 July, 2021 = 
+
+- Added: Theme support - remove_theme_support( 'widgets-block-editor' )
+- Fix: Minor PHP issue
 
 = 1.0.6 - 14 May, 2020 =
 
