@@ -53,7 +53,7 @@ if( ! class_exists( 'Fascinate_Author_Widget' ) ) {
 
                         $author_image_url = wp_get_attachment_image_src( $author_image_id, 'fascinate-thumbnail-two' );
 
-                        $author_image_url = $author_image_url[0];
+                        $author_image_url = isset( $author_image_url[0] ) ? $author_image_url[0] : '';
 
                         if( !empty( $author_image_url ) ) {
                             ?>
@@ -197,17 +197,17 @@ if( ! class_exists( 'Fascinate_Author_Widget' ) ) {
      
             $instance = $old_instance;
 
-            $instance['title']              = sanitize_text_field( $new_instance['title'] );
+            $instance['title']              = isset( $new_instance['title'] ) ? sanitize_text_field( $new_instance['title'] ) : '';
 
-            $instance['author_name']        = sanitize_text_field( $new_instance['author_name'] );
+            $instance['author_name']        = isset( $new_instance['author_name'] ) ? sanitize_text_field( $new_instance['author_name'] ) : '';
 
-            $instance['author_description'] = sanitize_text_field( $new_instance['author_description'] );
+            $instance['author_description'] = isset( $new_instance['author_description'] ) ? sanitize_text_field( $new_instance['author_description'] ) : '';
 
-            $instance['author_image']       = esc_url_raw( $new_instance['author_image'] );
+            $instance['author_image']       = isset( $new_instance['author_image'] ) ? esc_url_raw( $new_instance['author_image'] ) : '';
 
-            $instance['author_link_title']  = sanitize_text_field( $new_instance['author_link_title'] );
+            $instance['author_link_title']  = isset( $new_instance['author_link_title'] ) ? sanitize_text_field( $new_instance['author_link_title'] ) : '';
 
-            $instance['author_link']        = esc_url_raw( $new_instance['author_link'] );
+            $instance['author_link']        = isset( $new_instance['author_link'] ) ? esc_url_raw( $new_instance['author_link'] ) : '';
 
             return $instance;
         } 

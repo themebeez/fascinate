@@ -288,3 +288,8 @@ require get_template_directory() . '/widgets/fascinate-author-widget.php';
  * Load Social Links Widget.
  */
 require get_template_directory() . '/widgets/fascinate-social-widget.php';
+
+/**
+ * Load Everest Backup Plugin recommendation notice.
+ */
+require get_template_directory() . '/includes/ebwp-notice.php';
