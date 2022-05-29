@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Fascinate 1.0.7\n"
+"Project-Id-Version: Fascinate 1.0.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/fascinate\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-05-18T11:44:44+00:00\n"
+"POT-Creation-Date: 2022-05-29T11:42:20+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: fascinate\n"
@@ -519,6 +519,45 @@ msgstr ""
 #: includes/custom-fields.php:128
 #: widgets/fascinate-post-widget.php:181
 msgid "Layout Two"
+msgstr ""
+
+#: includes/ebwp-notice.php:288
+msgid "Thank You !!!"
+msgstr ""
+
+#. translators: %s is the Everest Backup plugin name wrapped with html.
+#: includes/ebwp-notice.php:295
+msgid "%s has been installed and activated successfully."
+msgstr ""
+
+#: includes/ebwp-notice.php:354
+msgid "Your website is super precious !"
+msgstr ""
+
+#. translators: %s is the Everest Backup plugin name wrapped with html.
+#: includes/ebwp-notice.php:361
+msgid "The best way to protect your website is by using %s plugin to keep your data safe and secure to remote storage.."
+msgstr ""
+
+#. translators: %s is the Everest Backup plugin name wrapped with html.
+#: includes/ebwp-notice.php:364
+msgid "You are just one step away. Please activate %s plugin and backup your website to keep your data safe and secure."
+msgstr ""
+
+#: includes/ebwp-notice.php:378
+msgid "Install & Activate"
+msgstr ""
+
+#: includes/ebwp-notice.php:379
+msgid "Remind me later"
+msgstr ""
+
+#: includes/ebwp-notice.php:380
+msgid "Don't show this again"
+msgstr ""
+
+#: includes/ebwp-notice.php:386
+msgid "Activate Plugin"
 msgstr ""
 
 #: includes/helper-functions.php:356
