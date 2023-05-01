@@ -90,6 +90,18 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 
 == Changelog ==
 
+= 1.0.9 - ? April, 2023 =
+
+- Removed: Everest backup plugin recommendation.
+- Removed: Options, `Enable Cursive Site Title`, `Enable Cursive Post Meta`, and `Enable Lazy Loading`.
+- Removed: jQuery plugin, Lazysize.
+- Fixed: Issue with customizer options, `Display Featured Image`.
+- Fixed: PHP error - `PHP Fatal error: Uncaught ArgumentCountError: Too few arguments to function get_day_link(), 1 passed in /wp-content/themes/cream-magazine/third-party/breadcrumbs.php on line 802 and exactly 3 expected.`
+- Fixed:  Missing `=` after an instance of `value` attribute in an `input` tag in `value"' . get_search_query() . '"`.
+- Updated: YouTube icon in social links of header and social widget.
+- Updated: WPCS maintained.
+- Added: Typography options for body, headings, site title, and author meta.
+
 = 1.0.8 - 29 May, 2022 = 
 
 - Update: Everest Backup plugin recommendation notice added.

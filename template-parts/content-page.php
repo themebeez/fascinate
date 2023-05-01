@@ -16,23 +16,27 @@ $display_featured_image = fascinate_get_option( 'display_post_feat_img' );
 	</header><!-- .entry-header -->
 
 	<?php
-	if( $display_featured_image == true ) {
-		fascinate_post_thumbnail(); 
-	} 
+	if ( true === $display_featured_image || true === $display_featured_image ) {
+		fascinate_post_thumbnail();
+	}
 	?>
 
 	<div class="entry-content">
 		<?php
 		the_content();
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'fascinate' ),
-			'after'  => '</div>',
-		) );
+		wp_link_pages(
+			array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'fascinate' ),
+				'after'  => '</div>',
+			)
+		);
 		?>
 	</div><!-- .entry-content -->
 
-	<?php if ( get_edit_post_link() ) : ?>
+	<?php
+	if ( get_edit_post_link() ) {
+		?>
 		<footer class="entry-footer">
 			<?php
 			edit_post_link(
@@ -53,5 +57,7 @@ $display_featured_image = fascinate_get_option( 'display_post_feat_img' );
 			);
 			?>
 		</footer><!-- .entry-footer -->
-	<?php endif; ?>
+		<?php
+	}
+	?>
 </article><!-- #post-<?php the_ID(); ?> -->

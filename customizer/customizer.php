@@ -11,7 +11,7 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function fascinate_customize_register( $wp_customize ) {
-	
+
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -19,32 +19,40 @@ function fascinate_customize_register( $wp_customize ) {
 	/**
 	 * Load custom customizer control for radio image control
 	 */
-	require get_template_directory() . '/customizer/controls/class-customizer-radio-image-control.php';
+	require get_template_directory() . '/customizer/controls/class-fascinate-customize-radio-image-control.php';
 
 	/**
 	 * Load custom customizer control for toggle control
 	 */
-	require get_template_directory() . '/customizer/controls/class-customizer-toggle-control.php';
+	require get_template_directory() . '/customizer/controls/class-fascinate-customize-toggle-control.php';
 
 	/**
 	 * Load custom customizer control for slider control
 	 */
-	require get_template_directory() . '/customizer/controls/class-customizer-slider-control.php';
+	require get_template_directory() . '/customizer/controls/class-fascinate-customize-slider-control.php';
 
 	/**
 	 * Load customizer functions for intializing theme upsell
 	 */
-	require get_template_directory() . '/customizer/controls/class-customizer-pro.php';
+	require get_template_directory() . '/customizer/controls/class-fascinate-customize-upsell.php';
 
-	$wp_customize->register_section_type( 'Fascinate_Pro' );
+	// Typography Control.
+	require get_template_directory() . '/customizer/controls/typography/class-fascinate-customize-typography-control.php';
+	$wp_customize->register_section_type( 'Fascinate_Customize_Typography_Control' );
+
+	$wp_customize->register_section_type( 'Fascinate_Customize_Upsell' );
 
 	$wp_customize->add_section(
-		new Fascinate_Pro( $wp_customize, 'facinate_pro', array(
-			'title'       	=> esc_html__( 'Fascinate Pro', 'fascinate' ),
-			'button_text' 	=> esc_html__( 'Go Pro',        'fascinate' ),
-			'button_url'  	=> 'https://themebeez.com/themes/fascinate-pro/?ref=upsell-btn',
-			'priority'		=> 1,
-		) )
+		new Fascinate_Customize_Upsell(
+			$wp_customize,
+			'facinate_pro',
+			array(
+				'title'       => esc_html__( 'Fascinate Pro', 'fascinate' ),
+				'button_text' => esc_html__( 'Go Pro', 'fascinate' ),
+				'button_url'  => 'https://themebeez.com/themes/fascinate-pro/?ref=upsell-btn',
+				'priority'    => 1,
+			)
+		)
 	);
 
 	/**
@@ -55,25 +63,30 @@ function fascinate_customize_register( $wp_customize ) {
 	/**
 	 * Load customizer functions for intializing panel, section, and control fields
 	 */
-	require get_template_directory() . '/customizer/functions/reuseable-callback.php';		
+	require get_template_directory() . '/customizer/functions/reuseable-callback.php';
 
 	/**
-	 * Load customizer functions for loading control field's choices, declaration of panel, section 
-	 * and control fields
+	 * Load customizer functions for loading control field's choices, declaration of panel, section and control fields.
 	 */
 	require get_template_directory() . '/customizer/functions/customizer-fields.php';
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
 
-		$wp_customize->selective_refresh->add_partial( 'blogname', array(
-			'selector'        => '.site-title a',
-			'render_callback' => 'fascinate_customize_partial_blogname',
-		) );
+		$wp_customize->selective_refresh->add_partial(
+			'blogname',
+			array(
+				'selector'        => '.site-title a',
+				'render_callback' => 'fascinate_customize_partial_blogname',
+			)
+		);
 
-		$wp_customize->selective_refresh->add_partial( 'blogdescription', array(
-			'selector'        => '.site-description',
-			'render_callback' => 'fascinate_customize_partial_blogdescription',
-		) );
+		$wp_customize->selective_refresh->add_partial(
+			'blogdescription',
+			array(
+				'selector'        => '.site-description',
+				'render_callback' => 'fascinate_customize_partial_blogdescription',
+			)
+		);
 	}
 }
 add_action( 'customize_register', 'fascinate_customize_register' );
@@ -123,7 +136,13 @@ function fascinate_customize_partial_blogdescription() {
  */
 function fascinate_customize_preview_js() {
 
-	wp_enqueue_script( 'fascinate-customizer', get_template_directory_uri() . '/customizer/assets/js/customizer.js', array( 'customize-preview' ), FASCINATE_VERSION, true );
+	wp_enqueue_script(
+		'fascinate-customizer',
+		get_template_directory_uri() . '/customizer/assets/js/customizer.js',
+		array( 'customize-preview' ),
+		FASCINATE_VERSION,
+		true
+	);
 }
 add_action( 'customize_preview_init', 'fascinate_customize_preview_js' );
 
@@ -134,27 +153,43 @@ add_action( 'customize_preview_init', 'fascinate_customize_preview_js' );
  */
 function fascinate_enqueues() {
 
-	wp_enqueue_style( 'fascinate-customizer-style', get_template_directory_uri() . '/customizer/assets/css/customizer-style.css' );
-
-	wp_register_script( 'fascinate-customizer-script', get_template_directory_uri() . '/customizer/assets/js/customizer-script.js', array( 'jquery' ), FASCINATE_VERSION, true );
-
-	// Localize the script with new data
-	$titles = array(
-	    'logo_title' => esc_html__( 'Logo Setup', 'fascinate' ),
-	    'favicon_title' => esc_html__( 'Favicon', 'fascinate' ),
-	    'body_bg_title' => esc_html__( 'Body Background', 'fascinate' ),
-	    'header_bg_title' => esc_html__( 'Background Image', 'fascinate' ),
-	    'carousel_content_title' => esc_html__( 'Carousel Content', 'fascinate' ),
-	    'carousel_layout_title' => esc_html__( 'Carousel Layout', 'fascinate' ),
-	    'social_links_title' => esc_html__( 'Social Links', 'fascinate' ),
-	    'post_content_title' => esc_html__( 'Post Content', 'fascinate' ),
-	    'author_section_title' => esc_html__( 'Author Section', 'fascinate' ),
-	    'related_section_title' => esc_html__( 'Related Section', 'fascinate' ),
-	    'sidebar_title' => esc_html__( 'Sidebar', 'fascinate' ),
+	wp_enqueue_style(
+		'fascinate-customizer-style',
+		get_template_directory_uri() . '/customizer/assets/css/customizer-style.css',
+		array(),
+		FASCINATE_VERSION,
+		'all'
 	);
 
-	wp_localize_script( 'fascinate-customizer-script', 'customizer_titles', $titles );
-	 
+	wp_register_script(
+		'fascinate-customizer-script',
+		get_template_directory_uri() . '/customizer/assets/js/customizer-script.js',
+		array( 'jquery' ),
+		FASCINATE_VERSION,
+		true
+	);
+
+	// Localize the script with new data.
+	$titles = array(
+		'logo_title'             => esc_html__( 'Logo Setup', 'fascinate' ),
+		'favicon_title'          => esc_html__( 'Favicon', 'fascinate' ),
+		'body_bg_title'          => esc_html__( 'Body Background', 'fascinate' ),
+		'header_bg_title'        => esc_html__( 'Background Image', 'fascinate' ),
+		'carousel_content_title' => esc_html__( 'Carousel Content', 'fascinate' ),
+		'carousel_layout_title'  => esc_html__( 'Carousel Layout', 'fascinate' ),
+		'social_links_title'     => esc_html__( 'Social Links', 'fascinate' ),
+		'post_content_title'     => esc_html__( 'Post Content', 'fascinate' ),
+		'author_section_title'   => esc_html__( 'Author Section', 'fascinate' ),
+		'related_section_title'  => esc_html__( 'Related Section', 'fascinate' ),
+		'sidebar_title'          => esc_html__( 'Sidebar', 'fascinate' ),
+	);
+
+	wp_localize_script(
+		'fascinate-customizer-script',
+		'customizer_titles',
+		$titles
+	);
+
 	// Enqueued script with localized data.
 	wp_enqueue_script( 'fascinate-customizer-script' );
 }
