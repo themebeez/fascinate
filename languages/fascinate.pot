@@ -1,4 +1,4 @@
-# Copyright (C) 2022 themebeez
+# Copyright (C) 2023 themebeez
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
@@ -9,9 +9,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-05-29T11:42:20+00:00\n"
+"POT-Creation-Date: 2023-05-01T08:20:20+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.6.0\n"
+"X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: fascinate\n"
 
 #. Theme Name of the theme
@@ -59,435 +59,462 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:66
+#: comments.php:68
 msgid "Comments are closed."
 msgstr ""
 
-#: customizer/customizer.php:43
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:219
+msgid "Font Family"
+msgstr ""
+
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:226
+msgid "Websafe Fonts"
+msgstr ""
+
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:245
+msgid "Google Fonts"
+msgstr ""
+
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:276
+msgid "Variants"
+msgstr ""
+
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:301
+msgid "Font Weight"
+msgstr ""
+
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:337
+msgid "Font Size"
+msgstr ""
+
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:605
+msgid "Line Height"
+msgstr ""
+
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:702
+msgid "Letter Spacing"
+msgstr ""
+
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:971
+msgid "Text Style"
+msgstr ""
+
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:1057
+msgid "Text Transform"
+msgstr ""
+
+#: customizer/customizer.php:50
 msgid "Fascinate Pro"
 msgstr ""
 
-#: customizer/customizer.php:44
+#: customizer/customizer.php:51
 msgid "Go Pro"
 msgstr ""
 
-#: customizer/customizer.php:143
+#: customizer/customizer.php:174
 msgid "Logo Setup"
 msgstr ""
 
-#: customizer/customizer.php:144
+#: customizer/customizer.php:175
 msgid "Favicon"
 msgstr ""
 
-#: customizer/customizer.php:145
+#: customizer/customizer.php:176
 msgid "Body Background"
 msgstr ""
 
-#: customizer/customizer.php:146
+#: customizer/customizer.php:177
 msgid "Background Image"
 msgstr ""
 
-#: customizer/customizer.php:147
+#: customizer/customizer.php:178
 msgid "Carousel Content"
 msgstr ""
 
-#: customizer/customizer.php:148
-#: customizer/functions/customizer-fields.php:239
+#: customizer/customizer.php:179
+#: customizer/functions/customizer-fields.php:413
 msgid "Carousel Layout"
 msgstr ""
 
-#: customizer/customizer.php:149
+#: customizer/customizer.php:180
 msgid "Social Links"
 msgstr ""
 
-#: customizer/customizer.php:150
+#: customizer/customizer.php:181
 msgid "Post Content"
 msgstr ""
 
-#: customizer/customizer.php:151
+#: customizer/customizer.php:182
 msgid "Author Section"
 msgstr ""
 
-#: customizer/customizer.php:152
+#: customizer/customizer.php:183
 msgid "Related Section"
 msgstr ""
 
-#: customizer/customizer.php:153
-#: functions.php:137
+#: customizer/customizer.php:184
+#: functions.php:154
 msgid "Sidebar"
 msgstr ""
 
-#: customizer/functions/customizer-choices.php:46
+#: customizer/functions/customizer-choices.php:50
 msgid "Boxed Layout"
 msgstr ""
 
-#: customizer/functions/customizer-choices.php:47
+#: customizer/functions/customizer-choices.php:51
 msgid "Full Width Layout"
 msgstr ""
 
-#: customizer/functions/customizer-choices.php:96
+#: customizer/functions/customizer-choices.php:98
 msgid "Show Default View"
 msgstr ""
 
-#: customizer/functions/customizer-choices.php:97
+#: customizer/functions/customizer-choices.php:99
 msgid "Toggleable Canvas View"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:12
+#: customizer/functions/customizer-fields.php:25
 msgid "Site Header"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:18
+#: customizer/functions/customizer-fields.php:31
 msgid "Site Pages"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:43
-#: customizer/functions/customizer-fields.php:210
+#: customizer/functions/customizer-fields.php:65
+#: customizer/functions/customizer-fields.php:253
 msgid "Site Layout"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:50
+#: customizer/functions/customizer-fields.php:72
 msgid "Site Preloader"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:57
+#: customizer/functions/customizer-fields.php:79
 msgid "Site Logo"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:64
+#: customizer/functions/customizer-fields.php:86
 msgid "Site Favicon"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:71
+#: customizer/functions/customizer-fields.php:93
 msgid "Top Header"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:78
+#: customizer/functions/customizer-fields.php:100
 msgid "Site Carousel"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:85
+#: customizer/functions/customizer-fields.php:107
 msgid "Blog Page"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:92
+#: customizer/functions/customizer-fields.php:114
 msgid "Archive Page"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:99
+#: customizer/functions/customizer-fields.php:121
 msgid "Search Page"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:106
+#: customizer/functions/customizer-fields.php:128
 msgid "Post Single"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:113
+#: customizer/functions/customizer-fields.php:135
 msgid "Page Single"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:120
+#: customizer/functions/customizer-fields.php:142
 msgid "Breadcrumb"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:127
-msgid "Site Image"
-msgstr ""
-
-#: customizer/functions/customizer-fields.php:134
+#: customizer/functions/customizer-fields.php:149
 msgid "Site Sidebar"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:141
+#: customizer/functions/customizer-fields.php:156
 msgid "Site Footer"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:148
+#: customizer/functions/customizer-fields.php:163
 msgid "Post Excerpt"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:155
+#: customizer/functions/customizer-fields.php:170
 msgid "Post Meta"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:180
+#: customizer/functions/customizer-fields.php:177
+msgid "Site Typography"
+msgstr ""
+
+#: customizer/functions/customizer-fields.php:212
 msgid "Site Title Color"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:183
+#: customizer/functions/customizer-fields.php:215
 msgid "Site Background"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:193
+#: customizer/functions/customizer-fields.php:225
 msgid "Header is used as background image for breadcrumb"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:203
+#: customizer/functions/customizer-fields.php:239
 msgid "Enable Preloader"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:218
+#: customizer/functions/customizer-fields.php:268
 msgid "Display Top Header"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:220
-#: widgets/fascinate-social-widget.php:136
+#: customizer/functions/customizer-fields.php:276
+#: widgets/class-fascinate-social-widget.php:162
 msgid "Facebook Link"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:221
-#: widgets/fascinate-social-widget.php:143
+#: customizer/functions/customizer-fields.php:284
+#: widgets/class-fascinate-social-widget.php:169
 msgid "Twitter Link"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:222
-#: widgets/fascinate-social-widget.php:150
+#: customizer/functions/customizer-fields.php:292
+#: widgets/class-fascinate-social-widget.php:176
 msgid "Instagram Link"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:223
-#: widgets/fascinate-social-widget.php:157
+#: customizer/functions/customizer-fields.php:300
+#: widgets/class-fascinate-social-widget.php:183
 msgid "Pinterest Link"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:224
-#: widgets/fascinate-social-widget.php:164
+#: customizer/functions/customizer-fields.php:308
+#: widgets/class-fascinate-social-widget.php:190
 msgid "Youtube Link"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:225
+#: customizer/functions/customizer-fields.php:316
 msgid "Linkedin Link"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:226
-#: widgets/fascinate-social-widget.php:178
+#: customizer/functions/customizer-fields.php:324
+#: widgets/class-fascinate-social-widget.php:204
 msgid "VK Link"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:228
-msgid "Enable Cursive Site Title"
+#: customizer/functions/customizer-fields.php:332
+msgid "Enable Different Font for Site Title"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:229
+#: customizer/functions/customizer-fields.php:360
 msgid "Logo Section Padding"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:229
+#: customizer/functions/customizer-fields.php:361
 msgid "Set padding on top and bottom of logo section. The range of value for padding is 0-50."
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:235
+#: customizer/functions/customizer-fields.php:377
 msgid "Display Carousel"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:236
+#: customizer/functions/customizer-fields.php:385
 msgid "Carousel Category"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:237
+#: customizer/functions/customizer-fields.php:394
 msgid "Number of Carousel Items"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:237
+#: customizer/functions/customizer-fields.php:395
 msgid "Maximum 5 items and minimum 1 item can be set."
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:238
+#: customizer/functions/customizer-fields.php:405
 msgid "Display Carousel Content"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:240
+#: customizer/functions/customizer-fields.php:422
 msgid "Enable Spacing"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:241
+#: customizer/functions/customizer-fields.php:430
 msgid "Carousel Height"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:241
+#: customizer/functions/customizer-fields.php:431
 msgid "This height will be displayed for devices with display width 992px. The range of value for carousel height is 400-700."
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:249
-#: customizer/functions/customizer-fields.php:262
-#: customizer/functions/customizer-fields.php:274
-#: customizer/functions/customizer-fields.php:287
-#: customizer/functions/customizer-fields.php:305
+#: customizer/functions/customizer-fields.php:447
+#: customizer/functions/customizer-fields.php:502
+#: customizer/functions/customizer-fields.php:557
+#: customizer/functions/customizer-fields.php:620
+#: customizer/functions/customizer-fields.php:727
 msgid "Display Featured Image"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:250
-#: customizer/functions/customizer-fields.php:263
-#: customizer/functions/customizer-fields.php:275
+#: customizer/functions/customizer-fields.php:455
+#: customizer/functions/customizer-fields.php:510
+#: customizer/functions/customizer-fields.php:565
 msgid "Display Post Categories"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:251
-#: customizer/functions/customizer-fields.php:264
-#: customizer/functions/customizer-fields.php:276
+#: customizer/functions/customizer-fields.php:463
+#: customizer/functions/customizer-fields.php:518
+#: customizer/functions/customizer-fields.php:573
 msgid "Display Post Date"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:252
-#: customizer/functions/customizer-fields.php:265
-#: customizer/functions/customizer-fields.php:277
+#: customizer/functions/customizer-fields.php:471
+#: customizer/functions/customizer-fields.php:526
+#: customizer/functions/customizer-fields.php:581
 msgid "Display Post Author"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:253
-#: customizer/functions/customizer-fields.php:266
-#: customizer/functions/customizer-fields.php:278
+#: customizer/functions/customizer-fields.php:479
+#: customizer/functions/customizer-fields.php:534
+#: customizer/functions/customizer-fields.php:589
 msgid "Enable Dropcap"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:254
-#: customizer/functions/customizer-fields.php:267
-#: customizer/functions/customizer-fields.php:279
-#: includes/custom-fields.php:27
+#: customizer/functions/customizer-fields.php:487
+#: customizer/functions/customizer-fields.php:542
+#: customizer/functions/customizer-fields.php:597
+#: includes/class-fascinate-custom-fields.php:40
 msgid "Sidebar Position"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:286
+#: customizer/functions/customizer-fields.php:612
 msgid "Display Categories"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:288
+#: customizer/functions/customizer-fields.php:628
 msgid "Display Posted Date"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:289
+#: customizer/functions/customizer-fields.php:636
 msgid "Display Author Name"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:290
+#: customizer/functions/customizer-fields.php:644
 msgid "Display Tags"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:291
+#: customizer/functions/customizer-fields.php:652
 msgid "Comments View"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:292
-#: customizer/functions/customizer-fields.php:293
+#: customizer/functions/customizer-fields.php:661
+#: customizer/functions/customizer-fields.php:669
 msgid "Display Section"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:294
+#: customizer/functions/customizer-fields.php:677
 msgid "Section Title"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:295
+#: customizer/functions/customizer-fields.php:685
 msgid "Number of Posts"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:295
+#: customizer/functions/customizer-fields.php:686
 msgid "Maximum 4 items and minimum 1 items can be set."
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:296
+#: customizer/functions/customizer-fields.php:696
 msgid "Display Author Meta"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:297
-#: customizer/functions/customizer-fields.php:306
+#: customizer/functions/customizer-fields.php:704
+#: customizer/functions/customizer-fields.php:735
 msgid "Enable Common Sidebar Position"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:298
-#: customizer/functions/customizer-fields.php:307
+#: customizer/functions/customizer-fields.php:712
+#: customizer/functions/customizer-fields.php:743
 msgid "Common Sidebar Position"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:313
+#: customizer/functions/customizer-fields.php:758
 msgid "Display Breadcrumb"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:319
-msgid "Enable Lazy Loading"
-msgstr ""
-
-#: customizer/functions/customizer-fields.php:327
+#: customizer/functions/customizer-fields.php:772
 msgid "Enable Sticky Sidebar"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:328
+#: customizer/functions/customizer-fields.php:780
 msgid "Enable Sidebar For Small Devices"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:328
+#: customizer/functions/customizer-fields.php:781
 msgid "This option lets you to display or do not display sidebar for devices with width smaller than 992px."
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:330
+#: customizer/functions/customizer-fields.php:789
 msgid "Enable Global Sidebar Position"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:331
+#: customizer/functions/customizer-fields.php:797
 msgid "Global Sidebar Position"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:342
+#: customizer/functions/customizer-fields.php:812
 msgid "Display Scroll Top Button"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:343
+#: customizer/functions/customizer-fields.php:820
 msgid "Copyright Text"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:349
+#: customizer/functions/customizer-fields.php:834
 msgid "Excerpt Length"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:349
+#: customizer/functions/customizer-fields.php:835
 msgid "Maximum excerpt length 40 and minimum excerpt length 20 can be set."
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:355
-msgid "Enable Cursive Post Meta"
-msgstr ""
-
-#: customizer/functions/customizer-fields.php:355
-msgid "This option affects categories and author post metas."
+#: customizer/functions/customizer-fields.php:851
+msgid "Enable Different Font for Author Meta"
 msgstr ""
 
 #. translators: 1: Theme name, 2: Theme author.
-#: footer.php:75
+#: footer.php:80
 msgid "%1$s Theme By %2$s"
 msgstr ""
 
-#. translators: 1: Theme name, 2: Theme author.
-#: footer.php:75
-msgid "Themebeez"
-msgstr ""
-
-#: footer.php:87
+#: footer.php:95
 msgid "Back to top"
 msgstr ""
 
-#: functions.php:54
+#: functions.php:55
 msgid "Main Menu"
 msgstr ""
 
-#: functions.php:55
+#: functions.php:56
 msgid "Top Header Menu"
 msgstr ""
 
-#: functions.php:139
-#: functions.php:149
-#: functions.php:160
-#: functions.php:171
+#: functions.php:156
+#: functions.php:168
+#: functions.php:180
+#: functions.php:192
 msgid "Add widgets here."
 msgstr ""
 
-#: functions.php:147
+#: functions.php:166
 msgid "Footer Left"
 msgstr ""
 
-#: functions.php:158
+#: functions.php:178
 msgid "Footer Middle"
 msgstr ""
 
-#: functions.php:169
+#: functions.php:190
 msgid "Footer Right"
 msgstr ""
 
@@ -495,156 +522,95 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: includes/custom-fields.php:29
+#: includes/class-fascinate-custom-fields.php:49
 msgid "Layout"
 msgstr ""
 
-#: includes/custom-fields.php:52
+#: includes/class-fascinate-custom-fields.php:77
 msgid "Right"
 msgstr ""
 
-#: includes/custom-fields.php:53
+#: includes/class-fascinate-custom-fields.php:78
 msgid "Left"
 msgstr ""
 
-#: includes/custom-fields.php:54
+#: includes/class-fascinate-custom-fields.php:79
 msgid "Fullwidth"
 msgstr ""
 
-#: includes/custom-fields.php:127
-#: widgets/fascinate-post-widget.php:180
+#: includes/class-fascinate-custom-fields.php:164
+#: widgets/class-fascinate-post-widget.php:212
 msgid "Layout One"
 msgstr ""
 
-#: includes/custom-fields.php:128
-#: widgets/fascinate-post-widget.php:181
+#: includes/class-fascinate-custom-fields.php:165
+#: widgets/class-fascinate-post-widget.php:213
 msgid "Layout Two"
 msgstr ""
 
-#: includes/ebwp-notice.php:288
-msgid "Thank You !!!"
-msgstr ""
-
-#. translators: %s is the Everest Backup plugin name wrapped with html.
-#: includes/ebwp-notice.php:295
-msgid "%s has been installed and activated successfully."
-msgstr ""
-
-#: includes/ebwp-notice.php:354
-msgid "Your website is super precious !"
-msgstr ""
-
-#. translators: %s is the Everest Backup plugin name wrapped with html.
-#: includes/ebwp-notice.php:361
-msgid "The best way to protect your website is by using %s plugin to keep your data safe and secure to remote storage.."
-msgstr ""
-
-#. translators: %s is the Everest Backup plugin name wrapped with html.
-#: includes/ebwp-notice.php:364
-msgid "You are just one step away. Please activate %s plugin and backup your website to keep your data safe and secure."
-msgstr ""
-
-#: includes/ebwp-notice.php:378
-msgid "Install & Activate"
-msgstr ""
-
-#: includes/ebwp-notice.php:379
-msgid "Remind me later"
-msgstr ""
-
-#: includes/ebwp-notice.php:380
-msgid "Don't show this again"
-msgstr ""
-
-#: includes/ebwp-notice.php:386
-msgid "Activate Plugin"
-msgstr ""
-
-#: includes/helper-functions.php:356
-msgid "Themebeez Toolkit"
-msgstr ""
-
-#: includes/template-functions.php:326
+#: includes/template-functions.php:334
 msgid "404 - Page Not Found"
 msgstr ""
 
 #. translators: %s: search query.
-#: includes/template-functions.php:339
+#: includes/template-functions.php:347
 msgid "Search Results for: %s"
 msgstr ""
 
-#: includes/template-functions.php:491
+#: includes/template-functions.php:482
 msgid "Prev"
 msgstr ""
 
-#: includes/template-functions.php:492
+#: includes/template-functions.php:483
 msgid "Next"
 msgstr ""
 
-#: includes/template-functions.php:519
+#: includes/template-functions.php:510
 msgid "Next Post"
 msgstr ""
 
-#: includes/template-functions.php:536
+#: includes/template-functions.php:527
 msgid "Previous Post"
 msgstr ""
 
-#: includes/template-tags.php:44
+#: includes/template-tags.php:59
 msgid "d M"
 msgstr ""
 
-#: includes/template-tags.php:44
+#: includes/template-tags.php:59
 msgid "Y"
 msgstr ""
 
 #. translators: %s: post author.
-#: includes/template-tags.php:59
+#: includes/template-tags.php:81
 msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
-#: includes/template-tags.php:84
+#: includes/template-tags.php:113
 msgid "Leave a comment"
 msgstr ""
 
 #. translators: %s: comments number.
-#: includes/template-tags.php:87
+#: includes/template-tags.php:117
 msgid "%s comment"
 msgstr ""
 
 #. translators: %s: comments number.
-#: includes/template-tags.php:91
+#: includes/template-tags.php:124
 msgid "%s comments"
 msgstr ""
 
-#. translators: If there are characters in your language that are not supported by Merriweather, translate this to 'off'. Do not translate into your own language.
-#: includes/theme-functions.php:23
-msgctxt "Poppins font: on or off"
-msgid "on"
-msgstr ""
-
-#. translators: If there are characters in your language that are not supported by Merriweather, translate this to 'off'. Do not translate into your own language.
-#: includes/theme-functions.php:29
-msgctxt "Oswald font: on or off"
-msgid "on"
-msgstr ""
-
-#. translators: If there are characters in your language that are not supported by Merriweather, translate this to 'off'. Do not translate into your own language.
-#: includes/theme-functions.php:35
-msgctxt "Pacifico font: on or off"
-msgid "on"
-msgstr ""
-
-#: includes/theme-functions.php:68
+#: includes/theme-functions.php:22
 msgid "Add Menu"
 msgstr ""
 
-#: includes/theme-functions.php:92
+#: includes/theme-functions.php:48
 msgctxt "place-holder"
 msgid "Type here to search"
 msgstr ""
 
-#: single.php:55
+#: single.php:54
 msgid "Load Comments"
 msgstr ""
 
@@ -657,116 +623,116 @@ msgstr ""
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: template-parts/content-none.php:33
+#: template-parts/content-none.php:32
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
-#: template-parts/content-none.php:37
+#: template-parts/content-none.php:36
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:29
-#: template-parts/single/single-one.php:42
-#: template-parts/single/single-two.php:23
+#: template-parts/content-page.php:30
+#: template-parts/single/single-one.php:48
+#: template-parts/single/single-two.php:26
 msgid "Pages:"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content-page.php:42
-#: template-parts/single/single-one.php:61
-#: template-parts/single/single-two.php:42
+#: template-parts/content-page.php:46
+#: template-parts/single/single-one.php:68
+#: template-parts/single/single-two.php:46
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: template-parts/content-search.php:39
-#: template-parts/content.php:54
+#: template-parts/content-search.php:40
+#: template-parts/content.php:53
 msgid "Continue Reading"
 msgstr ""
 
-#: third-party/breadcrumbs.php:264
+#: third-party/breadcrumbs.php:260
 msgid "Browse:"
 msgstr ""
 
-#: third-party/breadcrumbs.php:265
+#: third-party/breadcrumbs.php:261
 msgctxt "breadcrumbs aria label"
 msgid "Breadcrumbs"
 msgstr ""
 
-#: third-party/breadcrumbs.php:266
+#: third-party/breadcrumbs.php:262
 msgid "Home"
 msgstr ""
 
-#: third-party/breadcrumbs.php:267
+#: third-party/breadcrumbs.php:263
 msgid "404 Not Found"
 msgstr ""
 
-#: third-party/breadcrumbs.php:268
+#: third-party/breadcrumbs.php:264
 msgid "Archives"
 msgstr ""
 
 #. Translators: %s is the search query.
-#: third-party/breadcrumbs.php:270
+#: third-party/breadcrumbs.php:266
 msgid "Search results for: %s"
 msgstr ""
 
 #. Translators: %s is the page number.
-#: third-party/breadcrumbs.php:272
+#: third-party/breadcrumbs.php:268
 msgid "Page %s"
 msgstr ""
 
 #. Translators: %s is the page number.
-#: third-party/breadcrumbs.php:274
+#: third-party/breadcrumbs.php:270
 msgid "Comment Page %s"
 msgstr ""
 
 #. Translators: Minute archive title. %s is the minute time format.
-#: third-party/breadcrumbs.php:276
+#: third-party/breadcrumbs.php:272
 msgid "Minute %s"
 msgstr ""
 
 #. Translators: Weekly archive title. %s is the week date format.
-#: third-party/breadcrumbs.php:278
+#: third-party/breadcrumbs.php:274
 msgid "Week %s"
 msgstr ""
 
-#: third-party/breadcrumbs.php:738
+#: third-party/breadcrumbs.php:779
 msgctxt "minute and hour archives time format"
 msgid "g:i a"
 msgstr ""
 
-#: third-party/breadcrumbs.php:755
+#: third-party/breadcrumbs.php:797
 msgctxt "minute archives time format"
 msgid "i"
 msgstr ""
 
-#: third-party/breadcrumbs.php:772
+#: third-party/breadcrumbs.php:815
 msgctxt "hour archives time format"
 msgid "g a"
 msgstr ""
 
-#: third-party/breadcrumbs.php:788
-#: third-party/breadcrumbs.php:817
-#: third-party/breadcrumbs.php:844
-#: third-party/breadcrumbs.php:871
-#: third-party/breadcrumbs.php:1211
+#: third-party/breadcrumbs.php:832
+#: third-party/breadcrumbs.php:862
+#: third-party/breadcrumbs.php:902
+#: third-party/breadcrumbs.php:930
+#: third-party/breadcrumbs.php:1289
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr ""
 
-#: third-party/breadcrumbs.php:789
-#: third-party/breadcrumbs.php:845
-#: third-party/breadcrumbs.php:1215
+#: third-party/breadcrumbs.php:833
+#: third-party/breadcrumbs.php:903
+#: third-party/breadcrumbs.php:1293
 msgctxt "monthly archives date format"
 msgid "F"
 msgstr ""
 
-#: third-party/breadcrumbs.php:790
-#: third-party/breadcrumbs.php:1219
+#: third-party/breadcrumbs.php:834
+#: third-party/breadcrumbs.php:1297
 msgctxt "daily archives date format"
 msgid "j"
 msgstr ""
 
-#: third-party/breadcrumbs.php:818
+#: third-party/breadcrumbs.php:863
 msgctxt "weekly archives date format"
 msgid "W"
 msgstr ""
@@ -859,18 +825,18 @@ msgstr ""
 
 #: third-party/class-tgm-plugin-activation.php:393
 #: third-party/class-tgm-plugin-activation.php:923
-#: third-party/class-tgm-plugin-activation.php:2647
-#: third-party/class-tgm-plugin-activation.php:3696
+#: third-party/class-tgm-plugin-activation.php:2669
+#: third-party/class-tgm-plugin-activation.php:3722
 msgid "Return to the Dashboard"
 msgstr ""
 
 #: third-party/class-tgm-plugin-activation.php:394
-#: third-party/class-tgm-plugin-activation.php:3275
+#: third-party/class-tgm-plugin-activation.php:3297
 msgid "Plugin activated successfully."
 msgstr ""
 
 #: third-party/class-tgm-plugin-activation.php:395
-#: third-party/class-tgm-plugin-activation.php:3068
+#: third-party/class-tgm-plugin-activation.php:3090
 msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
 msgstr[0] ""
@@ -915,82 +881,82 @@ msgstr ""
 msgid "Set the parent_slug config variable instead."
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:1030
+#: third-party/class-tgm-plugin-activation.php:1032
 msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:1030
-#: third-party/class-tgm-plugin-activation.php:1033
+#: third-party/class-tgm-plugin-activation.php:1032
+#: third-party/class-tgm-plugin-activation.php:1042
 msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:1033
+#: third-party/class-tgm-plugin-activation.php:1042
 msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:1217
-#: third-party/class-tgm-plugin-activation.php:3064
+#: third-party/class-tgm-plugin-activation.php:1231
+#: third-party/class-tgm-plugin-activation.php:3086
 msgctxt "plugin A *and* plugin B"
 msgid "and"
 msgstr ""
 
 #. translators: %s: version number
-#: third-party/class-tgm-plugin-activation.php:2078
+#: third-party/class-tgm-plugin-activation.php:2100
 msgid "TGMPA v%s"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2387
+#: third-party/class-tgm-plugin-activation.php:2409
 msgid "Required"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2390
+#: third-party/class-tgm-plugin-activation.php:2412
 msgid "Recommended"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2406
+#: third-party/class-tgm-plugin-activation.php:2428
 msgid "WordPress Repository"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2409
+#: third-party/class-tgm-plugin-activation.php:2431
 msgid "External Source"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2412
+#: third-party/class-tgm-plugin-activation.php:2434
 msgid "Pre-Packaged"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2429
+#: third-party/class-tgm-plugin-activation.php:2451
 msgid "Not Installed"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2433
+#: third-party/class-tgm-plugin-activation.php:2455
 msgid "Installed But Not Activated"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2435
+#: third-party/class-tgm-plugin-activation.php:2457
 msgid "Active"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2441
+#: third-party/class-tgm-plugin-activation.php:2463
 msgid "Required Update not Available"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2444
+#: third-party/class-tgm-plugin-activation.php:2466
 msgid "Requires Update"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2447
+#: third-party/class-tgm-plugin-activation.php:2469
 msgid "Update recommended"
 msgstr ""
 
 #. translators: 1: install status, 2: update status
-#: third-party/class-tgm-plugin-activation.php:2456
+#: third-party/class-tgm-plugin-activation.php:2478
 msgctxt "Install/Update Status"
 msgid "%1$s, %2$s"
 msgstr ""
 
 #. translators: 1: number of plugins.
-#: third-party/class-tgm-plugin-activation.php:2502
+#: third-party/class-tgm-plugin-activation.php:2524
 msgctxt "plugins"
 msgid "All <span class=\"count\">(%s)</span>"
 msgid_plural "All <span class=\"count\">(%s)</span>"
@@ -998,291 +964,291 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. translators: 1: number of plugins.
-#: third-party/class-tgm-plugin-activation.php:2506
+#: third-party/class-tgm-plugin-activation.php:2528
 msgid "To Install <span class=\"count\">(%s)</span>"
 msgid_plural "To Install <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
 #. translators: 1: number of plugins.
-#: third-party/class-tgm-plugin-activation.php:2510
+#: third-party/class-tgm-plugin-activation.php:2532
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
 #. translators: 1: number of plugins.
-#: third-party/class-tgm-plugin-activation.php:2514
+#: third-party/class-tgm-plugin-activation.php:2536
 msgid "To Activate <span class=\"count\">(%s)</span>"
 msgid_plural "To Activate <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: third-party/class-tgm-plugin-activation.php:2596
+#: third-party/class-tgm-plugin-activation.php:2618
 msgctxt "as in: \"version nr unknown\""
 msgid "unknown"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2604
+#: third-party/class-tgm-plugin-activation.php:2626
 msgid "Installed version:"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2612
+#: third-party/class-tgm-plugin-activation.php:2634
 msgid "Minimum required version:"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2624
+#: third-party/class-tgm-plugin-activation.php:2646
 msgid "Available version:"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2647
+#: third-party/class-tgm-plugin-activation.php:2669
 msgid "No plugins to install, update or activate."
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2661
+#: third-party/class-tgm-plugin-activation.php:2683
 msgid "Plugin"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2662
+#: third-party/class-tgm-plugin-activation.php:2684
 msgid "Source"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2663
+#: third-party/class-tgm-plugin-activation.php:2685
 msgid "Type"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2667
+#: third-party/class-tgm-plugin-activation.php:2689
 msgid "Version"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2668
+#: third-party/class-tgm-plugin-activation.php:2690
 msgid "Status"
 msgstr ""
 
 #. translators: %2$s: plugin name in screen reader markup
-#: third-party/class-tgm-plugin-activation.php:2717
+#: third-party/class-tgm-plugin-activation.php:2739
 msgid "Install %2$s"
 msgstr ""
 
 #. translators: %2$s: plugin name in screen reader markup
-#: third-party/class-tgm-plugin-activation.php:2722
+#: third-party/class-tgm-plugin-activation.php:2744
 msgid "Update %2$s"
 msgstr ""
 
 #. translators: %2$s: plugin name in screen reader markup
-#: third-party/class-tgm-plugin-activation.php:2728
+#: third-party/class-tgm-plugin-activation.php:2750
 msgid "Activate %2$s"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2800
+#: third-party/class-tgm-plugin-activation.php:2822
 msgid "Upgrade message from the plugin author:"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2833
+#: third-party/class-tgm-plugin-activation.php:2855
 msgid "Install"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2839
+#: third-party/class-tgm-plugin-activation.php:2861
 msgid "Update"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2842
+#: third-party/class-tgm-plugin-activation.php:2864
 msgid "Activate"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2873
+#: third-party/class-tgm-plugin-activation.php:2895
 msgid "No plugins were selected to be installed. No action taken."
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2875
+#: third-party/class-tgm-plugin-activation.php:2897
 msgid "No plugins were selected to be updated. No action taken."
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2916
+#: third-party/class-tgm-plugin-activation.php:2938
 msgid "No plugins are available to be installed at this time."
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:2918
+#: third-party/class-tgm-plugin-activation.php:2940
 msgid "No plugins are available to be updated at this time."
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:3024
+#: third-party/class-tgm-plugin-activation.php:3046
 msgid "No plugins were selected to be activated. No action taken."
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:3050
+#: third-party/class-tgm-plugin-activation.php:3072
 msgid "No plugins are available to be activated at this time."
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:3274
+#: third-party/class-tgm-plugin-activation.php:3296
 msgid "Plugin activation failed."
 msgstr ""
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: third-party/class-tgm-plugin-activation.php:3614
+#: third-party/class-tgm-plugin-activation.php:3640
 msgid "Updating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #. translators: 1: plugin name, 2: error message.
-#: third-party/class-tgm-plugin-activation.php:3617
+#: third-party/class-tgm-plugin-activation.php:3643
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr ""
 
 #. translators: 1: plugin name.
-#: third-party/class-tgm-plugin-activation.php:3619
+#: third-party/class-tgm-plugin-activation.php:3645
 msgid "The installation of %1$s failed."
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:3623
+#: third-party/class-tgm-plugin-activation.php:3649
 msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
 msgstr ""
 
 #. translators: 1: plugin name.
-#: third-party/class-tgm-plugin-activation.php:3625
+#: third-party/class-tgm-plugin-activation.php:3651
 msgid "%1$s installed and activated successfully."
 msgstr ""
 
 #. translators: 1: plugin name.
-#: third-party/class-tgm-plugin-activation.php:3625
-#: third-party/class-tgm-plugin-activation.php:3633
+#: third-party/class-tgm-plugin-activation.php:3651
+#: third-party/class-tgm-plugin-activation.php:3659
 msgid "Show Details"
 msgstr ""
 
 #. translators: 1: plugin name.
-#: third-party/class-tgm-plugin-activation.php:3625
-#: third-party/class-tgm-plugin-activation.php:3633
+#: third-party/class-tgm-plugin-activation.php:3651
+#: third-party/class-tgm-plugin-activation.php:3659
 msgid "Hide Details"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:3626
+#: third-party/class-tgm-plugin-activation.php:3652
 msgid "All installations and activations have been completed."
 msgstr ""
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: third-party/class-tgm-plugin-activation.php:3628
+#: third-party/class-tgm-plugin-activation.php:3654
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:3631
+#: third-party/class-tgm-plugin-activation.php:3657
 msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
 msgstr ""
 
 #. translators: 1: plugin name.
-#: third-party/class-tgm-plugin-activation.php:3633
+#: third-party/class-tgm-plugin-activation.php:3659
 msgid "%1$s installed successfully."
 msgstr ""
 
-#: third-party/class-tgm-plugin-activation.php:3634
+#: third-party/class-tgm-plugin-activation.php:3660
 msgid "All installations have been completed."
 msgstr ""
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: third-party/class-tgm-plugin-activation.php:3636
+#: third-party/class-tgm-plugin-activation.php:3662
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: widgets/fascinate-author-widget.php:16
+#: widgets/class-fascinate-author-widget.php:27
 msgid "F: Author Widget"
 msgstr ""
 
-#: widgets/fascinate-author-widget.php:18
+#: widgets/class-fascinate-author-widget.php:29
 msgid "Displays brief author detail."
 msgstr ""
 
-#: widgets/fascinate-author-widget.php:132
-#: widgets/fascinate-post-widget.php:195
+#: widgets/class-fascinate-author-widget.php:138
+#: widgets/class-fascinate-post-widget.php:234
 msgid "Title"
 msgstr ""
 
-#: widgets/fascinate-author-widget.php:139
+#: widgets/class-fascinate-author-widget.php:151
 msgid "Author&rsquo;s Name"
 msgstr ""
 
-#: widgets/fascinate-author-widget.php:146
-#: widgets/fascinate-author-widget.php:182
+#: widgets/class-fascinate-author-widget.php:164
+#: widgets/class-fascinate-author-widget.php:211
 msgid "Author&rsquo;s Detail Link Title"
 msgstr ""
 
-#: widgets/fascinate-author-widget.php:153
+#: widgets/class-fascinate-author-widget.php:177
 msgid "Author&rsquo;s Image"
 msgstr ""
 
-#: widgets/fascinate-author-widget.php:175
+#: widgets/class-fascinate-author-widget.php:204
 msgid "Upload"
 msgstr ""
 
-#: widgets/fascinate-author-widget.php:176
+#: widgets/class-fascinate-author-widget.php:205
 msgid "Remove"
 msgstr ""
 
-#: widgets/fascinate-author-widget.php:189
+#: widgets/class-fascinate-author-widget.php:224
 msgid "Author&rsquo;s Detail Link"
 msgstr ""
 
-#: widgets/fascinate-post-widget.php:16
+#: widgets/class-fascinate-post-widget.php:27
 msgid "F: Posts Widget"
 msgstr ""
 
-#: widgets/fascinate-post-widget.php:18
+#: widgets/class-fascinate-post-widget.php:29
 msgid "Displays Posts."
 msgstr ""
 
-#: widgets/fascinate-post-widget.php:175
+#: widgets/class-fascinate-post-widget.php:203
 msgid "Chooose Layout"
 msgstr ""
 
-#: widgets/fascinate-post-widget.php:202
+#: widgets/class-fascinate-post-widget.php:246
 msgid "No of Posts"
 msgstr ""
 
-#: widgets/fascinate-post-widget.php:210
+#: widgets/class-fascinate-post-widget.php:269
 msgid "Display Date"
 msgstr ""
 
-#: widgets/fascinate-post-widget.php:217
+#: widgets/class-fascinate-post-widget.php:285
 msgid "Display Comments No"
 msgstr ""
 
-#: widgets/fascinate-social-widget.php:16
+#: widgets/class-fascinate-social-widget.php:27
 msgid "F: Social Widget"
 msgstr ""
 
-#: widgets/fascinate-social-widget.php:18
+#: widgets/class-fascinate-social-widget.php:29
 msgid "Displays social links."
 msgstr ""
 
-#: widgets/fascinate-social-widget.php:53
-msgid "Follow on facebook"
+#: widgets/class-fascinate-social-widget.php:71
+msgid "Follow on Facebook"
 msgstr ""
 
-#: widgets/fascinate-social-widget.php:61
-msgid "Follow on twitter"
+#: widgets/class-fascinate-social-widget.php:79
+msgid "Follow on Twitter"
 msgstr ""
 
-#: widgets/fascinate-social-widget.php:69
-msgid "Follow on instagram"
+#: widgets/class-fascinate-social-widget.php:87
+msgid "Follow on Instagram"
 msgstr ""
 
-#: widgets/fascinate-social-widget.php:77
-msgid "Follow on pinterest"
+#: widgets/class-fascinate-social-widget.php:95
+msgid "Follow on Pinterest"
 msgstr ""
 
-#: widgets/fascinate-social-widget.php:85
-msgid "Subscribe at youtube"
+#: widgets/class-fascinate-social-widget.php:103
+msgid "Subscribe at YouTube"
 msgstr ""
 
-#: widgets/fascinate-social-widget.php:93
-msgid "Connect on linkedin"
+#: widgets/class-fascinate-social-widget.php:111
+msgid "Connect on LinkedIn"
 msgstr ""
 
-#: widgets/fascinate-social-widget.php:101
-msgid "Follow on vk"
+#: widgets/class-fascinate-social-widget.php:119
+msgid "Follow on VK"
 msgstr ""
 
-#: widgets/fascinate-social-widget.php:129
+#: widgets/class-fascinate-social-widget.php:155
 msgid "Title "
 msgstr ""
 
-#: widgets/fascinate-social-widget.php:171
+#: widgets/class-fascinate-social-widget.php:197
 msgid "linkedin Link"
 msgstr ""
