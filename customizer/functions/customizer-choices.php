@@ -1,64 +1,65 @@
 <?php
 /**
- * Collection of functions that returns array of different elements. 
+ * Collection of helper functions for customize.
+ *
+ * @since 1.0.0
+ *
+ * @package Fascinate
  */
 
-if( ! function_exists( 'fascinate_post_category_choices' ) ) {
+if ( ! function_exists( 'fascinate_post_category_choices' ) ) {
 	/**
-     * Get post categories.
-     *
-     * @since 1.0.0
-     *
-     * @param null.
-     * @return array.
-     */
+	 * Generates array of category terms. Value is term slug and label is the term name.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @return array $category_terms
+	 */
 	function fascinate_post_category_choices() {
 
-		$post_terms = get_terms( array( 'taxonomy' => 'category' ) );
+		$query_category_terms = get_terms(
+			array(
+				'taxonomy' => 'category',
+			)
+		);
 
-		$post_categories = array();
+		$category_terms = array();
 
-		if( ! empty( $post_terms ) ) {
+		if ( ! empty( $query_category_terms ) ) {
 
-			foreach( $post_terms as $post_term ) {
+			foreach ( $query_category_terms as $category_term ) {
 
-				$post_categories[$post_term->slug] = $post_term->name;
+				$category_terms[ $category_term->slug ] = $category_term->name;
 			}
 		}
 
-		return $post_categories;
+		return $category_terms;
 	}
 }
 
 
-if( ! function_exists( 'fascinate_site_layout_choices' ) ) {
+if ( ! function_exists( 'fascinate_site_layout_choices' ) ) {
 	/**
-     * Get site layouts.
-     *
-     * @since 1.0.0
-     *
-     * @param null.
-     * @return array.
-     */
+	 * Generates array choices for site layouts.
+	 *
+	 * @since 1.0.0
+	 */
 	function fascinate_site_layout_choices() {
 
-		return array( 
-			'boxed' 	=> esc_html__( 'Boxed Layout', 'fascinate' ), 
-			'fullwidth' => esc_html__( 'Full Width Layout', 'fascinate' )
+		return array(
+			'boxed'     => esc_html__( 'Boxed Layout', 'fascinate' ),
+			'fullwidth' => esc_html__( 'Full Width Layout', 'fascinate' ),
 		);
 	}
 }
 
 
-if( ! function_exists( 'fascinate_carousel_layout_choices' ) ) {
+if ( ! function_exists( 'fascinate_carousel_layout_choices' ) ) {
 	/**
-     * Get sidebar positions.
-     *
-     * @since 1.0.0
-     *
-     * @param null.
-     * @return array.
-     */
+	 * Generates array choices for carousel layouts.
+	 *
+	 * @since 1.0.0
+	 */
 	function fascinate_carousel_layout_choices() {
 
 		return array(
@@ -69,32 +70,33 @@ if( ! function_exists( 'fascinate_carousel_layout_choices' ) ) {
 }
 
 
-if( ! function_exists( 'fascinate_sidebar_position_choices' ) ) {
+if ( ! function_exists( 'fascinate_sidebar_position_choices' ) ) {
 	/**
-     * Get sidebar positions.
-     *
-     * @since 1.0.0
-     *
-     * @param null.
-     * @return array.
-     */
+	 * Generates array choices for sidebar positions.
+	 *
+	 * @since 1.0.0
+	 */
 	function fascinate_sidebar_position_choices() {
 
 		return array(
-			'left' 	=> get_template_directory_uri() . '/customizer/assets/images/sidebar_left.png',
+			'left'  => get_template_directory_uri() . '/customizer/assets/images/sidebar_left.png',
 			'right' => get_template_directory_uri() . '/customizer/assets/images/sidebar_right.png',
-			'none' 	=> get_template_directory_uri() . '/customizer/assets/images/sidebar_none.png',
+			'none'  => get_template_directory_uri() . '/customizer/assets/images/sidebar_none.png',
 		);
 	}
 }
 
-if( ! function_exists( 'fascinate_comment_box_choices' ) ) {
-
+if ( ! function_exists( 'fascinate_comment_box_choices' ) ) {
+	/**
+	 * Generates array choices for comment box layouts.
+	 *
+	 * @since 1.0.0
+	 */
 	function fascinate_comment_box_choices() {
 
 		return array(
-			'default' => esc_html__( 'Show Default View', 'fascinate' ),
+			'default'       => esc_html__( 'Show Default View', 'fascinate' ),
 			'toggle_canvas' => esc_html__( 'Toggleable Canvas View', 'fascinate' ),
 		);
 	}
-} 
+}

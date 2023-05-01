@@ -11,7 +11,7 @@ $current_theme = wp_get_theme( 'fascinate' );
 
 define( 'FASCINATE_VERSION', $current_theme->get( 'Version' ) );
 
-if ( ! function_exists( 'fascinate_setup' ) ) :
+if ( ! function_exists( 'fascinate_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -46,32 +46,43 @@ if ( ! function_exists( 'fascinate_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		add_image_size( 'fascinate-thumbnail-one', 800, 450, true ); // Blog, Archive, Search Thumbnail
-		add_image_size( 'fascinate-thumbnail-two', 450, 450, true ); // Related Posts
+		add_image_size( 'fascinate-thumbnail-one', 800, 450, true ); // Blog, Archive, Search Thumbnail.
+		add_image_size( 'fascinate-thumbnail-two', 450, 450, true ); // Related Posts.
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Main Menu', 'fascinate' ),
-			'menu-2' => esc_html__( 'Top Header Menu', 'fascinate' ),
-		) );
+		register_nav_menus(
+			array(
+				'menu-1' => esc_html__( 'Main Menu', 'fascinate' ),
+				'menu-2' => esc_html__( 'Top Header Menu', 'fascinate' ),
+			)
+		);
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		) );
+		add_theme_support(
+			'html5',
+			array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+			)
+		);
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'fascinate_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
+		add_theme_support(
+			'custom-background',
+			apply_filters(
+				'fascinate_custom_background_args',
+				array(
+					'default-color' => 'ffffff',
+					'default-image' => '',
+				)
+			)
+		);
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -81,34 +92,39 @@ if ( ! function_exists( 'fascinate_setup' ) ) :
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
-		) );
+		add_theme_support(
+			'custom-logo',
+			array(
+				'height'      => 250,
+				'width'       => 250,
+				'flex-width'  => true,
+				'flex-height' => true,
+			)
+		);
 
-		// Add post-formats for theme
-        add_theme_support( 'post-formats', array( 'audio', 'video', 'quote', 'gallery', 'link' ) );
+		// Add post-formats for theme.
+		add_theme_support(
+			'post-formats',
+			array( 'audio', 'video', 'quote', 'gallery', 'link' )
+		);
 
-		// Add editor style
+		// Add editor style.
 		add_theme_support( 'editor-styles' );
 		add_editor_style( 'admin/css/editor-style.css' );
 
-		// Add support for gutenberg
+		// Add support for gutenberg.
 		add_theme_support( 'align-wide' );
 		add_theme_support( 'wp-block-styles' );
 		add_theme_support( 'responsive-embeds' );
 
-
 		/**
-		 * Remove block widget support in WordPress version 5.8 & later 
+		 * Remove block widget support in WordPress version 5.8 & later.
 		 *
 		 * @link https://make.wordpress.org/core/2021/06/29/block-based-widgets-editor-in-wordpress-5-8/
 		 */
 		remove_theme_support( 'widgets-block-editor' );
 	}
-endif;
+}
 add_action( 'after_setup_theme', 'fascinate_setup' );
 
 /**
@@ -132,49 +148,54 @@ add_action( 'after_setup_theme', 'fascinate_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function fascinate_widgets_init() {
-	
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'fascinate' ),
-		'id'            => 'sidebar',
-		'description'   => esc_html__( 'Add widgets here.', 'fascinate' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<div class="widget_title"><h3>',
-		'after_title'   => '</h3></div>',
-	) );
 
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Left', 'fascinate' ),
-		'id'            => 'footer-left',
-		'description'   => esc_html__( 'Add widgets here.', 'fascinate' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<div class="widget_title"><h3>',
-		'after_title'   => '</h3></div>',
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar', 'fascinate' ),
+			'id'            => 'sidebar',
+			'description'   => esc_html__( 'Add widgets here.', 'fascinate' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<div class="widget_title"><h3>',
+			'after_title'   => '</h3></div>',
+		)
+	);
 
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Left', 'fascinate' ),
+			'id'            => 'footer-left',
+			'description'   => esc_html__( 'Add widgets here.', 'fascinate' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<div class="widget_title"><h3>',
+			'after_title'   => '</h3></div>',
+		)
+	);
 
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Middle', 'fascinate' ),
-		'id'            => 'footer-middle',
-		'description'   => esc_html__( 'Add widgets here.', 'fascinate' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<div class="widget_title"><h3>',
-		'after_title'   => '</h3></div>',
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Middle', 'fascinate' ),
+			'id'            => 'footer-middle',
+			'description'   => esc_html__( 'Add widgets here.', 'fascinate' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<div class="widget_title"><h3>',
+			'after_title'   => '</h3></div>',
+		)
+	);
 
-	) );
-
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Right', 'fascinate' ),
-		'id'            => 'footer-right',
-		'description'   => esc_html__( 'Add widgets here.', 'fascinate' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<div class="widget_title"><h3>',
-		'after_title'   => '</h3></div>',
-
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Right', 'fascinate' ),
+			'id'            => 'footer-right',
+			'description'   => esc_html__( 'Add widgets here.', 'fascinate' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<div class="widget_title"><h3>',
+			'after_title'   => '</h3></div>',
+		)
+	);
 
 	register_widget( 'Fascinate_Author_Widget' );
 
@@ -189,13 +210,39 @@ add_action( 'widgets_init', 'fascinate_widgets_init' );
  */
 function fascinate_scripts() {
 
-	wp_enqueue_style( 'fascinate-style', get_stylesheet_uri() );
+	wp_enqueue_style(
+		'fascinate-style',
+		get_stylesheet_uri(),
+		array(),
+		FASCINATE_VERSION,
+		'all'
+	);
 
-	wp_enqueue_style( 'fascinate-google-fonts', fascinate_fonts_url() );
+	if ( fascinate_has_google_fonts() ) {
+		wp_enqueue_style( // phpcs:ignore
+			'fascinate-google-fonts',
+			fascinate_get_google_fonts_url(),
+			array(),
+			null,
+			'all'
+		);
+	}
 
-	wp_enqueue_style( 'fascinate-main', get_template_directory_uri() . '/assets/dist/css/main.css' );
+	wp_enqueue_style(
+		'fascinate-main',
+		get_template_directory_uri() . '/assets/dist/css/main.css',
+		array(),
+		FASCINATE_VERSION,
+		'all'
+	);
 
-	wp_enqueue_script( 'fascinate-bundle', get_template_directory_uri() . '/assets/dist/js/bundle.min.js', array( 'jquery' ), FASCINATE_VERSION, true );
+	wp_enqueue_script(
+		'fascinate-bundle',
+		get_template_directory_uri() . '/assets/dist/js/bundle.min.js',
+		array( 'jquery' ),
+		FASCINATE_VERSION,
+		true
+	);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -209,13 +256,25 @@ add_action( 'wp_enqueue_scripts', 'fascinate_scripts' );
  */
 function fascinate_admin_enqueue() {
 
-	wp_enqueue_style( 'fascinate-admin', get_template_directory_uri() . '/admin/css/admin.css' );
+	wp_enqueue_style(
+		'fascinate-admin',
+		get_template_directory_uri() . '/admin/css/admin.css',
+		array(),
+		FASCINATE_VERSION,
+		'all'
+	);
 
 	wp_enqueue_script( 'media-upload' );
 
 	wp_enqueue_media();
 
-	wp_enqueue_script( 'fascinate-admin-script', get_template_directory_uri() . '/admin/js/admin-script.js', array( 'jquery' ), FASCINATE_VERSION, true );
+	wp_enqueue_script(
+		'fascinate-admin-script',
+		get_template_directory_uri() . '/admin/js/admin-script.js',
+		array( 'jquery' ),
+		FASCINATE_VERSION,
+		true
+	);
 }
 add_action( 'admin_enqueue_scripts', 'fascinate_admin_enqueue' );
 
@@ -248,7 +307,7 @@ require get_template_directory() . '/includes/helper-functions.php';
 /**
  * Load custom fields.
  */
-require get_template_directory() . '/includes/custom-fields.php';
+require get_template_directory() . '/includes/class-fascinate-custom-fields.php';
 
 /**
  * Customizer additions.
@@ -267,29 +326,16 @@ require get_template_directory() . '/third-party/breadcrumbs.php';
 require get_template_directory() . '/third-party/class-tgm-plugin-activation.php';
 
 /**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/includes/jetpack.php';
-}
-
-
-/**
  * Load Post Widget.
  */
-require get_template_directory() . '/widgets/fascinate-post-widget.php';
+require get_template_directory() . '/widgets/class-fascinate-post-widget.php';
 
 /**
  * Load Author Widget.
  */
-require get_template_directory() . '/widgets/fascinate-author-widget.php';
+require get_template_directory() . '/widgets/class-fascinate-author-widget.php';
 
 /**
  * Load Social Links Widget.
  */
-require get_template_directory() . '/widgets/fascinate-social-widget.php';
-
-/**
- * Load Everest Backup Plugin recommendation notice.
- */
-require get_template_directory() . '/includes/ebwp-notice.php';
+require get_template_directory() . '/widgets/class-fascinate-social-widget.php';

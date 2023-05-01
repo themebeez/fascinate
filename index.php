@@ -13,54 +13,51 @@
  */
 
 get_header();
-	?>
-	<?php fascinate_banner(); ?>
-	<div class="main-content-area-wrap">
-        <div class="fb-container">
-            <div class="row">
-                <div class="<?php fascinate_main_container_class(); ?>">
-                    <div id="primary" class="primary-widget-area content-area">
-                        <main id="main" class="site-main">
-                            <?php
-                            if( have_posts() ) :
-                                ?>
-                                <div class="recent-posts-wrapper">
-                                    <div class="posts-list-style-1">
-                                        <?php
 
-                                    	/* Start the Loop */
-										while ( have_posts() ) :
+fascinate_banner();
+?>
+<div class="main-content-area-wrap">
+	<div class="fb-container">
+		<div class="row">
+			<div class="<?php fascinate_main_container_class(); ?>">
+				<div id="primary" class="primary-widget-area content-area">
+					<main id="main" class="site-main">
+						<?php
+						if ( have_posts() ) {
+							?>
+							<div class="recent-posts-wrapper">
+								<div class="posts-list-style-1">
+									<?php
 
-											the_post();
+									/* Start the Loop */
+									while ( have_posts() ) {
 
-											/*
-											 * Include the Post-Type-specific template for the content.
-											 * If you want to override this in a child theme, then include a file
-											 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-											 */
-											
-											get_template_part( 'template-parts/content', get_post_type() );
+										the_post();
 
-										endwhile;
-                                    ?>
-                                    </div><!-- .posts-list-style-1 -->
-                                </div><!-- .recent-posts-wrapper -->
-                                <?php
+										/**
+										 * Include the Post-Type-specific template for the content.
+										 * If you want to override this in a child theme, then include a file
+										 * called content-___.php (where ___ is the Post Type name) and that will be used
+										 * instead.
+										 */
+										get_template_part( 'template-parts/content', get_post_type() );
+									}
+									?>
+								</div><!-- .posts-list-style-1 -->
+							</div><!-- .recent-posts-wrapper -->
+							<?php
+							fascinate_pagination();
+						} else {
 
-                                fascinate_pagination();
-
-                            else :
-
-                            	get_template_part( 'template-parts/content', 'none' );
-
-                            endif;
-                            ?>
-                        </main><!-- #main.site-main -->
-                    </div><!-- #primary.primary-widget-area.content-area -->
-                </div><!-- .col -->
-                <?php get_sidebar(); ?>
-            </div><!-- .row -->
-        </div><!-- .fb-container -->
-    </div><!-- .main-content-area-wrap -->
-    <?php
+							get_template_part( 'template-parts/content', 'none' );
+						}
+						?>
+					</main><!-- #main.site-main -->
+				</div><!-- #primary.primary-widget-area.content-area -->
+			</div><!-- .col -->
+			<?php get_sidebar(); ?>
+		</div><!-- .row -->
+	</div><!-- .fb-container -->
+</div><!-- .main-content-area-wrap -->
+<?php
 get_footer();

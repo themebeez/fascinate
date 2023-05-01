@@ -7,9 +7,9 @@
  * @package Fascinate
  */
 
-$sidebar_position = fascinate_sidebar_position();
+$fascinate_sidebar_position = fascinate_sidebar_position();
 
-if ( ! is_active_sidebar( 'sidebar' ) || $sidebar_position == 'none' ) {
+if ( ! is_active_sidebar( 'sidebar' ) || 'none' === $fascinate_sidebar_position ) {
 	return;
 }
 ?>

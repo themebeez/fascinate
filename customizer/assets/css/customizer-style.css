@@ -464,3 +464,307 @@ input[type=checkbox].tgl-flat:checked+.tgl-btn:after {
     margin-left: 0;
     margin-right: 8px;
 }
+
+
+
+/* -------------------------------------------------------------------------- 
+	Responsive Switcher
+  -------------------------------------------------------------------------- */
+
+.customize-control.has-switchers .customize-control-title {
+    display: block;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.customize-control.has-switchers .customize-control-title span {
+    line-height: 20px
+}
+
+.customize-control .responsive-switchers {
+    width: auto;
+    float: right;
+}
+
+.customize-control .responsive-switchers-open.responsive-switchers li {
+    display: block
+}
+
+.customize-control .responsive-switchers li {
+    float: left;
+    margin: 0
+}
+
+.customize-control .responsive-switchers li button {
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    color: #555;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.customize-control .responsive-switchers li button svg {
+    fill: #888888;
+    height: 16px;
+    width: 16px;
+}
+
+.customize-control .responsive-switchers li button.active svg {
+    fill: #2271b1;
+}
+
+.customize-control .responsive-switchers li button:hover {
+    background-color: transparent;
+}
+
+.customize-control .responsive-switchers li:not(.desktop) button.active {
+    color: #0085ba;
+    background-color: transparent;
+}
+
+.customize-control .responsive-switchers.responsive-switchers-open li button.active {
+    color: #0085ba;
+}
+
+.customize-control .responsive-switchers li button i {
+    width: auto;
+    height: auto;
+    font-size: inherit;
+    line-height: 18px
+}
+
+.customize-control.has-switchers>.responsive-control-wrap:not(.active) {
+    display: none;
+    width: 100%
+}
+
+body.rtl .customize-control-checkbox input[type=checkbox] {
+    margin: 0 0 0 6px
+}
+
+body.rtl .customize-control-checkbox input[type=checkbox]:checked:before,
+body.rtl .customize-control-ocean-multi-check input[type=checkbox]:checked:before {
+    right: 0;
+    left: auto
+}
+
+body.rtl .customize-control .responsive-switchers,
+body.rtl .customize-control .responsive-switchers li button {
+    margin-right: 5px;
+    margin-left: 0
+}
+
+body.rtl .customize-control .responsive-switchers li {
+    float: right
+}
+
+@media screen and (max-width:768px) {
+    body .customize-control .responsive-switchers {
+        display: none
+    }
+
+    body .customize-control.has-switchers>.responsive-control-wrap:not(.active) {
+        display: inline-block
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    body .customize-control.has-switchers>.responsive-control-wrap {
+        display: inline-block
+    }
+
+    body .customize-control.has-switchers>.responsive-control-wrap:not(.tablet) {
+        display: none
+    }
+}
+
+@media screen and (max-width:480px) {
+    body .customize-control.has-switchers>.responsive-control-wrap {
+        display: inline-block
+    }
+
+    body .customize-control.has-switchers>.responsive-control-wrap:not(.mobile) {
+        display: none
+    }
+}
+
+
+/*
+Slim Select Override
+*/
+.ss-main {
+    display: block;
+    min-height: 37px;
+}
+
+.ss-content {
+    position: relative;
+    display: none;
+}
+
+.ss-content .ss-search.ss-hide input {
+    display: none;
+}
+
+
+.customize-hidden {
+    display: none;
+}
+
+.customize-display {
+    display: block;
+}
+
+
+.box-border-expand-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.fascinate-control-toggle-button {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.fascinate-control-toggle-button:hover {
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+}
+
+.fascinate-control-modal {
+    display: none;
+}
+
+.fascinate-control-modal.modal-open {
+    display: block;
+    position: relative;
+    margin-top: 5px;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fascinate-customize-control-label.flex {
+    align-items: center;
+}
+
+.fascinate-customize-control-section-inner.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fascinate-customizer-control-section-field-wrapper {
+    margin-bottom: 10px;
+}
+
+.fascinate-customize-button-group {
+    display: flex;
+}
+
+.fascinate-customize-button {
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    transition-duration: 0.2s;
+}
+
+.fascinate-customize-button.secondary:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.fascinate-customize-button.active,
+.fascinate-customize-button:hover {
+    background-color: #0085ba;
+    color: #ffffff;
+    border-color: #0085ba;
+    fill: #ffffff;
+}
+
+.fascinate-customize-button.no-style {
+    background: transparent;
+    border: none;
+    padding: 0px;
+}
+
+.fascinate-customize-button.no-style:hover {
+    background: transparent;
+    border: none;
+    color: #0085ba;
+}
+
+.fascinate-customize-reset-button .dashicons {
+    font-size: 14px;
+    color: #888888;
+}
+
+.fascinate-customize-reset-button:hover .dashicons {
+    color: #0085ba;
+}
+
+.fascinate-unit-wrapper {
+    position: relative;
+}
+
+.unit-dropdown-toggle-button {
+    width: 45px;
+    height: 35px;
+    border-radius: 3px;
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+.fascinate-unit-dropdown {
+    display: none;
+}
+
+.fascinate-unit-dropdown.dropdown-open {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 5px;
+    z-index: 1;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    margin-left: 5px;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+}
+
+.fascinate-unit-dropdown .fascinate-customize-button {
+    border: none;
+    width: 100%;
+    padding: 10px 5px;
+    text-transform: uppercase;
+}
+
+.responsive-control-wrap {
+    display: none;
+}
+
+.responsive-control-wrap.active,
+.non-responsive-control-wrap {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fascinate-slider-input .slider-input {
+    width: 45px !important;
+    margin: 0px !important;
+}
