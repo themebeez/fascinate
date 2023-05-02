@@ -1,52 +1,20 @@
-/**
-=======================================================
-
-- File: Master importer ( Imports all scss files )
-
-- Project : Fascinate
-
-- Author: Themebeez
-
-- Author url : https://themebeez.com/
-
-- Since : 27 May, 2019
-
-- Scss version: 1.0.5
-
-- Last updated: 05 May, 2020
-
-======================================================================================
-*/
-
-
-// Import framework
 
 @import 'framework/bootstrap-reboot';
 @import 'framework/bootstrap-grid';
-
-// Import variables 
 
 @import 'variables/var-typography';
 @import 'variables/var-colors';
 @import 'variables/var-spacing';
 
-// Import mixins
-
 @import 'custom/custom-parts/mixins'; 
-
-// Import libraries 
 
 @import 'libraries/slick';
 @import 'libraries/animate';
 @import 'libraries/owlcarousel';
 
-// Import font icons 
-
 @import 'fonticons/fontawesome/fontawesome';
 @import 'fonticons/ionicons/ionicons';
 @import 'fonticons/themify/themify';
-
-// Import custom parts & custom style file 
 
 @import 'custom/custom-parts/reset';         		// Our custom reset
 @import 'custom/custom-parts/forms';				// forms

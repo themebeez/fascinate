@@ -1,10 +1,10 @@
-(function($) {
+(function ($) {
 
     'use strict';
 
     // Document ready function
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
 
         /*
@@ -32,7 +32,7 @@
         */
 
 
-        $('.menu-toggle').on('click', function(e) {
+        $('.menu-toggle').on('click', function (e) {
 
             $('#site-navigation').slideToggle('medium');
 
@@ -45,7 +45,7 @@
         $('#site-navigation .page_item_has_children').append('<span class="sub-toggle"> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>');
 
 
-        $('#site-navigation .sub-toggle').on('click', function() {
+        $('#site-navigation .sub-toggle').on('click', function () {
 
             $(this).toggleClass('active-submenu');
 
@@ -65,7 +65,7 @@
         });
 
 
-        $('.menu-item a[href="#"]').on('click', function(e) {
+        $('.menu-item a[href="#"]').on('click', function (e) {
 
             e.preventDefault(); // prevent empty links clicks
         });
@@ -83,50 +83,18 @@
         var $CanvasAside = $('#comment-canvas');
         var $SideCanvasMask = $('.canvas-aside-mask');
 
-        $CanvasRevelBtn.on('click', function() {
+        $CanvasRevelBtn.on('click', function () {
 
             $CanvasAside.addClass('visible');
             $SideCanvasMask.addClass('visible');
         });
 
-        $SideCanvasMask.on('click', function() {
+        $SideCanvasMask.on('click', function () {
 
             $CanvasAside.removeClass('visible');
             $SideCanvasMask.removeClass('visible');
 
         });
-
-
-
-        /*
-        ========================
-        = Lazy load
-        ===================================
-        */
-
-        var lazy = function lazy() {
-
-            document.addEventListener('lazyloaded', function(e) {
-
-                e.target.parentNode.classList.add('image-loaded');
-
-                $.when().done(function() {
-
-                    var cloele = $('.lazy-thumb');
-
-                    cloele.removeClass('lazyloading');
-                });
-            });
-        }
-
-        lazy();
-
-        window.lazySizesConfig = window.lazySizesConfig || {};
-
-        lazySizesConfig.preloadAfterLoad = false;
-        lazySizesConfig.expandChild = 370;
-
-
 
         /*
         ===========================
@@ -179,34 +147,34 @@
             nextArrow: ' <a class="slick-nav slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>',
             prevArrow: ' <a class="slick-nav slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>',
             responsive: [{
-                    breakpoint: 1400,
-                    settings: {
+                breakpoint: 1400,
+                settings: {
 
-                        slidesToShow: 1,
-                        centerPadding: '250px',
+                    slidesToShow: 1,
+                    centerPadding: '250px',
 
-                    }
-                },
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 1,
-                        autoplaySpeed: 4000,
-                        speed: 800,
-                        centerPadding: '0px',
-                    }
-                },
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 1,
+                    autoplaySpeed: 4000,
+                    speed: 800,
+                    centerPadding: '0px',
+                }
+            },
 
-                {
-                    breakpoint: 0,
-                    settings: {
+            {
+                breakpoint: 0,
+                settings: {
 
-                        slidesToShow: 1,
-                        autoplaySpeed: 4000,
-                        speed: 800,
-                        centerPadding: '0px'
-                    }
-                },
+                    slidesToShow: 1,
+                    autoplaySpeed: 4000,
+                    speed: 800,
+                    centerPadding: '0px'
+                }
+            },
             ]
         });
 
@@ -252,7 +220,7 @@
                     centerPadding: '0px',
 
                 }
-            }, ]
+            },]
         });
 
         /* 
@@ -264,7 +232,7 @@
         */
 
 
-        $(window).load(function() {
+        $(window).load(function () {
 
             jQuery('.preLoader').fadeOut(1000);
         });
@@ -277,7 +245,7 @@
 
         // Window scroll function
 
-        $(window).scroll(function() {
+        $(window).scroll(function () {
 
             var height = $(window).scrollTop();
 
@@ -291,7 +259,7 @@
             }
         });
 
-        $(".fascinate-to-top").on('click', function(event) {
+        $(".fascinate-to-top").on('click', function (event) {
 
             event.preventDefault();
 
