@@ -124,7 +124,7 @@ if ( ! function_exists( 'fascinate_has_google_fonts' ) ) {
 
 		$author_meta_font = '';
 		if ( fascinate_get_option( 'enable_different_font_for_author_meta' ) ) {
-			$author_meta_font = fascinate_get_option( 'field_author_meta_font' );
+			$author_meta_font = fascinate_get_option( 'author_meta_font' );
 			$author_meta_font = json_decode( $author_meta_font, true );
 		}
 
@@ -168,7 +168,7 @@ if ( ! function_exists( 'fascinate_google_fonts_urls' ) ) {
 
 		$author_meta_font = '';
 		if ( fascinate_get_option( 'enable_different_font_for_author_meta' ) ) {
-			$author_meta_font = fascinate_get_option( 'field_author_meta_font' );
+			$author_meta_font = fascinate_get_option( 'author_meta_font' );
 			$author_meta_font = json_decode( $author_meta_font, true );
 		}
 
