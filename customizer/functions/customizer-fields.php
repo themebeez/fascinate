@@ -339,7 +339,7 @@ $wp_customize->add_setting(
 	'fascinate_field_site_title_font',
 	array(
 		'default'           => $defaults['site_title_font'],
-		'sanitize_callback' => '',
+		'sanitize_callback' => 'fascinate_sanitize_font',
 	)
 );
 
@@ -348,7 +348,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'fascinate_field_site_title_font',
 		array(
-			'label'           => esc_html__( 'Site Title Font', 'royale-news' ),
+			'label'           => esc_html__( 'Site Title Font', 'fascinate' ),
 			'section'         => 'fascinate_section_site_logo',
 			'active_callback' => 'fascinate_has_site_title_different_font_enabled',
 		)
@@ -858,7 +858,7 @@ $wp_customize->add_setting(
 	'fascinate_field_author_meta_font',
 	array(
 		'default'           => $defaults['author_meta_font'],
-		'sanitize_callback' => '',
+		'sanitize_callback' => 'fascinate_sanitize_font',
 	)
 );
 
@@ -867,7 +867,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'fascinate_field_author_meta_font',
 		array(
-			'label'           => esc_html__( 'Author Meta Font', 'royale-news' ),
+			'label'           => esc_html__( 'Author Meta Font', 'fascinate' ),
 			'section'         => 'fascinate_section_post_meta',
 			'active_callback' => 'fascinate_has_author_meta_different_font_enabled',
 		)
@@ -883,7 +883,7 @@ $wp_customize->add_setting(
 	'fascinate_field_body_font',
 	array(
 		'default'           => $defaults['body_font'],
-		'sanitize_callback' => '',
+		'sanitize_callback' => 'fascinate_sanitize_font',
 	)
 );
 
@@ -892,7 +892,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'fascinate_field_body_font',
 		array(
-			'label'   => esc_html__( 'Body Font', 'royale-news' ),
+			'label'   => esc_html__( 'Body Font', 'fascinate' ),
 			'section' => 'fascinate_section_typography',
 		)
 	)
@@ -902,7 +902,7 @@ $wp_customize->add_setting(
 	'fascinate_field_headings_font',
 	array(
 		'default'           => $defaults['headings_font'],
-		'sanitize_callback' => '',
+		'sanitize_callback' => 'fascinate_sanitize_font',
 	)
 );
 
@@ -911,7 +911,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'fascinate_field_headings_font',
 		array(
-			'label'   => esc_html__( 'Headings Font', 'royale-news' ),
+			'label'   => esc_html__( 'Headings Font', 'fascinate' ),
 			'section' => 'fascinate_section_typography',
 		)
 	)

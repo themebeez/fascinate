@@ -227,17 +227,17 @@ class Fascinate_Customize_Typography_Control extends WP_Customize_Control {
 									<# _.each( data.websafeFontsList, function( value, key ) { #>
 										<#
 										let selectedFontFamily = '';							
-										if ( savedValue.source == 'websafe' ) {
-											if ( savedValue.font_family == value ) {
+										if ( savedValue.source === 'websafe' ) {
+											if ( savedValue.font_family === key ) {
 												selectedFontFamily = "selected";
-											} else {
-												if ( defaultValue.font_family == value ) {
-													selectedFontFamily = "selected";
-												}
 											}
 										}
 										#>
-										<option value="{{ key }}" data-variants="{{ data.websafeFontVariants }}" data-source="websafe" {{{ selectedFontFamily }}}>{{ value }}</option>
+										<option
+											value="{{ key }}"
+											data-source="websafe"
+											{{{ selectedFontFamily }}}
+										>{{ value }}</option>
 									<# } ); #>
 								</optgroup>
 							<# } #>
@@ -246,13 +246,9 @@ class Fascinate_Customize_Typography_Control extends WP_Customize_Control {
 									<# _.each( data.googleFontsList, function( value, key ) { #>
 										<#
 										let selectedFontFamily = '';								
-										if ( savedValue.source == 'google' ) {
-											if ( savedValue.font_family == value.family ) {
+										if ( savedValue.source === 'google' ) {
+											if ( savedValue.font_family === value.family ) {
 												selectedFontFamily = "selected";
-											} else {
-												if ( defaultValue.font_family == value.family ) {
-													selectedFontFamily = "selected";
-												}
 											}
 										}
 										#>
