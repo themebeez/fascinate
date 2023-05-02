@@ -33,7 +33,7 @@
 		$fascinate_is_preloader_enabled = fascinate_get_option( 'display_preloader' );
 		if ( true === $fascinate_is_preloader_enabled || 1 === $fascinate_is_preloader_enabled ) {
 			?>
-			<div class="preLoader">
+			<div class="preLoader" id="preLoader">
 				<div class="fl fl-spinner spinner1">
 					<div class="double-bounce1"></div>
 					<div class="double-bounce2"></div>

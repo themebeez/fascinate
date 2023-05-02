@@ -87,59 +87,59 @@ const project_text_domain = 'fascinate';
 /*
 ####################
 =
-= Var 3: varibales for facinate static resources 
+= Var 3: varibales for fascinate static resources 
 =
 ####################
 */
 
 // #3.1 Script files path
-const facinateScriptsPath = {
+const fascinateScriptsPath = {
 
-    facinate_scripts_path: [
+    fascinate_scripts_path: [
 
         './assets/src/js/libraries/*.js',
         './assets/src/js/custom/*.js',
         '!./assets/src/js/conditional/**'
     ],
 
-    facinate_script_dist: "./assets/dist/js/",
+    fascinate_script_dist: "./assets/dist/js/",
 }
-const facinate_build_js_file_name = "bundle.js"; // what would you like to name your minified bundled js file
+const fascinate_build_js_file_name = "bundle.js"; // what would you like to name your minified bundled js file
 
 
 // #3.2 Conditional scripts
-const facinateConditionalScriptsPath = {
+const fascinateConditionalScriptsPath = {
 
-    facinate_con_scripts_src: [
+    fascinate_con_scripts_src: [
 
         './assets/src/js/conditional/*/**.js',
     ],
 
-    facinate_con_scripts_dist: "./assets/dist/js/conditional/",
+    fascinate_con_scripts_dist: "./assets/dist/js/conditional/",
 }
 
 
 // #3.3 SASS/SCSS file path
-const facinateSassPath = {
+const fascinateSassPath = {
 
-    facinate_sass_src: ["./assets/src/scss/**/*.scss", "!./assets/src/scss/conditional/**"],
-    facinate_sass_dist: "./assets/dist/css/",
+    fascinate_sass_src: ["./assets/src/scss/**/*.scss", "!./assets/src/scss/conditional/**"],
+    fascinate_sass_dist: "./assets/dist/css/",
 }
-const facinate_compiled_sass_css_file_name = "main.css"; // what would you like to name your compiled CSS file
+const fascinate_compiled_sass_css_file_name = "main.css"; // what would you like to name your compiled CSS file
 
 
 // #3.4 Conditional SASS/SCSS file path 
-const facinateConditionalSassPath = {
+const fascinateConditionalSassPath = {
 
-    facinate_cond_sass_src: "./assets/src/scss/conditional/**/*.scss",
-    facinate_cond_sass_dist: "./assets/dist/css/conditional/",
+    fascinate_cond_sass_src: "./assets/src/scss/conditional/**/*.scss",
+    fascinate_cond_sass_dist: "./assets/dist/css/conditional/",
 }
 
 // #3.5 LTR & RTL CSS path
-const facinateRtlCssPath = {
+const fascinateRtlCssPath = {
 
-    facinate_rtlcss_src: "./assets/dist/css/" + facinate_compiled_sass_css_file_name,
-    facinate_rtlcss_dist: "./assets/dist/css/", // where would you like to save your generated RTL CSS
+    fascinate_rtlcss_src: "./assets/dist/css/" + fascinate_compiled_sass_css_file_name,
+    fascinate_rtlcss_dist: "./assets/dist/css/", // where would you like to save your generated RTL CSS
 }
 
 
@@ -177,27 +177,27 @@ gulp.task('ZipProductionFiles', function () {
 /*
 ===========================================================
 =
-= Task 3: Compile facinate static resources
+= Task 3: Compile fascinate static resources
 =
 ====================================================
 */
 
-gulp.task('facinateScriptsTask', function () {
-    return gulp.src(facinateScriptsPath.facinate_scripts_path)
-        .pipe(concat(facinate_build_js_file_name))
+gulp.task('fascinateScriptsTask', function () {
+    return gulp.src(fascinateScriptsPath.fascinate_scripts_path)
+        .pipe(concat(fascinate_build_js_file_name))
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
-        .pipe(gulp.dest(facinateScriptsPath.facinate_script_dist));
+        .pipe(gulp.dest(fascinateScriptsPath.fascinate_script_dist));
 });
 
-gulp.task('facinateConditionalScriptsTask', function () {
-    return gulp.src(facinateConditionalScriptsPath.facinate_con_scripts_src)
+gulp.task('fascinateConditionalScriptsTask', function () {
+    return gulp.src(fascinateConditionalScriptsPath.fascinate_con_scripts_src)
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
-        .pipe(gulp.dest(facinateConditionalScriptsPath.facinate_con_scripts_dist));
+        .pipe(gulp.dest(fascinateConditionalScriptsPath.fascinate_con_scripts_dist));
 });
 
-gulp.task('facinateSassTask', function () {
+gulp.task('fascinateSassTask', function () {
     var onError = function (err) {
         notify.onError({
             title: "Gulp",
@@ -207,17 +207,17 @@ gulp.task('facinateSassTask', function () {
         })(err);
         this.emit('end');
     };
-    return gulp.src(facinateSassPath.facinate_sass_src)
+    return gulp.src(fascinateSassPath.fascinate_sass_src)
         .pipe(sourcemaps.init()) // initialize sourcemaps first
         .pipe(plumber({ errorHandler: onError }))
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(postcss([autoprefixer('last 2 version'), cssnano()])) // PostCSS plugins
-        .pipe(concat(facinate_compiled_sass_css_file_name))
+        .pipe(concat(fascinate_compiled_sass_css_file_name))
         .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
-        .pipe(gulp.dest(facinateSassPath.facinate_sass_dist)); // put final CSS in dist folder
+        .pipe(gulp.dest(fascinateSassPath.fascinate_sass_dist)); // put final CSS in dist folder
 });
 
-gulp.task('facinateConditionalSassTask', function () {
+gulp.task('fascinateConditionalSassTask', function () {
     var onError = function (err) {
         notify.onError({
             title: "Gulp",
@@ -227,21 +227,21 @@ gulp.task('facinateConditionalSassTask', function () {
         })(err);
         this.emit('end');
     };
-    return gulp.src(facinateConditionalSassPath.facinate_cond_sass_src)
+    return gulp.src(fascinateConditionalSassPath.fascinate_cond_sass_src)
         .pipe(sourcemaps.init()) // initialize sourcemaps first
         .pipe(plumber({ errorHandler: onError }))
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(postcss([autoprefixer('last 2 version'), cssnano()])) // PostCSS plugins
         .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
-        .pipe(gulp.dest(facinateConditionalSassPath.facinate_cond_sass_dist)); // put final CSS in dist folder
+        .pipe(gulp.dest(fascinateConditionalSassPath.fascinate_cond_sass_dist)); // put final CSS in dist folder
 });
 
 // task to convert LTR css to RTL
-gulp.task('facinateDortlTask', function () {
-    return gulp.src(facinateRtlCssPath.facinate_rtlcss_src)
+gulp.task('fascinateDortlTask', function () {
+    return gulp.src(fascinateRtlCssPath.fascinate_rtlcss_src)
         .pipe(rtlcss()) // Convert to RTL.
         .pipe(rename({ suffix: '-rtl' })) // Append "-rtl" to the filename.
-        .pipe(gulp.dest(facinateRtlCssPath.facinate_rtlcss_dist)); // Output RTL stylesheets.
+        .pipe(gulp.dest(fascinateRtlCssPath.fascinate_rtlcss_dist)); // Output RTL stylesheets.
 });
 
 
@@ -258,7 +258,7 @@ gulp.task('facinateDortlTask', function () {
 //=========================================
 //
 // 1. Command: gulp makepot (will generate WP POT file)
-// 2. Command: gulp assets (will compile facinate scss, js & watch for the changes)
+// 2. Command: gulp assets (will compile fascinate scss, js & watch for the changes)
 // 3. Command: gulp zipprod (zips the production files)
 //
 //=========================================
@@ -287,14 +287,14 @@ gulp.task('pot', gulp.series('WordpressPot', (done) => {
     done();
 }));
 
-// Run Task: Compile facinate assets.
+// Run Task: Compile fascinate assets.
 
-gulp.task('assets', gulp.series('facinateScriptsTask', 'facinateConditionalScriptsTask', 'facinateSassTask', 'facinateConditionalSassTask', 'facinateDortlTask', (done) => {
+gulp.task('assets', gulp.series('fascinateScriptsTask', 'fascinateConditionalScriptsTask', 'fascinateSassTask', 'fascinateConditionalSassTask', 'fascinateDortlTask', (done) => {
 
-    gulp.watch(facinateScriptsPath.facinate_scripts_path, gulp.series('facinateScriptsTask'));
-    gulp.watch(facinateConditionalScriptsPath.facinate_con_scripts_src, gulp.series('facinateConditionalScriptsTask'));
-    gulp.watch(facinateSassPath.facinate_sass_src, gulp.series('facinateSassTask'));
-    gulp.watch(facinateConditionalSassPath.facinate_cond_sass_src, gulp.series('facinateConditionalSassTask'));
-    gulp.watch(facinateRtlCssPath.facinate_rtlcss_src, gulp.series('facinateDortlTask'));
+    gulp.watch(fascinateScriptsPath.fascinate_scripts_path, gulp.series('fascinateScriptsTask'));
+    gulp.watch(fascinateConditionalScriptsPath.fascinate_con_scripts_src, gulp.series('fascinateConditionalScriptsTask'));
+    gulp.watch(fascinateSassPath.fascinate_sass_src, gulp.series('fascinateSassTask'));
+    gulp.watch(fascinateConditionalSassPath.fascinate_cond_sass_src, gulp.series('fascinateConditionalSassTask'));
+    gulp.watch(fascinateRtlCssPath.fascinate_rtlcss_src, gulp.series('fascinateDortlTask'));
     done();
 }));

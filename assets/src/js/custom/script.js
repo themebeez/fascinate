@@ -2,8 +2,6 @@
 
     'use strict';
 
-    // Document ready function
-
     $(document).ready(function () {
 
 
@@ -113,7 +111,6 @@
                 additionalMarginTop: 30
 
             });
-
         }
 
 
@@ -223,13 +220,6 @@
             },]
         });
 
-
-        let preLoader = $('.preLoader');
-
-        if(preLoader.length === 1) {
-            preLoader.fadeOut(1000);
-        }
-
         /*
         ==========================
         = Back to top
@@ -263,4 +253,22 @@
 
     });
 
+    /**
+    *
+    * Remove preloader once DOM is fully loaded & all the assets are loaded.
+    * 
+    * @since: 1.0.9
+    */
+
+    $(window).on("load", function () {
+
+        let preLoader = $('#preLoader');
+
+        if (preLoader.length > 0) {
+
+            preLoader.fadeOut('slow');
+        }
+    });
+
 })(jQuery);
+
