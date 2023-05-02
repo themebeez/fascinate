@@ -223,19 +223,12 @@
             },]
         });
 
-        /* 
-        =============================
-        =
-        = Window load function
-        =
-        =====================================
-        */
 
+        let preLoader = $('.preLoader');
 
-        $(window).load(function () {
-
-            jQuery('.preLoader').fadeOut(1000);
-        });
+        if(preLoader.length === 1) {
+            preLoader.fadeOut(1000);
+        }
 
         /*
         ==========================

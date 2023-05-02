@@ -2,9 +2,9 @@
 
 Contributors: themebeez
 Requires at least: 5.0
-Requires PHP: 5.6
-Tested up to: 6.0
-Stable tag: 1.0.8
+Requires PHP: 5.6 or higher
+Tested up to: 6.2
+Stable tag: 1.0.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, blog, custom-header, theme-options, footer-widgets, editor-style, block-styles, wide-blocks, sticky-post, post-formats
@@ -17,7 +17,7 @@ Fascinate is a slick, modern, minimal, and beautifully designed Gutenberg compat
 
 == License ==
 
-Fascinate WordPress Theme, Copyright (C) 2022, themebeez.
+Fascinate WordPress Theme, Copyright (C) 2023, themebeez.
 Fascinate is distributed under the terms of the GNU GPL
 
 
@@ -34,8 +34,6 @@ Fascinate is distributed under the terms of the GNU GPL
 * Breadcrumbs Trail https://themehybrid.com/plugins/breadcrumb-trail, Copyright (c) 2008 - 2017, Justin Tadlock, [GPLv2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 
 * Bootstrap https://github.com/twbs/bootstrap/blob/master/LICENSE, Copyright (c) 2011-2018 Twitter, Inc,, [MIT](http://opensource.org/licenses/MIT)
-
-* Lazysize https://github.com/aFarkas/lazysizes, Copyright (c) 2015 Alexander Farkas, [MIT](http://opensource.org/licenses/MIT)
 
 * Slick http://github.com/kenwheeler/slick, Copyright (c) 2017 Ken Wheeler, [MIT](http://opensource.org/licenses/MIT)
 
@@ -90,7 +88,7 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 
 == Changelog ==
 
-= 1.0.9 - ? April, 2023 =
+= 1.0.9 - 2 May, 2023 =
 
 - Removed: Everest backup plugin recommendation.
 - Removed: Options, `Enable Cursive Site Title`, `Enable Cursive Post Meta`, and `Enable Lazy Loading`.
@@ -98,11 +96,14 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 - Fixed: Issue with customizer options, `Display Featured Image`.
 - Fixed: PHP error - `PHP Fatal error: Uncaught ArgumentCountError: Too few arguments to function get_day_link(), 1 passed in /wp-content/themes/cream-magazine/third-party/breadcrumbs.php on line 802 and exactly 3 expected.`
 - Fixed:  Missing `=` after an instance of `value` attribute in an `input` tag in `value"' . get_search_query() . '"`.
+- Fixed: JS issue of preloader.
+- Fixed: Minor CSS issues.
 - Updated: YouTube icon in social links of header and social widget.
 - Updated: WPCS maintained.
+- Updated: Post comments meta linked to comment section of the post.
 - Added: Typography options for body, headings, site title, and author meta.
 
-= 1.0.8 - 29 May, 2022 = 
+= 1.0.8 - 29 May, 2022 =
 
 - Update: Everest Backup plugin recommendation notice added.
 - Fix: Minor PHP issue in author widget.
@@ -120,18 +121,15 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 - Fix: H1 tag issue in home page(static or default)
 - CSS: Line height added to site title
 
-
 = 1.0.5 - 05 May, 2020 =
 
 - Fix: Padding issue with article tag on single layout two
-
 
 = 1.0.4 - 31 March, 2020 =
 
 - Fix: Heading tag h1 at single, page, archive, category, 404 & search pages
 - Removed: Retins js & scss file
 - Removed: Bootstrap js
-
 
 = 1.0.3 - 24 October, 2019 =
 
@@ -143,13 +141,11 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 - Issue with wp_body_open() fixed
 - Issue of skip links fixed
 
-
 = 1.0.1 - 30 July, 2019 =
 
 - Issue on image upload field of author widget fixed
 - UGAAM plugin recommended
 - Screenshot has been changed
-
 
 = 1.0.0 - 21, July 2019 =
 
