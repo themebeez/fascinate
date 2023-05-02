@@ -136,8 +136,14 @@ if ( ! class_exists( 'Fascinate_Post_Widget' ) ) {
 							$i = 1;
 							while ( $post_query->have_posts() ) {
 								$post_query->the_post();
+
+								$post_classes = 'post';
+
+								if ( ! has_post_thumbnail() ) {
+									$post_classes .= ' has-no-post-thumbnail';
+								}
 								?>
-								<article class="post">
+								<article class="<?php echo esc_attr( $post_classes ); ?>">
 									<div class="fb-row">
 										<?php
 										if ( has_post_thumbnail() ) {

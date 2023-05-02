@@ -104,9 +104,13 @@ if ( ! function_exists( 'fascinate_comments_no_meta' ) ) {
 		) {
 
 			if ( ( comments_open() || get_comments_number() ) ) {
+
+				$comments_view_layout = fascinate_get_option( 'display_post_comments_view' );
+
+				$comments_link = ( 'default' === $comments_view_layout ) ? get_permalink() . '#comments' : get_permalink() . '#load-comments';
 				?>
 				<li class="comment">
-					<a href="<?php the_permalink(); ?>">
+					<a href="<?php echo esc_url( $comments_link ); ?>">
 						<?php
 						if ( get_comments_number() <= 1 ) {
 							if ( get_comments_number() === 0 ) {
