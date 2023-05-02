@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Fascinate 1.0.8\n"
+"Project-Id-Version: Fascinate 1.0.9\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/fascinate\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-05-02T05:34:38+00:00\n"
+"POT-Creation-Date: 2023-05-02T07:29:04+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: fascinate\n"
@@ -539,12 +539,12 @@ msgid "Fullwidth"
 msgstr ""
 
 #: includes/class-fascinate-custom-fields.php:164
-#: widgets/class-fascinate-post-widget.php:212
+#: widgets/class-fascinate-post-widget.php:218
 msgid "Layout One"
 msgstr ""
 
 #: includes/class-fascinate-custom-fields.php:165
-#: widgets/class-fascinate-post-widget.php:213
+#: widgets/class-fascinate-post-widget.php:219
 msgid "Layout Two"
 msgstr ""
 
@@ -587,17 +587,17 @@ msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
-#: includes/template-tags.php:113
+#: includes/template-tags.php:117
 msgid "Leave a comment"
 msgstr ""
 
 #. translators: %s: comments number.
-#: includes/template-tags.php:117
+#: includes/template-tags.php:121
 msgid "%s comment"
 msgstr ""
 
 #. translators: %s: comments number.
-#: includes/template-tags.php:124
+#: includes/template-tags.php:128
 msgid "%s comments"
 msgstr ""
 
@@ -1156,7 +1156,7 @@ msgid "Displays brief author detail."
 msgstr ""
 
 #: widgets/class-fascinate-author-widget.php:138
-#: widgets/class-fascinate-post-widget.php:234
+#: widgets/class-fascinate-post-widget.php:240
 msgid "Title"
 msgstr ""
 
@@ -1193,19 +1193,19 @@ msgstr ""
 msgid "Displays Posts."
 msgstr ""
 
-#: widgets/class-fascinate-post-widget.php:203
+#: widgets/class-fascinate-post-widget.php:209
 msgid "Chooose Layout"
 msgstr ""
 
-#: widgets/class-fascinate-post-widget.php:246
+#: widgets/class-fascinate-post-widget.php:252
 msgid "No of Posts"
 msgstr ""
 
-#: widgets/class-fascinate-post-widget.php:269
+#: widgets/class-fascinate-post-widget.php:275
 msgid "Display Date"
 msgstr ""
 
-#: widgets/class-fascinate-post-widget.php:285
+#: widgets/class-fascinate-post-widget.php:291
 msgid "Display Comments No"
 msgstr ""
 
