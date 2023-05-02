@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-05-02T10:53:12+00:00\n"
+"POT-Creation-Date: 2023-05-02T12:15:46+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: fascinate\n"
@@ -75,31 +75,31 @@ msgstr ""
 msgid "Google Fonts"
 msgstr ""
 
-#: customizer/controls/typography/class-fascinate-customize-typography-control.php:276
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:272
 msgid "Variants"
 msgstr ""
 
-#: customizer/controls/typography/class-fascinate-customize-typography-control.php:301
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:297
 msgid "Font Weight"
 msgstr ""
 
-#: customizer/controls/typography/class-fascinate-customize-typography-control.php:337
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:333
 msgid "Font Size"
 msgstr ""
 
-#: customizer/controls/typography/class-fascinate-customize-typography-control.php:605
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:601
 msgid "Line Height"
 msgstr ""
 
-#: customizer/controls/typography/class-fascinate-customize-typography-control.php:702
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:698
 msgid "Letter Spacing"
 msgstr ""
 
-#: customizer/controls/typography/class-fascinate-customize-typography-control.php:971
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:967
 msgid "Text Style"
 msgstr ""
 
-#: customizer/controls/typography/class-fascinate-customize-typography-control.php:1057
+#: customizer/controls/typography/class-fascinate-customize-typography-control.php:1053
 msgid "Text Transform"
 msgstr ""
 
@@ -308,6 +308,10 @@ msgstr ""
 msgid "Enable Different Font for Site Title"
 msgstr ""
 
+#: customizer/functions/customizer-fields.php:351
+msgid "Site Title Font"
+msgstr ""
+
 #: customizer/functions/customizer-fields.php:360
 msgid "Logo Section Padding"
 msgstr ""
@@ -480,6 +484,18 @@ msgstr ""
 
 #: customizer/functions/customizer-fields.php:851
 msgid "Enable Different Font for Author Meta"
+msgstr ""
+
+#: customizer/functions/customizer-fields.php:870
+msgid "Author Meta Font"
+msgstr ""
+
+#: customizer/functions/customizer-fields.php:895
+msgid "Body Font"
+msgstr ""
+
+#: customizer/functions/customizer-fields.php:914
+msgid "Headings Font"
 msgstr ""
 
 #. translators: 1: Theme name, 2: Theme author.
