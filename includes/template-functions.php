@@ -37,10 +37,7 @@ function fascinate_body_classes( $classes ) {
 	// Adds a class when preloader is enabled.
 	$is_preloader_enabled = fascinate_get_option( 'enable_preloader' );
 
-	if (
-		true === $is_preloader_enabled ||
-		1 === $is_preloader_enabled
-	) {
+	if ( $is_preloader_enabled ) {
 
 		$classes[] = 'preloader-active';
 	}
@@ -99,7 +96,7 @@ if ( ! function_exists( 'fascinate_main_container_class' ) ) {
 		}
 
 		if (
-			( true === $sticky_enabled || 1 === $sticky_enabled ) &&
+			( $sticky_enabled ) &&
 			'none' !== $sidebar_position
 		) {
 
@@ -124,7 +121,7 @@ if ( ! function_exists( 'fascinate_sidebar_class' ) ) {
 
 		$sticky_enabled = fascinate_sticky_sidebar_enabled();
 
-		if ( true === $sticky_enabled || 1 === $sticky_enabled ) {
+		if ( $sticky_enabled ) {
 
 			$sidebar_class .= ' sticky-portion';
 		}
@@ -138,10 +135,7 @@ if ( ! function_exists( 'fascinate_sidebar_class' ) ) {
 
 		$enable_for_small_devices = fascinate_get_option( 'enable_sidebar_small_devices' );
 
-		if (
-			true !== $enable_for_small_devices ||
-			1 !== $enable_for_small_devices
-		) {
+		if ( ! $enable_for_small_devices ) {
 
 			$sidebar_class .= ' hide-medium';
 		}
@@ -185,7 +179,7 @@ if ( ! function_exists( 'fascinate_dropcap_class' ) ) {
 
 			$enable_dropcap = fascinate_get_option( 'blog_enable_dropcap' );
 
-			if ( true === $enable_dropcap || 1 === $enable_dropcap ) {
+			if ( $enable_dropcap ) {
 
 				$dropcap_class = 'dropcap';
 
@@ -197,7 +191,7 @@ if ( ! function_exists( 'fascinate_dropcap_class' ) ) {
 
 			$enable_dropcap = fascinate_get_option( 'archive_enable_dropcap' );
 
-			if ( true === $enable_dropcap || 1 === $enable_dropcap ) {
+			if ( $enable_dropcap ) {
 
 				$dropcap_class = 'dropcap';
 
@@ -209,7 +203,7 @@ if ( ! function_exists( 'fascinate_dropcap_class' ) ) {
 
 			$enable_dropcap = fascinate_get_option( 'search_enable_dropcap' );
 
-			if ( true === $enable_dropcap || 1 === $enable_dropcap ) {
+			if ( $enable_dropcap ) {
 
 				$dropcap_class = 'dropcap';
 
@@ -290,7 +284,7 @@ if ( ! function_exists( 'fascinate_breadcrumb' ) ) {
 
 		$display_breadcrumb = fascinate_get_option( 'display_breadcrumb' );
 
-		if ( true === $display_breadcrumb || 1 === $display_breadcrumb ) {
+		if ( $display_breadcrumb ) {
 			?>
 			<div class="fb-breadcrumb">
 				<?php

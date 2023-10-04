@@ -7,7 +7,7 @@
 
 $display_author_section = fascinate_get_option( 'display_author_section' );
 
-if ( true === $display_author_section || 1 === $display_author_section ) {
+if ( $display_author_section ) {
 	?>
 	<div class="author-box">
 		<div class="top-wrap">

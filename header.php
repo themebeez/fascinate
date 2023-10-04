@@ -31,7 +31,7 @@
 
 		<?php
 		$fascinate_is_preloader_enabled = fascinate_get_option( 'display_preloader' );
-		if ( true === $fascinate_is_preloader_enabled || 1 === $fascinate_is_preloader_enabled ) {
+		if ( $fascinate_is_preloader_enabled ) {
 			?>
 			<div class="preLoader" id="preLoader">
 				<div class="fl fl-spinner spinner1">
@@ -48,7 +48,7 @@
 
 				$fascinate_display_top_header = fascinate_get_option( 'display_top_header' );
 
-				if ( true === $fascinate_display_top_header || 1 === $fascinate_display_top_header ) {
+				if ( $fascinate_display_top_header ) {
 					?>
 					<div class="header-top">
 						<div class="fb-container">

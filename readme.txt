@@ -3,8 +3,8 @@
 Contributors: themebeez
 Requires at least: 5.0
 Requires PHP: 5.6 or higher
-Tested up to: 6.2
-Stable tag: 1.0.9
+Tested up to: 6.3.1
+Stable tag: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, blog, custom-header, theme-options, footer-widgets, editor-style, block-styles, wide-blocks, sticky-post, post-formats
@@ -87,6 +87,10 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 
 
 == Changelog ==
+
+= 1.1.0 - 4 October, 2023 =
+
+- Fixed: Not working customize options, `Display Featured Image` of Page Single section and `Enable Sidebar For Small Devices` of Site Sidebar section.
 
 = 1.0.9 - 2 May, 2023 =
 
