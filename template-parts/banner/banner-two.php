@@ -17,7 +17,7 @@ if ( $banner_query->have_posts() ) {
 
 	$spacing_class = '';
 
-	if ( true === $enable_spacing || 1 === $enable_spacing ) {
+	if ( $enable_spacing ) {
 
 		$spacing_class = 'carousel-spacing';
 	} else {
@@ -39,7 +39,7 @@ if ( $banner_query->have_posts() ) {
 						<div class="item">		                    	
 							<div class="post-thumb" style="background-image: url(<?php echo esc_url( $carousel_img_url ); ?>);">                        	
 								<?php
-								if ( true === $display_banner_content || 1 === $display_banner_content ) {
+								if ( $display_banner_content ) {
 									?>
 									<div class="content-holder-wrap">
 										<div class="content-holder">

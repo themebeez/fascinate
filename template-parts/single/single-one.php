@@ -19,11 +19,7 @@
 		$display_date   = fascinate_get_option( 'display_post_date' );
 		$display_author = fascinate_get_option( 'display_post_author' );
 
-		if (
-			( true === $display_cats || 1 === $display_cats ) ||
-			( true === $display_author || 1 === $display_author ) ||
-			( true === $display_date || 1 === $display_date )
-		) {
+		if ( $display_cats || $display_author || $display_date ) {
 			?>
 			<div class="single-metas-and-cats">
 				<?php fascinate_categories_meta( $display_cats ); ?>

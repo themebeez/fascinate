@@ -42,7 +42,7 @@ if ( ! function_exists( 'fascinate_dynamic_style' ) ) {
 
 		$css = '<style>';
 
-		if ( false === $display_srcoll_top || 0 === $display_srcoll_top ) {
+		if ( ! $display_srcoll_top ) {
 
 			$css .= '.fascinate-to-top {';
 			$css .= 'display: none !important;';

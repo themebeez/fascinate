@@ -7,7 +7,7 @@
 
 $display_related_section = fascinate_get_option( 'display_related_section' );
 
-if ( true === $display_related_section || 1 === $display_related_section ) {
+if ( $display_related_section ) {
 
 	$related_query = fascinate_related_posts_query();
 

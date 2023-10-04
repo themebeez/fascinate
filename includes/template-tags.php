@@ -17,10 +17,7 @@ if ( ! function_exists( 'fascinate_posted_on' ) ) {
 	 */
 	function fascinate_posted_on( $display_meta ) {
 
-		if (
-			( true === $display_meta || 1 === $display_meta ) &&
-			'post' === get_post_type()
-		) {
+		if ( $display_meta && 'post' === get_post_type() ) {
 
 			$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 
@@ -51,10 +48,7 @@ if ( ! function_exists( 'fascinate_posted_date' ) ) {
 	 */
 	function fascinate_posted_date( $display_meta ) {
 
-		if (
-			( true === $display_meta || 1 === $display_meta ) &&
-			'post' === get_post_type()
-		) {
+		if ( $display_meta && 'post' === get_post_type() ) {
 
 			echo '<li class="posted-date"><span class="posted-date-month">' . esc_html( get_the_date( __( 'd M', 'fascinate' ) ) ) . '</span><span class="posted-year">' . esc_html( get_the_date( __( 'Y', 'fascinate' ) ) ) . '</span></li>';
 		}
@@ -71,10 +65,7 @@ if ( ! function_exists( 'fascinate_posted_by' ) ) {
 	 */
 	function fascinate_posted_by( $display_meta ) {
 
-		if (
-			( true === $display_meta || 1 === $display_meta ) &&
-			'post' === get_post_type()
-		) {
+		if ( $display_meta && 'post' === get_post_type() ) {
 
 			$byline = sprintf(
 				/* translators: %s: post author. */
@@ -98,10 +89,7 @@ if ( ! function_exists( 'fascinate_comments_no_meta' ) ) {
 	 */
 	function fascinate_comments_no_meta( $display_meta ) {
 
-		if (
-			( true === $display_meta || 1 === $display_meta ) &&
-			'post' === get_post_type()
-		) {
+		if ( $display_meta && 'post' === get_post_type() ) {
 
 			if ( ( comments_open() || get_comments_number() ) ) {
 
@@ -175,10 +163,7 @@ if ( ! function_exists( 'fascinate_tags_meta' ) ) {
 	 */
 	function fascinate_tags_meta( $display_meta ) {
 
-		if (
-			( true === $display_meta || 1 === $display_meta ) &&
-			'post' === get_post_type()
-		) {
+		if ( $display_meta && 'post' === get_post_type() ) {
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list();
@@ -206,9 +191,17 @@ if ( ! function_exists( 'fascinate_post_thumbnail' ) ) {
 
 		if ( is_singular() ) {
 
-			$show_featured_image = fascinate_get_option( 'display_post_feat_img' );
+			$show_featured_image = false;
 
-			if ( true === $show_featured_image || 1 === $show_featured_image ) {
+			if ( is_page() ) {
+				$show_featured_image = fascinate_get_option( 'display_page_feat_img' );
+			}
+
+			if ( is_single() ) {
+				$show_featured_image = fascinate_get_option( 'display_post_feat_img' );
+			}
+
+			if ( $show_featured_image ) {
 				?>
 				<div class="post-media-wrap">
 					<div class="post-media-entry standard">
@@ -244,7 +237,7 @@ if ( ! function_exists( 'fascinate_post_thumbnail' ) ) {
 				$show_featured_image = fascinate_get_option( 'search_display_feat_img' );
 			}
 
-			if ( true === $show_featured_image || 1 === $show_featured_image ) {
+			if ( $show_featured_image ) {
 
 				fascinate_large_thumbnail();
 			}
@@ -312,7 +305,7 @@ if ( ! function_exists( 'fascinate_large_thumbnail' ) ) {
 	 */
 	function fascinate_large_thumbnail( $display_featured_image = true ) {
 
-		if ( true === $display_featured_image || 1 === $display_featured_image ) {
+		if ( $display_featured_image ) {
 			?>
 			<div class="post-thumb imghover <?php fascinate_thumbnail_class(); ?>">
 				<a href="<?php the_permalink(); ?>">

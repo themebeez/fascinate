@@ -16,7 +16,7 @@ $display_featured_image = fascinate_get_option( 'display_post_feat_img' );
 	</header><!-- .entry-header -->
 
 	<?php
-	if ( true === $display_featured_image || true === $display_featured_image ) {
+	if ( $display_featured_image ) {
 		fascinate_post_thumbnail();
 	}
 	?>
