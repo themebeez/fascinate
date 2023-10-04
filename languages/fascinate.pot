@@ -2,16 +2,16 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Fascinate 1.0.9\n"
+"Project-Id-Version: Fascinate 1.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/fascinate\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-05-02T12:15:46+00:00\n"
+"POT-Creation-Date: 2023-10-04T09:04:45+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.7.1\n"
+"X-Generator: WP-CLI 2.8.1\n"
 "X-Domain: fascinate\n"
 
 #. Theme Name of the theme
@@ -564,56 +564,56 @@ msgstr ""
 msgid "Layout Two"
 msgstr ""
 
-#: includes/template-functions.php:334
+#: includes/template-functions.php:328
 msgid "404 - Page Not Found"
 msgstr ""
 
 #. translators: %s: search query.
-#: includes/template-functions.php:347
+#: includes/template-functions.php:341
 msgid "Search Results for: %s"
 msgstr ""
 
-#: includes/template-functions.php:482
+#: includes/template-functions.php:476
 msgid "Prev"
 msgstr ""
 
-#: includes/template-functions.php:483
+#: includes/template-functions.php:477
 msgid "Next"
 msgstr ""
 
-#: includes/template-functions.php:510
+#: includes/template-functions.php:504
 msgid "Next Post"
 msgstr ""
 
-#: includes/template-functions.php:527
+#: includes/template-functions.php:521
 msgid "Previous Post"
 msgstr ""
 
-#: includes/template-tags.php:59
+#: includes/template-tags.php:53
 msgid "d M"
 msgstr ""
 
-#: includes/template-tags.php:59
+#: includes/template-tags.php:53
 msgid "Y"
 msgstr ""
 
 #. translators: %s: post author.
-#: includes/template-tags.php:81
+#: includes/template-tags.php:72
 msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
-#: includes/template-tags.php:117
+#: includes/template-tags.php:105
 msgid "Leave a comment"
 msgstr ""
 
 #. translators: %s: comments number.
-#: includes/template-tags.php:121
+#: includes/template-tags.php:109
 msgid "%s comment"
 msgstr ""
 
 #. translators: %s: comments number.
-#: includes/template-tags.php:128
+#: includes/template-tags.php:116
 msgid "%s comments"
 msgstr ""
 
@@ -648,14 +648,14 @@ msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searc
 msgstr ""
 
 #: template-parts/content-page.php:30
-#: template-parts/single/single-one.php:48
+#: template-parts/single/single-one.php:44
 #: template-parts/single/single-two.php:26
 msgid "Pages:"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #: template-parts/content-page.php:46
-#: template-parts/single/single-one.php:68
+#: template-parts/single/single-one.php:64
 #: template-parts/single/single-two.php:46
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
