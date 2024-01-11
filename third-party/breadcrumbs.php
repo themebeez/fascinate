@@ -47,7 +47,7 @@ function fascinate_breadcrumb_trail( $args = array() ) {
  * @since  0.6.0
  * @access public
  */
-class Fascinate_Breadcrumb_Trail {
+class Fascinate_Breadcrumb_Trail { // phpcs:ignore.
 
 	/**
 	 * Array of items belonging to the current breadcrumb trail.

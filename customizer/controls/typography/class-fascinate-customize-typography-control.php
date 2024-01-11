@@ -1270,7 +1270,7 @@ if ( ! function_exists( 'fascinate_get_customize_responsive_icon_desktop' ) ) {
 	 *
 	 * @since 1.0.9
 	 */
-	function fascinate_get_customize_responsive_icon_desktop() {
+	function fascinate_get_customize_responsive_icon_desktop() { // phpcs:ignore.
 		?>
 		<li class="desktop">
 			<button type="button" class="preview-desktop active" data-device="desktop">

@@ -95,13 +95,11 @@ if ( ! function_exists( 'fascinate_dynamic_style' ) ) {
 			! empty( $site_title_font['font_family'] )
 		) {
 			$css .= 'font-family: ' . esc_attr( $site_title_font['font_family'] ) . ';';
-		} else {
-			if (
+		} elseif (
 				isset( $headings_font['font_family'] ) &&
 				! empty( $headings_font['font_family'] )
-			) {
+		) {
 				$css .= 'font-family: ' . esc_attr( $headings_font['font_family'] ) . ';';
-			}
 		}
 
 		if (
@@ -109,13 +107,11 @@ if ( ! function_exists( 'fascinate_dynamic_style' ) ) {
 			! empty( $site_title_font['font_weight'] )
 		) {
 			$css .= 'font-weight: ' . esc_attr( $site_title_font['font_weight'] ) . ';';
-		} else {
-			if (
+		} elseif (
 				isset( $headings_font['font_weight'] ) &&
 				! empty( $headings_font['font_weight'] )
-			) {
+		) {
 				$css .= 'font-weight: ' . esc_attr( $headings_font['font_weight'] ) . ';';
-			}
 		}
 
 		$css .= '}';
@@ -128,13 +124,11 @@ if ( ! function_exists( 'fascinate_dynamic_style' ) ) {
 			! empty( $author_meta_font['font_family'] )
 		) {
 			$css .= 'font-family: ' . esc_attr( $author_meta_font['font_family'] ) . ';';
-		} else {
-			if (
+		} elseif (
 				isset( $body_font['font_family'] ) &&
 				! empty( $body_font['font_family'] )
-			) {
+		) {
 				$css .= 'font-family: ' . esc_attr( $body_font['font_family'] ) . ';';
-			}
 		}
 
 		if (
@@ -142,13 +136,11 @@ if ( ! function_exists( 'fascinate_dynamic_style' ) ) {
 			! empty( $author_meta_font['font_weight'] )
 		) {
 			$css .= 'font-weight: ' . esc_attr( $author_meta_font['font_weight'] ) . ';';
-		} else {
-			if (
+		} elseif (
 				isset( $body_font['font_weight'] ) &&
 				! empty( $body_font['font_weight'] )
-			) {
+		) {
 				$css .= 'font-weight: ' . esc_attr( $body_font['font_weight'] ) . ';';
-			}
 		}
 
 		$css .= '}';

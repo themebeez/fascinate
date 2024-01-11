@@ -223,7 +223,7 @@ function fascinate_scripts() {
 			'fascinate-google-fonts',
 			fascinate_get_google_fonts_url(),
 			array(),
-			null,
+			FASCINATE_VERSION,
 			'all'
 		);
 	}
