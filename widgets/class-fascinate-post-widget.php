@@ -173,7 +173,7 @@ if ( ! class_exists( 'Fascinate_Post_Widget' ) ) {
 									</div><!-- .fb-row -->
 								</article><!-- .post -->
 								<?php
-								$i++;
+								++$i;
 							}
 							wp_reset_postdata();
 							?>

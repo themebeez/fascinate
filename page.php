@@ -34,15 +34,10 @@ fascinate_single_breadcrumb_wrapper();
 									if ( is_front_page() ) {
 
 										get_template_part( 'template-parts/single/single', 'one' );
+									} elseif ( 'layout_two' === $fascinate_single_layout ) {
+										get_template_part( 'template-parts/single/single', 'two' );
 									} else {
-
-										if ( 'layout_two' === $fascinate_single_layout ) {
-
-											get_template_part( 'template-parts/single/single', 'two' );
-										} else {
-
-											get_template_part( 'template-parts/single/single', 'one' );
-										}
+										get_template_part( 'template-parts/single/single', 'one' );
 									}
 
 									// If comments are open or we have at least one comment, load up the comment template.

@@ -84,15 +84,11 @@ if ( ! function_exists( 'fascinate_main_container_class' ) ) {
 
 				$container_class = 'col-lg-8 col-md-12 aligncenter';
 			}
+		} elseif ( 'left' === $sidebar_position ) {
+			$container_class = 'col-lg-8 col-md-12 order-last';
 		} else {
 
-			if ( 'left' === $sidebar_position ) {
-
-				$container_class = 'col-lg-8 col-md-12 order-last';
-			} else {
-
-				$container_class = 'col-lg-8 col-md-12';
-			}
+			$container_class = 'col-lg-8 col-md-12';
 		}
 
 		if (
@@ -229,15 +225,11 @@ if ( ! function_exists( 'fascinate_single_layout_class' ) ) {
 		if ( is_front_page() ) {
 
 			$single_layout_class = 'single-page-style-1';
+		} elseif ( 'layout_two' === $single_layout ) {
+			$single_layout_class = 'single-page-style-2';
 		} else {
 
-			if ( 'layout_two' === $single_layout ) {
-
-				$single_layout_class = 'single-page-style-2';
-			} else {
-
 				$single_layout_class = 'single-page-style-1';
-			}
 		}
 
 		echo esc_attr( $single_layout_class );
