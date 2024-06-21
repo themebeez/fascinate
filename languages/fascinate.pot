@@ -2,35 +2,40 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Fascinate 1.1.0\n"
+"Project-Id-Version: Fascinate 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/fascinate\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-01-11T12:14:20+00:00\n"
+"POT-Creation-Date: 2024-06-21T09:14:21+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.9.0\n"
+"X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: fascinate\n"
 
 #. Theme Name of the theme
+#: style.css
 msgid "Fascinate"
 msgstr ""
 
 #. Theme URI of the theme
+#: style.css
 msgid "https://themebeez.com/themes/fascinate/"
 msgstr ""
 
 #. Description of the theme
+#: style.css
 msgid "Fascinate is a slick, modern, minimal, and beautifully designed Gutenberg compatible WordPress blog theme. Fascinate Blog is an ideal and complete WordPress blog theme for creating personal or professional blogging website to showcase your experiences, stories or write on different niches like fashion, travel, lifestyle, gourmet, business and so on. Fascinate is 100% media responsive, which means that Fascinate Blog is compatible for all devices ranging from desktop, tablets to smartphones. Fascinate Blog supports four types of post formats ( video, audio, gallery & quote formats ) which can be very helpful to showcase your special moments insisted of a featured image. Fascinate Blog extends WordPress Live customizer functionality which will help you to build your blog website right from customizer itself. Fascinate Blog includes built-in features like custom author widget, social widget, lazyload for images etc. Fascinate Blog is also optimized for SEO & website load time. Fascinate Blog also supports third party popular plugins like Jetpack, Mail Chimp, Contact Form 7, Yoast, Universal Google AdSense & Ads manager etc."
 msgstr ""
 
 #. Author of the theme
+#: style.css
 msgid "themebeez"
 msgstr ""
 
 #. Author URI of the theme
+#: style.css
 msgid "https://themebeez.com"
 msgstr ""
 
@@ -157,19 +162,19 @@ msgstr ""
 msgid "Sidebar"
 msgstr ""
 
-#: customizer/functions/customizer-choices.php:50
+#: customizer/functions/customizer-choices.php:51
 msgid "Boxed Layout"
 msgstr ""
 
-#: customizer/functions/customizer-choices.php:51
+#: customizer/functions/customizer-choices.php:52
 msgid "Full Width Layout"
 msgstr ""
 
-#: customizer/functions/customizer-choices.php:98
+#: customizer/functions/customizer-choices.php:99
 msgid "Show Default View"
 msgstr ""
 
-#: customizer/functions/customizer-choices.php:99
+#: customizer/functions/customizer-choices.php:100
 msgid "Toggleable Canvas View"
 msgstr ""
 
@@ -291,11 +296,11 @@ msgid "Pinterest Link"
 msgstr ""
 
 #: customizer/functions/customizer-fields.php:308
-#: widgets/class-fascinate-social-widget.php:190
 msgid "Youtube Link"
 msgstr ""
 
 #: customizer/functions/customizer-fields.php:316
+#: widgets/class-fascinate-social-widget.php:197
 msgid "Linkedin Link"
 msgstr ""
 
@@ -1265,6 +1270,6 @@ msgstr ""
 msgid "Title "
 msgstr ""
 
-#: widgets/class-fascinate-social-widget.php:197
-msgid "linkedin Link"
+#: widgets/class-fascinate-social-widget.php:190
+msgid "YouTube Link"
 msgstr ""
