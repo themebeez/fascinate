@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-06-21T09:14:21+00:00\n"
+"POT-Creation-Date: 2024-07-09T07:06:35+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: fascinate\n"
@@ -176,6 +176,10 @@ msgstr ""
 
 #: customizer/functions/customizer-choices.php:100
 msgid "Toggleable Canvas View"
+msgstr ""
+
+#: customizer/functions/customizer-defaults.php:119
+msgid "Copyright {copy} {year} {site_title}. All rights reserved."
 msgstr ""
 
 #: customizer/functions/customizer-fields.php:25
@@ -475,8 +479,12 @@ msgstr ""
 msgid "Display Scroll Top Button"
 msgstr ""
 
-#: customizer/functions/customizer-fields.php:820
+#: customizer/functions/customizer-fields.php:821
 msgid "Copyright Text"
+msgstr ""
+
+#: customizer/functions/customizer-fields.php:822
+msgid "You can use {copy}, {year}, {site_title}, and {theme_author} placeholders to display copyright icon, current year, site title,and theme author respectively in the copyright text."
 msgstr ""
 
 #: customizer/functions/customizer-fields.php:834
@@ -504,11 +512,11 @@ msgid "Headings Font"
 msgstr ""
 
 #. translators: 1: Theme name, 2: Theme author.
-#: footer.php:80
+#: footer.php:100
 msgid "%1$s Theme By %2$s"
 msgstr ""
 
-#: footer.php:95
+#: footer.php:115
 msgid "Back to top"
 msgstr ""
 
