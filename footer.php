@@ -63,9 +63,29 @@
 								$copyright_text = fascinate_get_option( 'copyright_text' );
 
 								if ( ! empty( $copyright_text ) ) {
+									if ( str_contains( $copyright_text, '{copy}' ) ) {
+										$copy_right_symbol = '&copy;';
+										$copyright_text    = str_replace( '{copy}', $copy_right_symbol, $copyright_text );
+									}
+
+									if ( str_contains( $copyright_text, '{year}' ) ) {
+										$year           = gmdate( 'Y' );
+										$copyright_text = str_replace( '{year}', $year, $copyright_text );
+									}
+
+									if ( str_contains( $copyright_text, '{site_title}' ) ) {
+										$site_title     = get_bloginfo( 'name' );
+										$copyright_text = str_replace( '{site_title}', $site_title, $copyright_text );
+									}
+
+									if ( str_contains( $copyright_text, '{theme_author}' ) ) {
+										$theme_author   = '<a href="https://themebeez.com" rel="author" target="_blank">Themebeez</a>';
+										$copyright_text = str_replace( '{theme_author}', $theme_author, $copyright_text );
+									}
+
 									?>
 									<div class="copyright-information">
-										<p><?php echo esc_html( $copyright_text ); ?></p>
+										<p><?php echo wp_kses_post( $copyright_text ); ?></p>
 									</div><!-- .copyright-information -->
 									<?php
 								}

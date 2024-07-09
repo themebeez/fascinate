@@ -815,14 +815,14 @@ fascinate_add_toggle_field(
 	'site_footer'
 );
 
-fascinate_add_text_field(
-	'copyright_text',
-	esc_html__( 'Copyright Text', 'fascinate' ),
-	'',
-	'',
-	'site_footer'
+fascinate_add_textarea_field(
+	array(
+		'id'          => 'copyright_text',
+		'label'       => esc_html__( 'Copyright Text', 'fascinate' ),
+		'description' => esc_html__( 'You can use {copy}, {year}, {site_title}, and {theme_author} placeholders to display copyright icon, current year, site title,and theme author respectively in the copyright text.', 'fascinate' ),
+		'section'     => 'site_footer',
+	)
 );
-
 
 /**
  * *****************************************************************************************************

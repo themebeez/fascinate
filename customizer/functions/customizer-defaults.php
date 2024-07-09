@@ -116,7 +116,7 @@ if ( ! function_exists( 'fascinate_get_default_theme_options' ) ) {
 			'common_page_sidebar_position'          => 'right',
 			'display_breadcrumb'                    => true,
 			'display_scroll_top'                    => true,
-			'copyright_text'                        => '',
+			'copyright_text'                        => esc_html__( 'Copyright {copy} {year} {site_title}. All rights reserved.', 'fascinate' ),
 			'excerpt_length'                        => 30,
 			'enable_cursive_post_meta'              => 30,
 			'body_font'                             => wp_json_encode(

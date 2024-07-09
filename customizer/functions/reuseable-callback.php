@@ -113,6 +113,41 @@ if ( ! function_exists( 'fascinate_add_text_field' ) ) {
 	}
 }
 
+if ( ! function_exists( 'fascinate_add_textarea_field' ) ) {
+	/**
+	 * Function to register customize textarea control.
+	 *
+	 * @since 1.5.3
+	 *
+	 * @param array $customize_args     Control arguments.
+	 */
+	function fascinate_add_textarea_field( $customize_args ) {
+
+		global $wp_customize;
+
+		$customize_defaults = fascinate_get_default_theme_options();
+
+		$wp_customize->add_setting(
+			'fascinate_field_' . $customize_args['id'],
+			array(
+				'sanitize_callback' => 'sanitize_textarea_field',
+				'default'           => $customize_defaults[ $customize_args['id'] ],
+			)
+		);
+
+		$wp_customize->add_control(
+			'fascinate_field_' . $customize_args['id'],
+			array(
+				'label'           => isset( $customize_args['label'] ) ? $customize_args['label'] : '',
+				'description'     => isset( $customize_args['description'] ) ? $customize_args['description'] : '',
+				'type'            => 'textarea',
+				'section'         => 'fascinate_section_' . $customize_args['section'],
+				'active_callback' => isset( $customize_args['active_callback'] ) ? $customize_args['active_callback'] : '',
+			)
+		);
+	}
+}
+
 
 if ( ! function_exists( 'fascinate_add_number_field' ) ) {
 	/**
