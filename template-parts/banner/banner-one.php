@@ -9,6 +9,7 @@
 
 $banner_query = fascinate_banner_query();
 
+
 if ( $banner_query->have_posts() ) {
 
 	$display_banner_content = fascinate_get_option( 'carousel_hide_content' );

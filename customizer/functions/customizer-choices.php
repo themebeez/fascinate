@@ -19,7 +19,8 @@ if ( ! function_exists( 'fascinate_post_category_choices' ) ) {
 
 		$query_category_terms = get_terms(
 			array(
-				'taxonomy' => 'category',
+				'taxonomy'   => 'category',
+				'hide_empty' => false,
 			)
 		);
 

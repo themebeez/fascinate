@@ -247,7 +247,7 @@ if ( ! function_exists( 'fascinate_banner' ) ) {
 
 		$show_carousel = fascinate_get_option( 'display_carousel' );
 
-		if ( true === $show_carousel || 1 === $show_carousel ) {
+		if ( $show_carousel ) {
 
 			$carousel_layout = fascinate_get_option( 'carousel_layout' );
 

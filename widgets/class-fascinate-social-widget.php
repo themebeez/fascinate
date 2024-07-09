@@ -187,14 +187,14 @@ if ( ! class_exists( 'Fascinate_Social_Widget' ) ) {
 
 			<p>
 				<label for="<?php echo esc_attr( $this->get_field_id( 'youtube' ) ); ?>">
-					<strong><?php esc_html_e( 'Youtube Link', 'fascinate' ); ?></strong>
+					<strong><?php esc_html_e( 'YouTube Link', 'fascinate' ); ?></strong>
 				</label>
 				<input type="text" class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'youtube' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'youtube' ) ); ?>" value="<?php echo esc_attr( $instance['youtube'] ); ?>">
 			</p>           
 
 			<p>
 				<label for="<?php echo esc_attr( $this->get_field_id( 'linkedin' ) ); ?>">
-					<strong><?php esc_html_e( 'linkedin Link', 'fascinate' ); ?></strong>
+					<strong><?php esc_html_e( 'Linkedin Link', 'fascinate' ); ?></strong>
 				</label>
 				<input type="text" class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'linkedin' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'linkedin' ) ); ?>" value="<?php echo esc_attr( $instance['linkedin'] ); ?>">
 			</p> 
