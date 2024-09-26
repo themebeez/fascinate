@@ -91,6 +91,7 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 == 1.1.1 - 26 September, 2024 ==
 
 - Updated: Copyright setting.
+- Fixed:   Issue with widget option, `Display Comments No`, in `F: Posts Widget`.
 - Tested: Up to PHP 8.3 and WordPress 6.6.
 
 = 1.1.0 - 4 October, 2023 =
