@@ -17,7 +17,7 @@ Fascinate is a slick, modern, minimal, and beautifully designed Gutenberg compat
 
 == License ==
 
-Fascinate WordPress Theme, Copyright (C) 2023, themebeez.
+Fascinate WordPress Theme, Copyright (C) 2024, themebeez.
 Fascinate is distributed under the terms of the GNU GPL
 
 
@@ -88,9 +88,10 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 
 == Changelog ==
 
-== 1.1.1 - ?, 2024 ==
-- Tested upto PHP 8.3.0 and WordPress 6.6
+== 1.1.1 - 26 September, 2024 ==
 
+- Updated: Copyright setting.
+- Tested: Up to PHP 8.3 and WordPress 6.6.
 
 = 1.1.0 - 4 October, 2023 =
 
@@ -102,7 +103,7 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 - Removed: Options, `Enable Cursive Site Title`, `Enable Cursive Post Meta`, and `Enable Lazy Loading`.
 - Removed: jQuery plugin, Lazysize.
 - Fixed: Issue with customizer options, `Display Featured Image`.
-- Fixed: PHP error - `PHP Fatal error: Uncaught ArgumentCountError: Too few arguments to function get_day_link(), 1 passed in /wp-content/themes/cream-magazine/third-party/breadcrumbs.php on line 802 and exactly 3 expected.`
+- Fixed: PHP error - `PHP Fatal error: Uncaught ArgumentCountError: Too few arguments to function get_day_link(), 1 passed in /wp-content/themes/fascinate/third-party/breadcrumbs.php on line 802 and exactly 3 expected.`
 - Fixed:  Missing `=` after an instance of `value` attribute in an `input` tag in `value"' . get_search_query() . '"`.
 - Fixed: JS issue of preloader.
 - Fixed: Minor CSS issues.

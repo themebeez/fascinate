@@ -11,7 +11,7 @@ if ( ! class_exists( 'Fascinate_Custom_Fields' ) ) {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @package Cream_Magazine
+	 * @package Fascinate
 	 */
 	class Fascinate_Custom_Fields {
 

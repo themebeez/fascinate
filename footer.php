@@ -69,8 +69,8 @@
 									}
 
 									if ( str_contains( $copyright_text, '{year}' ) ) {
-										$year           = gmdate( 'Y' );
-										$copyright_text = str_replace( '{year}', $year, $copyright_text );
+										$current_year   = gmdate( 'Y' );
+										$copyright_text = str_replace( '{year}', $current_year, $copyright_text );
 									}
 
 									if ( str_contains( $copyright_text, '{site_title}' ) ) {
