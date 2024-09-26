@@ -43,10 +43,10 @@ if ( ! class_exists( 'Fascinate_Post_Widget' ) ) {
 
 			$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base );
 
-			$posts_no            = ! empty( $instance['post_no'] ) ? $instance['post_no'] : 5;
-			$layout              = ! empty( $instance['layout'] ) ? $instance['layout'] : 'layout_one';
-			$display_date        = ! empty( $instance['display_date'] ) ? $instance['display_date'] : false;
-			$dispaly_comments_no = ! empty( $instance['dispaly_comments_no'] ) ? $instance['dispaly_comments_no'] : false;
+			$posts_no            = isset( $instance['post_no'] ) ? absint( $instance['post_no'] ) : 5;
+			$layout              = isset( $instance['layout'] ) ? sanitize_text_field( $instance['layout'] ) : 'layout_one';
+			$display_date        = isset( $instance['display_date'] ) ? $instance['display_date'] : false;
+			$display_comments_no = isset( $instance['display_comments_no'] ) ? $instance['display_comments_no'] : false;
 
 			$post_args = array(
 				'post_type'           => 'post',
@@ -105,7 +105,7 @@ if ( ! class_exists( 'Fascinate_Post_Widget' ) ) {
 												<div class="entry-metas">
 													<ul>
 														<?php fascinate_posted_on( $display_date ); ?>
-														<?php fascinate_comments_no_meta( $dispaly_comments_no ); ?>
+														<?php fascinate_comments_no_meta( $display_comments_no ); ?>
 													</ul>
 												</div><!-- .entry-metas -->
 											</div><!-- .content-holder -->
@@ -165,7 +165,7 @@ if ( ! class_exists( 'Fascinate_Post_Widget' ) ) {
 												<div class="entry-metas">
 													<ul>
 														<?php fascinate_posted_on( $display_date ); ?>
-														<?php fascinate_comments_no_meta( $dispaly_comments_no ); ?>
+														<?php fascinate_comments_no_meta( $display_comments_no ); ?>
 													</ul>
 												</div><!-- .entry-metas -->
 											</div><!-- .content-holder -->
@@ -197,7 +197,7 @@ if ( ! class_exists( 'Fascinate_Post_Widget' ) ) {
 				'title'               => '',
 				'post_no'             => 5,
 				'display_date'        => false,
-				'dispaly_comments_no' => false,
+				'display_comments_no' => false,
 				'layout'              => 'layout_one',
 			);
 
@@ -271,7 +271,7 @@ if ( ! class_exists( 'Fascinate_Post_Widget' ) ) {
 					}
 					?>
 				>
-				<label for="<?php echo esc_attr( $this->get_field_name( 'display_date' ) ); ?>">
+				<label for="<?php echo esc_attr( $this->get_field_id( 'display_date' ) ); ?>">
 					<strong><?php esc_html_e( 'Display Date', 'fascinate' ); ?></strong>
 				</label>
 			</p>
@@ -279,15 +279,15 @@ if ( ! class_exists( 'Fascinate_Post_Widget' ) ) {
 			<p>
 				<input
 					type="checkbox"
-					id="<?php echo esc_attr( $this->get_field_id( 'dispaly_comments_no' ) ); ?>"
-					name="<?php echo esc_attr( $this->get_field_name( 'dispaly_comments_no' ) ); ?>"
+					id="<?php echo esc_attr( $this->get_field_id( 'display_comments_no' ) ); ?>"
+					name="<?php echo esc_attr( $this->get_field_name( 'display_comments_no' ) ); ?>"
 					<?php
-					if ( true === $instance['dispaly_comments_no'] ) {
+					if ( true === $instance['display_comments_no'] ) {
 						echo 'checked';
 					}
 					?>
 				>
-				<label for="<?php echo esc_attr( $this->get_field_name( 'dispaly_comments_no' ) ); ?>">
+				<label for="<?php echo esc_attr( $this->get_field_id( 'display_comments_no' ) ); ?>">
 					<strong><?php esc_html_e( 'Display Comments No', 'fascinate' ); ?></strong>
 				</label>
 			</p>            
@@ -310,7 +310,7 @@ if ( ! class_exists( 'Fascinate_Post_Widget' ) ) {
 			$instance['title']               = isset( $new_instance['title'] ) ? sanitize_text_field( $new_instance['title'] ) : '';
 			$instance['post_no']             = isset( $new_instance['post_no'] ) ? absint( $new_instance['post_no'] ) : 5;
 			$instance['display_date']        = isset( $new_instance['display_date'] ) ? true : false;
-			$instance['dispaly_comments_no'] = isset( $new_instance['display_comments_no'] ) ? true : false;
+			$instance['display_comments_no'] = isset( $new_instance['display_comments_no'] ) ? true : false;
 			$instance['layout']              = isset( $new_instance['layout'] ) ? sanitize_text_field( $new_instance['layout'] ) : 'layout_one';
 
 			return $instance;
