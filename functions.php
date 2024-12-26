@@ -357,7 +357,7 @@ require get_template_directory() . '/admin/welcome-notice/class-fascinate-theme-
 add_action(
 	'init',
 	function () {
-		new Orchid_Store_Theme_Welcome_Notice(
+		new Fascinate_Theme_Welcome_Notice(
 			'fascinate',
 			admin_url( 'admin.php?page=fascinate' ),
 			array(
