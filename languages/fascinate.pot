@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Fascinate 1.1.1\n"
+"Project-Id-Version: Fascinate 1.1.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/fascinate\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-09-26T06:39:22+00:00\n"
+"POT-Creation-Date: 2024-12-26T11:18:25+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: fascinate\n"
@@ -49,6 +49,29 @@ msgstr ""
 
 #: 404.php:28
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#. translators: %s: current user's display name
+#: admin/welcome-notice/class-fascinate-theme-welcome-notice.php:137
+msgid "Hello, %s"
+msgstr ""
+
+#. translators: %s: theme name
+#: admin/welcome-notice/class-fascinate-theme-welcome-notice.php:146
+msgid "Welcome to %s"
+msgstr ""
+
+#. translators: 1: theme name
+#: admin/welcome-notice/class-fascinate-theme-welcome-notice.php:155
+msgid "Thank you for choosing %1$s! To get started with %1$s and import starter templates, install Themebeez Toolkit plugin by clicking on the button below! We hope you enjoy using %1$s."
+msgstr ""
+
+#: admin/welcome-notice/class-fascinate-theme-welcome-notice.php:165
+msgid "Get Started"
+msgstr ""
+
+#: admin/welcome-notice/class-fascinate-theme-welcome-notice.php:175
+msgid "Notice Image"
 msgstr ""
 
 #. translators: 1: title.
@@ -637,6 +660,35 @@ msgstr ""
 #: includes/theme-functions.php:48
 msgctxt "place-holder"
 msgid "Type here to search"
+msgstr ""
+
+#: includes/udp/class-udp-agent.php:116
+msgid "Allow Anonymous Tracking"
+msgstr ""
+
+#: includes/udp/class-udp-agent.php:158
+msgid "Become a super contributor by sharing your non-sensitive WordPress data. We guarantee no sensitive data is collected."
+msgstr ""
+
+#: includes/udp/class-udp-agent.php:159
+msgid " What data do we collect?"
+msgstr ""
+
+#. translators: %s: agent name
+#: includes/udp/init.php:99
+msgid "%s is asking to allow tracking your non-sensitive WordPress data?"
+msgstr ""
+
+#: includes/udp/init.php:105
+msgid "Allow"
+msgstr ""
+
+#: includes/udp/init.php:107
+msgid "Do not show again"
+msgstr ""
+
+#: includes/udp/init.php:109
+msgid "Later"
 msgstr ""
 
 #: single.php:54
