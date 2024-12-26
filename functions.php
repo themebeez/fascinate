@@ -310,6 +310,11 @@ require get_template_directory() . '/includes/helper-functions.php';
 require get_template_directory() . '/includes/class-fascinate-custom-fields.php';
 
 /**
+ * Load Udp agent file.
+ */
+require get_template_directory() . '/includes/udp/init.php'; // since 1.1.2.
+
+/**
  * Customizer additions.
  */
 require get_template_directory() . '/customizer/customizer.php';
@@ -339,3 +344,26 @@ require get_template_directory() . '/widgets/class-fascinate-author-widget.php';
  * Load Social Links Widget.
  */
 require get_template_directory() . '/widgets/class-fascinate-social-widget.php';
+
+
+/**
+* Adds welcome notice to admin dashboard.
+*
+* @since 1.5.8.
+*/
+require get_template_directory() . '/admin/welcome-notice/class-fascinate-theme-welcome-notice.php';
+
+
+add_action(
+	'init',
+	function () {
+		new Orchid_Store_Theme_Welcome_Notice(
+			'fascinate',
+			admin_url( 'admin.php?page=fascinate' ),
+			array(
+				'themebeez-toolkit/themebeez-toolkit.php' => 'https://downloads.wordpress.org/plugin/themebeez-toolkit.zip',
+			)
+		);
+	}
+);
+
