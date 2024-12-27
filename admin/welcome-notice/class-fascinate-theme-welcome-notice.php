@@ -92,7 +92,7 @@ if ( ! class_exists( 'Fascinate_Theme_Welcome_Notice' ) ) {
 				'theme-notice-script',
 				get_template_directory_uri() . '/admin/welcome-notice/theme-notice.js',
 				array( 'jquery' ),
-				ORCHID_STORE_VERSION, // Update version here.
+				FASCINATE_VERSION, // Update version here.
 				true
 			);
 
@@ -112,7 +112,7 @@ if ( ! class_exists( 'Fascinate_Theme_Welcome_Notice' ) ) {
 				'theme-notice-style',
 				get_template_directory_uri() . '/admin/welcome-notice/theme-notice.css',
 				array(),
-				ORCHID_STORE_VERSION, // Update version here.
+				FASCINATE_VERSION, // Update version here.
 				'all'
 			);
 		}
