@@ -109,8 +109,8 @@ if ( ! function_exists( 'fascinate_setup' ) ) {
 		);
 
 		// Add editor style.
-		add_theme_support( 'editor-styles' );
-		add_editor_style( 'admin/css/editor-style.css' );
+		//add_theme_support( 'editor-styles' );
+		//add_editor_style( 'admin/css/editor-style.css' );
 
 		// Add support for gutenberg.
 		add_theme_support( 'align-wide' );
