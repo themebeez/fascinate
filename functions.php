@@ -7,9 +7,10 @@
  * @package Fascinate
  */
 
-$current_theme = wp_get_theme( 'fascinate' );
+if ( ! defined( 'FASCINATE_VERSION' ) ) {
+	define( 'FASCINATE_VERSION', '1.1.3' );
+}
 
-define( 'FASCINATE_VERSION', $current_theme->get( 'Version' ) );
 
 if ( ! function_exists( 'fascinate_setup' ) ) {
 	/**

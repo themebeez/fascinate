@@ -88,6 +88,12 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 
 == Changelog ==
 
+== 1.1.3 - 25 March, 2025 ==
+
+- Tested: Up to PHP 8.3.11 and WordPress 6.8
+
+== Changelog ==
+
 == 1.1.2 - 26 December, 2024 ==
 
 - Added: Udp agent to track user's non sensitive data.
