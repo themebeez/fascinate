@@ -5,6 +5,10 @@
  * @package Fascinate
  */
 
+if ( 'post' !== get_post_type() ) {
+	return;
+}
+
 $display_related_section = fascinate_get_option( 'display_related_section' );
 
 if ( $display_related_section ) {

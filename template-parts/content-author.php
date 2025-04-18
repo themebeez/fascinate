@@ -5,6 +5,10 @@
  * @package Fascinate
  */
 
+if ( 'post' !== get_post_type() ) {
+	return;
+}
+
 $display_author_section = fascinate_get_option( 'display_author_section' );
 
 if ( $display_author_section ) {
