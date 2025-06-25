@@ -87,6 +87,21 @@ header span.site-title {
     border-top:1px solid $border_color;
 }
 
+.header-style-1 .fb-search {
+    svg {
+        fill: #333333;
+        height: 16px;
+        width: 16px;
+        @include transation_delay();
+    }
+
+    &:hover {
+        svg {
+            fill: $secondary_color;
+        }
+    }
+}
+
 
 /*
 ====================================================
@@ -1033,30 +1048,96 @@ body.page .single-page-style-2 .fb-breadcrumb-wrap {
 
 
 
+// Search
+.search-area-container {
+
+    position: fixed;
+    margin: 0 auto;
+    background-color: $primary_color;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.search-area-container.show-search {
+
+    opacity: 1;
+    z-index: 5;
+}
+
+.search-area-container.hide-search {
+
+    opacity: 0;
+    z-index: 0;
+}
 
 
 
+.search-area-container .form-container {
 
+    position: relative;
+    height: 100vh;
+}
 
+.search-area-container .form-container .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    padding: 20px;
+    resize: both;
+}
 
+.search-area-container .form-container .form-wrapper .search-close {
+    align-self: flex-end;
+    position: relative;
+    background-color: transparent;
+    padding: 0;
 
+    svg {
+        @include transation_delay;
+        fill: #FFFFFF;
+        height: 45px;
+        width: 45px;
+    }
 
+    &:hover {
+        svg {
+            fill: $secondary_color;
+        }
+    }
+}
 
+.search-area-container .form-container form {
+    position: relative;
 
+    button[type="submit"] {
+        background: transparent;
+        color: #333333;
+        position: absolute;
+        right: 0px;
+        font-size: 36px;
+        height: 70px;
+        top: 50%;
+        transform: translateY(-50%);
 
+        &:hover {
+            color: $secondary_color;
+        }
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.search-area-container .form-container form input[type="search"] {
+    background-color: #ffffff;
+    border-radius: 3px;
+    color: #222222;
+    font-size: 18px;
+    padding-right: 90px;
+    height: 70px;
+}

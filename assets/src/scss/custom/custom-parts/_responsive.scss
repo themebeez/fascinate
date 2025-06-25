@@ -140,10 +140,11 @@
 
 	// Menu
 
-
-	.menu-toggle {
-
-		display:block;
+	#menu-toggle-search-container {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	body .header-style-1 .main-menu-wrapper {
@@ -162,6 +163,10 @@
 
 		display:none;
 		text-align: left;
+
+		#menu-item-search {
+			display: none;
+		}
 	}
 
 	#site-navigation ul li {

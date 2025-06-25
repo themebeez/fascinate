@@ -4,7 +4,7 @@ Contributors: themebeez
 Requires at least: 5.0
 Requires PHP: 5.6 or higher
 Tested up to: 6.8
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, blog, custom-header, theme-options, footer-widgets, editor-style, block-styles, wide-blocks, sticky-post, post-formats
@@ -87,6 +87,10 @@ Fascinate includes support for contact form 7, wp forms, jetpack
 
 
 == Changelog ==
+
+== 1.1.4 - 25 June, 2025 ==
+
+- Added: Search icon to the header.
 
 == 1.1.3 - 18 April, 2025 ==
 
