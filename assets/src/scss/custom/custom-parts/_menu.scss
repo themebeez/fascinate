@@ -138,11 +138,26 @@
     display: none;
 }
 
+#menu-toggle-search-container {
+    display: none;
+    padding: 5px 0;
+
+    .fb-search {
+        background: transparent;
+        padding: 0;
+        
+        svg {
+            fill: #FFFFFF;
+            height: 24px;
+            width: 24px;
+        }
+    }
+}
+
 // toggle menu 
 
 .menu-toggle {
 
-    display: none;
     padding: 15px 0;
     font-size: 0;
     font-weight: normal;
