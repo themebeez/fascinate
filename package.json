@@ -4,7 +4,7 @@
   "description": "=== Fascinate ===",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "gulp",
+    "zip": "gulp zip",
     "assets": "gulp assets"
   },
   "repository": {
